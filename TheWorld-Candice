@@ -1,0 +1,19 @@
+# The World
+# Candice
+
+play_again = "yes"
+while play_again == "yes":
+    print("Welcome to the world!")
+    player_name = input ("What is your player name? ")
+    print(f"Hello, {player_name}! Welcome to the game!")
+    direction = input("You are at a crossroads. Would you like to go left or right?")
+    print(f"You chose to go {direction}.")
+    quest=input("Would you like to kill hate or loyalty?")
+    if quest=="loyalty": print("You have became the god of betrayal")
+    if quest=="hate": print("You have became the god of loyalty")
+    import random
+    event=random.choice(["dragon","chest","wolf"])
+    print(f"You encounter a {event}.")
+    if event =="wolf": print("You have lost.")
+    elif event=="dragon": print("You have won.")
+    elif event=="chest": print("You have won.")
