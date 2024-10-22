@@ -1,0 +1,43 @@
+#The Oregan Trail
+#Nolan
+
+inventory = []
+play_again = "yes"
+while play_again == "yes":
+    import time
+    print("It is May of 1843.")
+    time.sleep(1)
+    print("")
+    print("The American Government wants us to migrate to Oregon.")
+    time.sleep(1)
+    print("")
+    print("They promise new land and a better life.")
+    time.sleep(1)
+    print("")
+    input("Press 'enter' to continue")
+    print("You decide to go.")
+    print("")
+    time.sleep(1)
+    river = input("You come across a river that is 1 ft deep. You either press 1 to ford the river or press 2 to caulk the wagon and float across. Caulking the wagon will take 2 days.")
+    if river == "1":print("You almost drown but still manage to make it across")
+    elif river == "2":print("You float across safely")
+    time.sleep(1)
+    print("you find an an axe on the ground though it doesnt seem to be useful")
+    axe =input("Would you like to pick it up?")
+    if axe == "yes" :
+        inventory.append("axe")  
+    elif axe == "no":
+        print ("2 days pass")
+    time.sleep(1)
+    print ("You are along the side of a river when you come across a tree blocking your path")
+    time.sleep(1)
+    if "axe" in inventory:
+       print("you use the axe from earlier to cut the tree and you are able to bring all your supplies")
+       import random
+       event = random.choice (["a group of guides","VSauce"])
+       print(f"you encounter {event} and they help you reach Oregon")
+    else:
+        print("you have to leave your supplies behind and climb over it")
+        time.sleep(1)
+        print("you die 2 days laterdue to dehydration")
+        time.sleep(3)
