@@ -1,0 +1,164 @@
+#i don't know (idk)
+#Jacob 
+
+import random
+
+def intro_scene():
+    print("Welcome to the world of humans!")
+    player_name = input("What is your name? ")
+    print(f"Hello, {player_name}! Welcome to the game.")
+
+    direction = input("You are at a river. Do you go left or right? ").lower()
+    print(f"Do you really want to go {direction}?")
+
+    print("You are now walking towards the selected area.")
+   
+    inventory = []
+
+    if direction == "right":
+        print("You have found a sign saying 'Wrong way'.")
+    elif direction == "left":
+        print("You have found a cave. Do you go into it?")
+        go_into_cave = input("Type 'yes' to enter or 'no' to stay outside: ").lower()
+        if go_into_cave == 'yes':
+            print("You found a treasure in the cave!")
+            inventory.append("treasure")
+        else:
+            print("You decided to stay outside.")
+    else:
+        print("This isn't a choice. Please enter a valid choice to continue.")
+   
+    if "treasure" in inventory:
+        print("You won! Yay!")
+
+    play_again = input("Do you want to play again? Type 'yes' or 'no': ").lower()
+    while play_again == "yes":
+        intro_scene()
+        play_again = input("Do you want to play again? Type 'yes' or 'no': ").lower()
+
+# Start the game
+intro_scene()
+
+
+
+
+
+
+
+import random
+
+def intro_scene():
+    print("Welcome to the world of humans!")
+    player_name = input("What is your name? ")
+    print(f"Hello, {player_name}! Welcome to the game.")
+
+    direction = input("You are at a river. Do you go left or right? ").lower()
+    print(f"Do you really want to go {direction}?")
+
+    print("You are now walking towards the selected area.")
+   
+    inventory = []
+    encountered_animals = []
+    health = 100
+
+    if direction == "right":
+        print("You have found a sign saying 'Wrong way'.")
+        encounter = random.choice(["a snake", "a rabbit", "a bear", "nothing"])
+       
+        if encounter == "a snake":
+            print("Oh no! A snake appears! You need to run!")
+            action = input("Do you run or try to scare it away? (run/scare): ").lower()
+            if action == "run":
+                print("You managed to escape safely!")
+            else:
+                print("The snake hisses at you, and you decide to back away.")
+       
+        elif encounter == "a rabbit":
+            print("You see a rabbit! It looks friendly.")
+            pet_rabbit = input("Do you want to pet the rabbit? (yes/no): ").lower()
+            if pet_rabbit == "yes":
+                print("The rabbit seems happy! You gained a new friend.")
+                encountered_animals.append("rabbit")
+            else:
+                print("You decide to leave the rabbit alone.")
+       
+        elif encounter == "a bear":
+            print("A bear suddenly appears! It's hungry!")
+            action = input("Do you try to scare it away, run, or offer it food? (scare/run/offer): ").lower()
+            if action == "run":
+                print("You sprint away and escape, but you lose some energy.")
+                health -= 10
+            elif action == "scare":
+                print("You wave your arms and shout! The bear is startled and runs away.")
+            elif action == "offer":
+                print("You offer the bear some berries you found earlier. It seems satisfied and leaves you alone.")
+                inventory.append("berries")
+            else:
+                print("You stand frozen in fear, and the bear approaches. Thankfully, it just sniffs you and wanders off.")
+
+        else:
+            print("You walk peacefully and enjoy the scenery.")
+
+    elif direction == "left":
+        print("You have found a cave. Do you go into it?")
+        go_into_cave = input("Type 'yes' to enter or 'no' to stay outside: ").lower()
+        if go_into_cave == 'yes':
+            print("Inside the cave, you find a treasure chest!")
+            treasure_choice = input("Do you want to open it? (yes/no): ").lower()
+            if treasure_choice == "yes":
+                print("You found a treasure in the cave!")
+                inventory.append("treasure")
+                print("You also find a mysterious map. It might lead you to more treasures.")
+                inventory.append("mysterious map")
+            else:
+                print("You decided not to open the chest, keeping your curiosity in check.")
+                print("But you hear a noise coming from deeper inside the cave.")
+                investigate = input("Do you investigate the noise? (yes/no): ").lower()
+                if investigate == "yes":
+                    print("You find a hidden passage that leads to another chamber!")
+                    chamber_choice = input("Do you explore the chamber or leave? (explore/leave): ").lower()
+                    if chamber_choice == "explore":
+                        print("You discover ancient artifacts! This could be valuable.")
+                        inventory.append("ancient artifacts")
+                    else:
+                        print("You decide to leave the chamber and head back outside.")
+                else:
+                    print("You decide to leave the cave and continue your journey.")
+
+        else:
+            print("You decided to stay outside and enjoy the fresh air.")
+            sit_by_river = input("Do you want to sit by the river for a while? (yes/no): ").lower()
+            if sit_by_river == "yes":
+                print("You relax by the river, listening to the soothing sounds of nature.")
+                rest = input("Do you want to take a nap? (yes/no): ").lower()
+                if rest == "yes":
+                    print("You take a short nap and regain some energy!")
+                    health += 10
+                else:
+                    print("You choose to stay awake and enjoy the scenery.")
+            else:
+                print("You continue your journey along the riverbank.")
+
+    else:
+        print("This isn't a choice. Please enter a valid choice to continue.")
+   
+    print(f"Your current health: {health}")
+    if "treasure" in inventory:
+        print("You won! Yay!")
+    else:
+        print("You didn't find any treasure this time, but maybe next time!")
+
+    if encountered_animals:
+        print(f"You encountered: {', '.join(encountered_animals)}.")
+    else:
+        print("You didn't encounter any animals on your journey.")
+
+    print(f"Your inventory: {', '.join(inventory) if inventory else 'empty'}")
+   
+    play_again = input("Do you want to play again? Type 'yes' or 'no': ").lower()
+    while play_again == "yes":
+        intro_scene()
+        play_again = input("Do you want to play again? Type 'yes' or 'no': ").lower()
+
+# Start the game
+intro_scene()
