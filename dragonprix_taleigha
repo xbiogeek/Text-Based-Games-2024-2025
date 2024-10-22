@@ -1,0 +1,13 @@
+#dragon prix
+#by taleigha
+
+print("Hello World")
+player_name=input("what's your player name ")
+print(f'hello,{player_name}! welcome to the game.')
+direction = input("you are at a crossroads. do u go left or right")
+print(f"you chose to go {direction}. ")
+if direction== "left": action = input("you see a dragon. do you fight or flee? ")
+if direction==right: action = input("you see a dragon. do you fight or flee?")
+if action=="fight":print(" you bravely fight the drangon and win!")
+elif action == "right": print("you run safely.")
+print("you enter a brige its broken")
