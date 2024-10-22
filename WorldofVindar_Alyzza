@@ -1,0 +1,32 @@
+# World of Vindar
+# Alyzza
+inventory = []
+print("Welcome to the villiage of Vindar.")
+player_name = input("what is you're name? ")
+print(f"Hello, {player_name} ! Welcome to the game. ")
+direction = input("You come across an issue of which bridge to chooese, left or right?")
+print(f"You chose to go {direction}. ")
+if direction == "left":
+    print("You fell into the pond of deadly water,the bridge you went through was old and rusty.")
+    play_again = input ("do you play again? 'yes' or 'no':")
+elif direction == "right": 
+    print("You walked safely across to the bridge.")
+    print("you come across a sword, and pick it up.")
+    inventory.append("sword") 
+action =input("You come across the king who challenged you to a duel. Do you fight or run?")
+if action == "fight":
+ print("you fight the King with the sword and took his place! The king retreated and you are now known as the King/queen.")
+elif action == "run":
+ print("the kingdom was in pain after you left.. No one has left the kingdom and were worked like slaves.")
+ play_again = "yes"
+action2 = input("you now lead the whole kingdom. Do you wanna help the kingdom or starve everyone?")
+if action2 == "help":
+  print("you helped the kingdom and everyone honored you. GOOD ending.")
+elif action2 == "starve.":
+ print(" you were thrown into the pit of lava by everyone after everyone has been starves for 5 days. BAD ending.")
+
+
+ 
+ 
+
+ 
