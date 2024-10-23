@@ -1,0 +1,58 @@
+#Onion
+#Kayden
+
+print("Wecome to the game")
+
+playe_name = input("what is your name?")
+
+print(f"hello, {player_name}! wecome to the game. ")
+
+if direction = input("you are at a crossroads. do you go left or right? ")
+
+print(f"you chose to go {direction}.")
+
+print("you encounter a dragon!")
+
+print ("you encounter a minion!
+
+elif direction == "right":
+
+print("you find a treasure chest.")
+
+else:
+
+print ("invalid choice.")
+
+if direction == left":
+
+action = input ("you see a dragon do you fight or flee?")
+
+if action == "fight":
+
+print ("you bravely fight the dragon and win!")
+
+elif action == "flee":
+
+print (" you run away safely.")
+
+inventory = []
+
+if direction == "right":
+
+print("you find a soword")
+
+inventory.append("soword")
+
+"soword" in inventory:
+
+print("you use the soword to fight the dragon!")
+
+inport random
+
+event = random.choice(["dragon", "treasurere", "notthing"])
+
+print(f"you encounter a {event}.")
+
+if direction == "left" and action == "fight":
+
+print("you won the game!!!")
