@@ -1,0 +1,129 @@
+#Space Game
+#Darren
+
+play_again = "yes"
+
+while play_again == "yes":
+
+print("Welcome to the game!")
+
+
+name = input("What is your name? ")
+
+
+print(f"Hello, {name}! In this game, you will be going on an adventure in outer space.")
+
+
+location = "mars"
+
+
+while location != "quit":
+
+if location == "mars":
+
+print("You are stranded in mars.")
+
+direction = input("Which way do you want to go? (left/right) ")
+
+if direction == "left":
+
+location = "alien"
+
+elif direction == "right":
+
+location = "talk"
+
+
+elif location == "alien":
+
+print("You met a alien.")
+
+direction = input("What do you want to do? (fight/talk) ")
+
+if direction == "fight":
+
+location = "fight"
+
+elif direction == "talk":
+
+location = "talk"
+
+
+elif location == "1":
+
+print("You fortunately beat the alien and stole his tech, you are able to head back to earth with it.")
+
+print("Congratulations! You won the game.")
+
+play_again = input ("do you want to play again? (yes or no)")
+
+location = "quit"
+
+
+elif location == "talk":
+
+print("You met a alien you attempted to talk to him, He doesn't understand you")
+
+direction = input("What will you do? steal his ufo or attack him? (steal/attack) ")
+
+if direction == "steal":
+
+location = "steal"
+
+elif direction == "attack":
+
+location = "attack"
+
+
+elif location == "steal":
+
+print("You succesfully stole his ufo and made it safely to earth.")
+
+print("Congratulations! You won the game.")
+
+play_again = input ("do you want to play again? (yes or no)")
+
+location = "quit"
+
+
+elif location == "attack":
+
+print("You start attacking the alien he attempts to hit you, you try to dodge.")
+
+direction2 = input("where do you dodge left or right? (left/right) ")
+
+if direction2 == "left":
+
+print("You died! the alien hit you with his alien technology Blaster.")
+
+print("Game Over.")
+
+play_again = input ("do you want to play again? (yes or no)")
+
+location = "quit"
+
+elif direction2 == "right":
+
+print("You succesfully dodged and weaved past him to launch a devestating blow. But it didn't effect him")
+
+direction = input("Do you want to fight or run (fight/run)")
+
+if direction == "fight":
+
+print ("the alien was too powerful and he defeated you")
+
+print ("Game Over.")
+
+play_again = input ("do you want to play again? (yes or no)")
+
+location = "quit"
+
+elif direction == "run":
+
+print ("you successfully ran off and stole his spaceship you made it back to earth safely")
+
+print ("You Win!")
+
+play_again = input ("do you want to play again? (yes or no)")
+
+location = "quit"
