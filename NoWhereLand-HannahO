@@ -1,0 +1,50 @@
+# No Where Land
+# Hannah O
+
+inventory = []
+
+play_again = “yes”
+
+while play_again == "yes":
+
+print ("Hi, welcome to the adventure")
+
+player_name = input ("What is your icons name? ")
+
+print (f"Hi, {player_name} ! Welcome to the adventure of a lifetime.")
+
+direction = input("You are at a crossroads. Do you go left or right? ")
+
+print(f"You chose to go {direction}.")
+
+if direction == "left":
+
+print ("you found the tresure!Yay!:)")
+
+direction2 = input("You encountered a scary bear. do you fight or leave?")
+
+if direction2 =="leave":
+
+print("You chose leave.You survived and found a dimond know you are rich and live in a big house.you have one the game!")
+
+elif direction2== "fight":
+
+print("You chose fight you died.you have lost. Thats too bad try again.")
+
+print("you found a dimond")
+
+elif direction == "right":
+
+print ("you encountered a huge cliff. try not to fall off of it.")
+
+play_again = input("Do you want to play again?")
+
+inventory = ["dimond"]
+
+import random
+
+event = random.choice(["dimond","tresure","nothing"])
+
+print(f"you encountered a {event}")
+
+play_again = input("Do you want to play again?hope you do!")
