@@ -1,0 +1,40 @@
+#Crossroads
+#Ayaka
+
+play_again = "yes"
+
+while play_again == "yes":
+
+print("Welcome to the game!")
+
+player_name = input("What is your name? ")
+
+print(f"Hello, {player_name}! Welcome to the game.")
+
+direction = input ("You are at a crossroads. Do you go left or right? ")
+
+print(f"You chose to go {direction}.")
+
+if direction == "left":
+
+print("You encounter a dragon!")
+
+elif direction == "right":
+
+print("You find a treasure chest.")
+
+else:
+
+print(" Invalid choice.")
+
+if direction == "left":
+
+action = input(" You see a dragon. Do you fight or flee? ")
+
+if action == "fight":
+
+print(" You bravely fight the dragon and win!")
+
+elif action == "flee":
+
+print("you run away safley.")
