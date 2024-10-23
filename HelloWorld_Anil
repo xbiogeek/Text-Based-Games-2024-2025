@@ -1,0 +1,12 @@
+#Hello World
+#Anil
+
+print("welcome to the world?") 
+
+player_name = input("what the hell is your name!") 
+
+print (f"hello, (player_name)! welcome to the game") 
+
+print("l") 
+
+print("l") 
