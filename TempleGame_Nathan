@@ -1,0 +1,100 @@
+# Temple Game
+# Nathan 
+playagain = "yes"
+while playagain == "yes":
+    inventory = []
+    def pregame():
+        print("Welcome to temple game")
+        player_name = input("What will be your player name? ")
+        print(f"Hello {player_name}, Welcome to temple game")
+    pregame()
+    def start():
+        print("You are lost an ancient temple, to you it seems like a never ending maze of infinite winding path. You are travelling through a long hallway within the maze before seeing something bright ahead")
+        code = input("You find weird writting on the wall. Do you choose to read it? ")
+        if code == "yes":
+            print("You choose to read it. It says 'qwerty!E2!uiop!L3!asdfmovie!E6!ghjkl!H1!zxcv!P4!bnm!M5!' It makes no sense to you, but you keep it in mind as you continue to the light")
+        else:
+            print("You ignore the writing and continue to the light")
+    start()
+    direction = input("The light brings you to a split path. Do you go right or left? ")
+    print(f"You choose to go {direction}, and down that hall") 
+    print("The hall you chose is long and has a few missing tiles in the ground with a massive drop below. You carefully traverse the broken floor before finding another path.")
+    direction4 = input("The path is dark and the floor is almost completely gone, will you 1. Go back or 2. Overcome the jumps on the new path? ")
+    if direction4 == "1":
+        print("You choose to go back and head down the familiar path")
+        ladderg = input("While going back down the path you find a ladder. It is heavy and might affect your movement speed but you could climb higher with it. Will you 1. Take it, or 2. Leave it? ")
+        if ladderg == "1":
+            print("You decide to take it and keep going.")
+            inventory.append("ladder")
+        direction2 = input("You find yourself back at the split path but now the other path is blocked by rocks. The path you entered this room originally is still open though. Will you go back down that path? ")
+        if direction2 == "yes":
+            print("You choose to go back the long hallway and find a message on the wall you did not see before. It reads '' This temple is breaking, I see holes starting to form. Do not fall in the holes or you won't come back.'' You think back to the holes in the floor from earlier and continue")
+            if "ladder" in inventory:
+                direction3 = input("You find a hole in the roof leading to another path. Do you 1. Use the ladder you found earlier to climb up it, or 2. Continue down the long hall? ")
+                if direction3 == "1":
+                    print("You use the ladder to climb up. It is much darker in the hall than you expected and is getting very hard to see.")
+                    print("You go down this new path until you find a winding staicase. As you have nowhere else to go, you go up it.")
+                    print("You keep climbing and climbing it without any end in sight, not even a F!flicker of light. You keep going until there I!is a hole in the stairs but you see it too late and fall in it. You are V!very near to death but you are able to hang on to the E!edge.")
+                    edge = input("To try to climb up, please input a number 1-10 ")
+                    if edge == "5":
+                        print("You pull your hardest and are able to pull yourself back up. You jump over the gap and see light up ahead, a trail of torches leading to another hall.")
+                        print("Upon reaching this hall you find a set of 4 pathes. Both lead to a multitude of jumps but a sign says only one path leads to an exit.")
+                        fp = input("Please choose one of the 4 pathes to go down. ")
+                        if fp == "1":
+                            print("You choose to go down path 1, the path that looks the most challenging of the 4, meaning you have a good chance at escaping.")
+                        if fp == "2":
+                            print("You choose to go down path 2, the path that looks the most simple of the 4, but it isn't as easy as you first expect with spikes and traps along with the jumps.")
+                        if fp == "3":
+                            print("You choose to go down path 3, the path that looks the longest of the 4, you think the length might mean it is easier but you are wrong.")
+                        if fp == "4":
+                            print("You choose to go down path 4, the path that looks the shortest of the 4, you think the length might mean it is easier but you are wrong.")
+                        print("As you traverse the obstacles in your path carefully and quickly, you see the light getting bigger and bigger. You are almost there when the door to the light starts closing.")
+                        import random
+                        speed = random.choice(["Yes","No"])
+                        if speed == "Yes":
+                            print("You barely slid under the door and reach the outside world. You find yourself at the base of a mountain with a village nearby")
+                            print("You talk with locals of the village and slowly learn the way to get to your home and, after a long journey, you make it there. Afterwards, you think to yourself that you've had the adventure of a lifetime.") # ^^^^ Last Line  Finished / 100th Line Finished!
+                            print("You got the good ending. Play again for another ending")
+                            playagain = input("Do you want to play again? ")
+                        if speed == "No":
+                            print("You sprint as fast as you can but are just too late as the door closes on you, trapping you from the outside world.")
+                            print("You got the bad ending. Play again for a better ending.")
+                            playagain = input("Do you want to play again? ")
+                if direction3 == "2":
+                    print("you chose to keep going down the hall")
+            else:
+                print("You see a path above you but are unable to reach it without a ladder")
+            print("You continue down the long hall and find a door with a combination lock. You need to input a code.")
+            lock = input("Please input the code. It has already been featured at the start. ")
+            if lock == "HELPME":
+                print("You input the code and to your surprise it works and you find an exit. You find yourself at the base of a tall mountain and are glad to see a nearby village")
+                print("After spending some time in the village you learn the way to get home and make it all the way.")
+                print("You got the great ending. Play again for other endings")
+                playagain = input("Do you want to play again? ")
+            else:
+                print("You input a code but it was incorrect and you are forced to keep going")
+                if "ladder" in inventory:
+                    print("You find another section with jumps. You forget you are holding a heavy ladder and try to make a jump but are unable to")
+                    print("You got a bad ending. Please play again for a better ending.")
+                    playagain = input("Do you want to play again? ")
+                else:
+                    print("You find another section with jumps and are able to clear them with ease. Upon clearing the jumps you realize it was a dead end and you are stuck")
+                    print("You got a bad ending. Please play again for a better ending.")
+                    playagain = input("Do you want to play again? ")
+        else:
+            print("You wait for help but it never comes")
+            print("You got the bad ending. Play again for a better ending")
+            playagain = input("Do you want to play again? ")
+    else: 
+        print("You choose to risk it and carefully traverse the jumps")
+        print("The further you go the distance between safe poinnts get longer and longer until you fiind a jump you are unnsure is possible. Ahead you see light that seems like it could be an eexit. You go for the jump but it is much harder than you thought")
+        longjump = input("Please choose a number 1-10 to increase you jump distance ")
+        if longjump == "9":
+            print("You take a massive leap and grab on to the edge of the platform, hanging above the abyss below. The platform is hard to grip and your hands start slipping. You find just enough strength to pull yourself up and run for the exit")
+            print("You get past the final few jumps and reach the source of the light. As you thought, it was the exit and find yourself at an overhang above a massive cliff. If you had missed a jump, you would have fallen for a long time.")
+            print("You got the escape ending. You can't climb down, but you escaped at least. Play again for another ending")
+            playagain = input("Do you want to play again? ")
+        else:
+            print("You take a giant leap and grab hold of the platform, but the momentum you had causes you to swing under the platform as you lose your grip and fall down into the abyss below")
+            print("You got the bad ending. Please play again for a better ending")
+            playagain = input("Do you want to play again? ")
