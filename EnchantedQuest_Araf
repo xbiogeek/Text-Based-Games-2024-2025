@@ -1,0 +1,128 @@
+#Enchanted Quest
+#Araf
+
+import random
+
+print("Your adventure rating is currently 1 out of 20.")
+
+def intro():
+    print("Welcome to the Enchanted Quest of Mount Eldoria!")
+    hero_name = input("What is your name, valiant hero? ")
+    print(f"Greetings, {hero_name}! Your quest to conquer the mystical heights of Mount Eldoria begins now!")
+    return hero_name
+
+def choose_party_size():
+    while True:
+        size = input("How many brave souls will accompany you on this journey? (1-5): ")
+        if size.isdigit() and 1 <= int(size) <= 5:
+            return int(size)
+        else:
+            print("Invalid input. Please enter a number between 1 and 5.")
+
+def choose_starting_resources():
+    resources = {
+        "food": 40,  # Starting food adjusted
+        "water": 40,  # Starting water adjusted
+        "rope": 2,
+        "potions": 4
+    }
+    print("You set forth with the following supplies:")
+    for item, quantity in resources.items():
+        print(f"{item.capitalize()}: {quantity}")
+    return resources
+
+def daily_event():
+    event = random.choice(["discover_food", "find_water", "rock_slide", "rest", "encounter_monster", "nothing"])
+    return event
+
+def travel(resources):
+    print("\nYour adventure through the mystical lands of Mount Eldoria begins!")
+    days_passed = 0
+    while days_passed < 10:  
+        print(f"\nDay {days_passed + 1}:")
+        event = daily_event()
+        
+        if event == "discover_food":
+            food_found = random.randint(3, 15)  # Less food found for balance
+            resources["food"] += food_found
+            print(f"You discovered {food_found} units of enchanted berries in the forest!")
+
+        elif event == "find_water":
+            water_found = random.randint(3, 15)  # Less water found for balance
+            resources["water"] += water_found
+            print(f"You stumbled upon a magical spring, collecting {water_found} units of crystal-clear water!")
+
+        elif event == "rock_slide":
+            print("A sudden rock slide blocks your path!")
+            if resources["rope"] > 0:
+                use_rope = input("Do you wish to use your rope to scale the rocks? (yes/no): ").lower()
+                if use_rope == "yes":
+                    resources["rope"] -= 1
+                    print("You skillfully navigate the rocks, but some supplies were lost in the process.")
+                    resources["food"] -= 10  # Moderate food loss
+                else:
+                    print("You decided to wait, which cost you some precious supplies.")
+                    resources["food"] -= 5  # Moderate food loss
+
+            else:
+                print("You have no rope! You must turn back, losing valuable time.")
+                resources["food"] -= 15  # Increased food loss
+
+        elif event == "rest":
+            print("You took a moment to rest and regain your strength.")
+            resources["food"] -= 10  # Some food loss for resting
+
+        elif event == "encounter_monster":
+            print("A wild creature appears! You must defend yourself!")
+            if resources["potions"] > 0:
+                use_potion = input("Do you want to use a potion to heal? (yes/no): ").lower()
+                if use_potion == "yes":
+                    resources["potions"] -= 1
+                    print("You used a potion and managed to fend off the creature!")
+                else:
+                    print("You chose not to use a potion and sustained some injuries.")
+                    resources["food"] -= 10  # Loss due to injuries
+
+        else:
+            print("Today was uneventful; nothing of note happened.")
+
+        days_passed += 1
+        
+        if resources["food"] <= 0 or resources["water"] <= 0:
+            print("You have run out of vital supplies and cannot continue. Your quest ends here.")
+            return False
+        
+        print(f"\nCurrent supplies: Food: {resources['food']}, Water: {resources['water']}, Rope: {resources['rope']}, Potions: {resources['potions']}")
+        
+        if days_passed < 10:
+            continue_choice = input("Do you wish to continue your adventure? (yes/no): ").lower()
+            if continue_choice != "yes":
+                print("You've chosen to return. Your adventure concludes here.")
+                return False
+
+    print("Congratulations! You have reached the summit of Mount Eldoria!")
+    return True
+
+def ending(success):
+    if success:
+        print("\nAt the peak, the view unfolds like a tapestry of wonder before you.")
+        print("Your companions cheer, celebrating the triumph and the bonds forged through adversity.")
+        print("With the summit conquered, you reflect on the incredible journey that led you here.")
+        print("Will you explore the mysteries of the mountain further, or descend to share your tales with the world below?")
+        print("The choice is yours; each adventure brings new horizons!")
+    else:
+        print("\nAs twilight descends upon the mountains, you ponder the trials faced.")
+        print("Though the journey ended in disappointment, you gained wisdom and a newfound respect for the wild.")
+        print("Every hero encounters setbacks; this chapter may just be the prelude to a greater saga.")
+        print("Rest and heal, for new adventures await. The mountains will always welcome you back.")
+
+def main_game():
+    name = intro()
+    party_size = choose_party_size()
+    resources = choose_starting_resources()
+    
+    success = travel(resources)
+    ending(success)
+
+if __name__ == "__main__":
+    main_game()
