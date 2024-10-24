@@ -1,0 +1,27 @@
+#Aliens
+#Mohammad 
+play_again = "yes"
+while play_again == "yes": 
+    print("Welcome to space")
+    player_name = input("What is your name? ")
+    print (f"Hello , {player_name}! Welcome")
+    direction = input("you are in a dangerous are do you want to look around or go foward, 'direction 1' or 'direction 2'")
+    print(f"you chose to go {direction}.")
+    direction2 = input ("would you like to go to mars or saturn")
+    if direction2 == "mars": 
+        print ("you crashed") 
+        play_again = input("Would you like to play again?")
+    elif direction2 == "saturn": print ("you found tresure")
+    direction3 = input("you ar at an unknown planet do you want to explore or move forward")
+    print(f"you choose to {direction3}.")
+    if direction3 == "explore": 
+        import random 
+        event = random.choice(["meteor", "aleins", "nothing"])
+        print(f"you encountered a {event}.")
+        print("you found a place to live, You WIN!")
+    if direction3 == ("forward") :
+        print("you hit a rock you died")
+    play_again = input("Would you like to play again?")
+    import random 
+    event = random.choice(["meteor", "aleins", "nothing"])
+    print(f"you encountered a {event}.")
