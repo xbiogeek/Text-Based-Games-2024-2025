@@ -1,0 +1,32 @@
+#2090
+#Leda
+
+print("Is the year 2090 in Canada BC")
+player_name = input("What is your name? ")
+print(f"Hello, {player_name}! Welcome to the game.")
+def intro_scene():
+    print("You are at a crossroads.")
+    direction = input("Do you go left or right? ").lower()
+    return direction
+def main_game():
+    direction = intro_scene()
+    if direction == 'left':
+        print("You encounter a shark.")
+        action = input("Do you fight or flee? ").lower()
+        if action == 'fight':
+            print("You bravely fight the shark and win!")
+        elif action == 'flee':
+            print("You run away safely.")
+        else:
+            print("Invalid choice.")
+    elif direction == 'right':
+        print("You find a golden retriever puppy.")
+    else:
+        print("Invalid choice.")
+    play_again = input("Do you want to play again? Type 'yes' or 'no': ").lower()
+    if play_again == 'yes':
+        main_game()
+    else:
+        print("Thank you for playing!")
+# Start the game
+main_game()
