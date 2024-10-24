@@ -1,0 +1,72 @@
+#Space
+#Anil
+
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    def intro_scene(): 
+
+        print ("you woke up") 
+
+        print ("you have to to go to your friends house") 
+
+        print ("You see someone and walk up to them") 
+
+        player_name=input("they say 'whats your name'") 
+
+        print ("thats a nice name!") 
+
+    def secord_scene(): 
+
+        direction = input ("would you want to go left or right?") 
+
+        if direction == "left":                                 collect = input("you find a gold coin do you take it?(yes or no)") 
+
+        elif direction == "right":                                          print("you went the wrong way and lost aura") 
+
+               play_again = input ("do you want to play again?(yes or no)") 
+
+        if play_again == "yes": 
+
+            print("ok") 
+
+        elif play_again == "no": 
+
+            print("ok") 
+
+        if collect == "yes": 
+
+            print ("ok, you continue to your friends house ") 
+
+            print("you see a goldlem and walk up to it") 
+
+            print ("the goldlem asks for a gold coin") 
+
+            print("you hand over the coin") 
+
+            print("you may pass(goldlem)") 
+
+            print("you keep walking") 
+
+            direction = input ("would you want to go left or right?") 
+
+        if direction == "left":                               
+
+            print("You finally made it to your friends house (YOU WIN)") 
+
+        elif direction == "right":                                          print("You hit a wall and 400000000000000 people run you over") 
+
+        elif collect == "no": 
+
+            print("ok, you continue to your friends house") 
+
+            print("you see a goldlem and walk up to it") 
+
+            print ("the goldlem asks for a gold coin") 
+
+            print("you say:'i don't have a gold coin' and the goldlem gets angry") 
+
+            print("the goldlem grabs you and throws you across the world and you hit jupiter") 
+
+            return direction 
