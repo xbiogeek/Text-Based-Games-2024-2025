@@ -1,0 +1,28 @@
+#Dragon
+#Ziva
+
+play_again = "yes"
+ while play_again == "yes"
+    print ("welcometo your adventure!")
+    player_name = input ("what is your name?")
+    print (f"Hello, {player_name}! Welcome To The Game.")
+    direction = input ("You are at a crossroad. Do you go left or right?")
+    print (f"You chose to go (direction).")
+    if direction == "left":
+        print ("you encounter a dragon!")
+    elif direction == "Left":
+        print("you find a treasure chest.")
+    else:
+        Print("invalid choice")
+    if direction == "left":
+        print ("You find a sword.")
+        inventory.append("sword")
+        if "sword" in inventory
+        print ("you use the sword to fight the dragon!")
+        event = random.choice (["dragon", "treasure", "nothing"])
+        print (f"you encounter a {event}.")
+        action = input("you see a dragon. Do  you flight or flee?")
+    if action == "fight":
+        print("you bravely fight the dragon and win!")
+    elif action == "flee":
+        print (" you run away saflely.")
