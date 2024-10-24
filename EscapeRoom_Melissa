@@ -1,0 +1,93 @@
+#Escape Room
+#Melissa
+
+	import math
+ 
+# Global variable to keep track of the current room
+current_room = 1
+ 
+def main():
+    """
+    Main function to run the escape room game.
+    """
+ 
+    print("Welcome to the Escape Room!")
+    print("You are trapped in a series of rooms and need to find your way out.")
+    print("Good luck!\n")
+ 
+    # Start the game loop
+    while True:
+        # Display the current room
+        print(f"You are in Room {current_room}\n")
+ 
+        # Check if the player has reached the final room
+        if current_room == 3:
+            print("Congratulations! You have escaped the room!")
+            break
+ 
+        # Prompt the player for their next move
+        print("What would you like to do?")
+        print("1. Go to the next room")
+        print("2. Go back to the previous room")
+        print("3. Quit the game")
+ 
+        choice = get_user_choice(3)  # Get user input and validate
+ 
+        if choice == 1:
+            go_to_next_room()
+        elif choice == 2:
+            go_to_previous_room()
+        elif choice == 3:
+            quit_game()
+ 
+def get_user_choice(max_choice):
+    """
+    Function to get user input and validate it.
+ 
+    Parameters:
+    - max_choice: int
+        The maximum valid choice allowed.
+ 
+    Returns:
+    - int:
+        The user's valid choice.
+    """
+ 
+    while True:
+        try:
+            choice = int(input("Enter your choice: "))
+            if choice < 1 or choice > max_choice:
+                raise ValueError()
+            break
+        except ValueError:
+            print(f"Invalid choice. Please enter a number between 1 and {max_choice}.\n")
+ 
+    return choice
+ 
+def go_to_next_room():
+    """
+    Function to go to the next room.
+    """
+ 
+    global current_room
+    current_room += 1
+ 
+def go_to_previous_room():
+    """
+    Function to go back to the previous room.
+    """
+ 
+    global current_room
+    current_room -= 1
+ 
+def quit_game():
+    """
+    Function to quit the game.
+    """
+ 
+    print("Thank you for playing the Escape Room!")
+    exit()
+ 
+# Start the game
+if __name__ == "__main__":
+    main()
