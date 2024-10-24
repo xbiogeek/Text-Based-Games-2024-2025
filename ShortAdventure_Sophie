@@ -1,0 +1,122 @@
+#Short Adventure
+#Sophie
+
+play_again = "yes" 
+
+while play_again = "yes": 
+
+  print("you wake up at noon") 
+
+  print("you have breakfast and go outside") 
+
+  print("you take a walk outside and you see someone") 
+
+  player_name = input ("they walk up to you and ask you your name") 
+
+  print("hey, you look like that guy on the posters!") 
+
+  print("what posters(you)") 
+
+  print("haven't you seen those posters around town?") 
+
+  reply = input("I have seen them(yes), or i haven't seen them(no)") 
+
+  if reply == "yes": 
+
+    print("ok, that's not too suspicous") 
+
+    print("have a good day") 
+
+    print("you keep walking and you see those posters they were talking about") 
+
+    pic = input("do you want to take a picture of the poster and send it to your friend(send) or not send it(no)") 
+
+  elif reply == "no": 
+
+    print("wait, why haven't you seen them, they've been around the whole morning!") 
+
+    print("no, I just woke up!") 
+
+    print("i don't belive that!") 
+
+    print("it is him!!!, it is him!!!!!, it is the robber guy!!!!!") 
+
+    print("suddenly cops swarm you and handcuff you") 
+
+    play_again = input("do you want to restart?(yes or no)") 
+
+  if pic == "send": 
+
+    print("you send the picture to your friend and a few minutes later he replies") 
+
+    print("Hey!!! that poster looks like you(friend)") 
+
+    print("it does, but it isn't me(you)") 
+
+    print("I'm pretty sure that's you!(friend)") 
+
+    print("wait!, you came to my house last night to play games so there isn't any way it could be me!(you)") 
+
+    print("you're right(friend)") 
+
+    print("you should come to my house so the cops don't spot you(friend)") 
+
+    print("wait, cops! are there cops patrolling the streets?!?!?(you)") 
+
+    print("ya! you didn't know? in fact, they're coming to your house right now!") 
+
+    print("suddenly, you hear a loud police siren") 
+
+    print("oh no! you think to yourself") 
+
+    cops = input("do you want to hide(hide) or sprint to your friend's house(run)") 
+
+  elif pic == "no": 
+
+   print("you decide to not send it to your friend") 
+
+   print("after a little bit more of walking, cops you hear police sirens and cops start running after you") 
+
+   print("they handcuff you and take you away") 
+
+   play_again = input("do you wanna restart(yes or no)") 
+
+  if cops == "hide": 
+
+    import random  
+
+    hide = ["bush"],["traffic light"],["bush"] 
+
+  elif cops == "run": 
+
+    print(" you sprint to your friends house") 
+
+    print("you bang on the door and he lets you in") 
+
+    print("good, you're here you'll be safe now(friend)") 
+
+    print("hiding ending unlocked") 
+
+    play_again = input("do you wanna restart(yes or no)") 
+
+             
+
+  if random == "bush":  
+
+    print("you jump into a nearby bush") 
+
+    print("you hear some cops running past you") 
+
+    print("after a few minutes you jump out and run to your friend's house") 
+
+  else:  
+
+    print("you see some cops run up to you") 
+
+    print("they put handcuffs on you and take you away") 
+
+    print("game over") 
+
+  intro_scene() 
+
+  second_scene() 
