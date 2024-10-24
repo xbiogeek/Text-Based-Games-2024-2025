@@ -1,0 +1,36 @@
+#Treasure
+#Zach
+
+direction input=(would you like to go left or right???)
+if direction=="left"print"wow you found treasure" elif direction=="right print""no you died from a huge falling rock
+play again="yes
+print("you woke up.it was all a dream")
+print("you decide to go to your friends house")
+print(" you run into someone")
+player name=input("they ask whats your name")
+print("thats a nice name, Goodbye!")
+directin=input("you forget your way. do you want to go left or right?")
+if direction==left print("you fall into a manhole,you die")
+if direction input==right print(" you find a mysterious item do you take it?(yes or no")")
+if directon=="yes" print ("it drags you into the sewer water, you die"
+play again=input("do you want to play again")
+if play again=="yes"
+print"ok"
+elif direction=="no" print "( ok, you continue to your friends house)"
+print "(you make it to your friends house, his dog barks at you. what do you do, go in the front or back)"
+if direction=="front"
+print"(you open the door, your friends dog mauls you, you lose)"
+play again=input"(do you want to play again)"
+if play again=="yes"
+print "(okay)"
+if direction=="back"
+print"(you sneak in the back, the dog doesnt notice you. You see the stairs, do you run or sneak)"
+if direction "sneak" print"(you try sneaking, you step on a creaky step, the dog gets you)"
+play again=input"(do you want to play again)
+if play again=="yes"
+print"(okay)"
+if direction "run" print "(you somehow make it up stairs, you open your friends door and...)"
+print "(he got sick, you came here for nothing)"
+print"(the end)"
+
+    
