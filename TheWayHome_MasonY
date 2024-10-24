@@ -1,0 +1,49 @@
+#The Way Home
+#Mason
+
+player_name = input("What you like to be called")
+print(f"Hello, {player_name}! Welcome to the West side(home). You are currently at you Grandma's house(West side) to give her cookies. but the problem is that you have forgotten the way to the East side(home). In order to get to the east side you will have to guess which choice is the right choice... Good Luck!")
+
+directions = input("You currently know the ways to the North side, Northwest side, South side, and Southwest side. Which side do you want to go to?")
+
+if directions == "North side": 
+    print("You see a Garbage truck with a kind looking man, you go and ask the man where the ways to the East side is. The man tells you to hop on so you do as he says. While being on the truck. The man offers you an orange juice and you drink it since you didn't drink water for 5 hours. Right as you finish the drink you remember your mom telling you to never follow strangers. You suddenly feel dizzy and fall asleep. You wake up and see yourself in a pile of garbage that is about to be crushed...")
+    
+if directions == "Northwest side": 
+    print(" You see an apple, you go for it since you starving. You munch and crunch on the juicy and flavourful apple. You become dizzy and you suddenly blackout. You die.")
+    
+if directions == "Southwest side":
+    print(" You see a village, but the weird part is that their are no humans living there. You go in a house and you see a dead human who was brutally killed and was bit by something about 20 times. You find a house without any humans so you spend the night there since it was dark. At about 3am, you wake up by the sound of the front door opening. You get scared so you go under the bed and there you see a dead human who got killed the same way you saw the other dead human in the other house. And at that moment a wolf looks under the bed and sees you... you get bitten exactly 23 times before you die...")
+    
+if directions == "South side":
+    action = input("You see a cave in the distance. You go inside the cave quietly, you see a bright yellow light not so far away. You walk quietly into the cave. As you got closer to the bright light you here a loud sound coming behind you. You get so scared and you run as fast as you can towards the bright light. you look behind you and see a round giant rock behind. You run even faster and you see a old yellow paper. Right as you snatch the yellow paper the giant rock suddenly breaks down into small peices. The old yellow paper guides you to the West side. You follow where the map guides you to. The map comes to an end and you dont see no house near by. The path split in half. Which way do you want to go right or left?")
+    
+    if action == "right":
+        print(" You look in front of you and see a pack of hungary wolves. You try running back but your already to late. You get eaten alive...")
+        
+    if action == "left":
+        action = input(" You see another path but this time it splits into 3 paths. Which way do you want to go to Straight, Right, or Left?")
+        
+        if action == "Right":
+            print(" You look in front of you and see a pack of hungary wolves. You try runnin back but your already to late. You get eaten alive...")
+            
+        if action == "Left":
+            print(" You look in front of you and see a pack of hungary wolves. You try runnin back but your already to late. You get eaten alive...")
+            
+        if action == "Straight":
+            action = input("You safely made it home...or did you... When you go in the house you don't see your mom, you start searching only to find a paper that says I HAVE TOOKEN YOUR MOM. You start to freak out so you go to your secret room and open a chess. You see a sword, a pistol, and a drone. Which one will you choose?")
+            
+            if action == "sword":
+                print("You start to go searching for your mom in the dark forest. You here a little whisper that says I am here. You run to the place that you heard the sound. When you got closer to the sound you suddenly get bitten on the leg by a giant wolf. You start to scream for help but the wolf eats you up in second.")
+                
+            if action == "pistol":
+                print("You start to go searching for your mom in the dark forest. You here a little whisper that says I am here. You run to the place that you heard the sound. When you got closer to the sound you suddenly get bitten on the leg by a giant wolf. Before you were bitten anywhere else you start shooting the wolf in the legs but it doesn't do anything to the wolf. You start to scream for help but you get eaten in seconds. ")
+                
+            if action == "drone":
+                action = input("You fly the drone around the house and forest to see if there is any signs of your mom being there. Then you see a whole pack of wolfs feeding on your mom. You start to cry and only seem to have the mind to do revenge. You grab the pistol and sword and start running to the place you saw the wolfs. When you went to the place where the wolfs were. You hide to see what they are doing now. The wolfs are sleeping. What will you use to kill them? A Pistol or a Sword?")
+                
+                if action == "Sword":
+                    print(" You stab one in the head and you repeat this until there is one remaining. but right before you stab the last one for your revenge. The wolf wakes up and backs away. You run for the wolf, but the wolf is too fast, but it suddely attacks you. The wolf eats your left hand and you scream in pain. You eventually get eaten and die... ")
+                        
+                if action == "Pistol":
+                    print(" You put a silencerinfront of your pistol so the wolfs won't wake up. You shoot each one in the head as fast as you can. You eventually kill the last wolf. 'You win the game!'")
