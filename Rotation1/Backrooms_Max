@@ -1,0 +1,74 @@
+#Backdoors
+#Max W.
+
+inventory = [] 
+ 
+print("Welcome to the Backrooms")         
+ 
+  
+ 
+name = input("What is your name?")         
+ 
+  
+ 
+print(f"Greetings {name}, welcome to the Backrooms, you will be trying to escape the Backrooms.")           
+ 
+  
+ 
+direction = input("You are at a fork in the path. Do you want to go left or right?")          
+ 
+  
+ 
+input = ("left")          
+ 
+  
+ 
+input = ("right")           
+ 
+  
+ 
+import random        
+ 
+  
+ 
+num = random.random()          
+ 
+  
+ 
+E = random.random()          
+ 
+  
+ 
+if E < num:print("You made it by chance...")          
+ 
+  
+ 
+if E > num:print("You died from a trap... wait nooooo you managed to survive!")   
+ 
+if E < num:print("Congrats you made it... but I dont think you will make the next one")     
+ 
+  
+ 
+if E < num:print("You see a dog, its pooing on itself")   
+ 
+if num < E:print("You see a dog, its pooing on itself")    
+ 
+import random       
+ 
+  
+ 
+nume = random.random()          
+ 
+  
+ 
+Ee = random.random()      
+ 
+  
+ 
+if Ee > nume:print("Bob came out of the caca you died")        
+ 
+  
+ 
+if Ee > nume:print("If you wish to RESPAWN then PRESS Clear then PRESS RUN") 
+ 
+if Ee < nume:print("Comeing out of its poo is ... a door to the exit! You win!")
