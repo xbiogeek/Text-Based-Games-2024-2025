@@ -1,0 +1,15 @@
+#Wolves
+#Marcus
+
+print("welcome to your adventure!")
+player_name=input("what is your name")
+print(f"Your name is {player_name}.")
+direction = input ("you are at a crossroad do you go left or right? ")
+print (f"you chose to go (direction right)")
+print(f"you chose to go (direction left you fall into lava)")
+print(f"you chose to go (direction right you get to chose your powers)")
+direction = input ("you must chose fire water air dirt")
+print("you found a pack of wolfs you must fight")
+direction = input("do you use firefeet or firetornado")
+print("you killed all of the wolf")
+direction = input("you killed all of the wolf you ganed xp you need to pick fireball or firefist")
