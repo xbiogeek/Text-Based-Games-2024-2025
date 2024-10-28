@@ -15,12 +15,12 @@ if ready == "yes":
         print("ops you drowned in the chocolate river")
     if ready2 == "right":
         print("yay you went the right way")
-ready3=input("you see THE Willy Wonka (hes evil btw) type 'run pass'or 'fight him'")
-if ready3 =='run pass' :
-    print("he didn't see you you suvived yay :)")
-if ready3 =='fight him' :
-    print("he ate you you dided")
-    print("we are almost there!!!!!!!") 
+        ready3=input("you see THE Willy Wonka (hes evil btw) type 'run pass'or 'fight him'")
+        if ready3 =='run pass' :
+            print("he didn't see you you suvived yay :)")
+        if ready3 =='fight him' :
+            print("he ate you you dided")
+            print("we are almost there!!!!!!!") 
 ready4=input("you see a rianbow bear type 'climb a tree'or 'shoot it away'")
 if ready4== "shoot it" :
     print("he killed you 😔")
@@ -33,3 +33,4 @@ if ready5 =='yes' :
     print ("we here yayyyyyy")
 if ready5 =='no' :
     print("there was a pack of wolf and they ate you ")
+
