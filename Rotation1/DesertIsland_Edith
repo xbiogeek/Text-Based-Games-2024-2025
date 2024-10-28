@@ -1,0 +1,56 @@
+#Desert Island
+#Edith
+
+print ("Welcome to a desert island! here you will be amoung the other kids from your grade six/sevan class")   
+
+  
+
+   
+
+  
+
+player_name = input ("What is your name?")   
+
+  
+
+   
+
+  
+
+print (f"Hello, {player_name} Welcome to your worst nightmare!")   
+
+  
+
+direction = input("You are at dinner time, there is not much food. do you (a)give more to others, or do you (b)feed yourself?") 
+
+if direction == "a":   
+
+    print ("You starve for the night, but Arina survives her sickness because you gave her some food.")   
+
+if direction == "b":   
+
+     print ("You keep all your rations to yourself and Arina dies from her sickness thanks to you. You are very greedy.")   
+
+else: 
+
+    print("Invalid choice.Run again.")  
+
+  
+
+direction == input("you have limited food, you find some berries.The berries look really good, but they might be poisonous.Do you try to (a)eat the berries. or do you(b) bring the berries back to camp and share them?") 
+
+if direction == "a": 
+
+    print ("the berries are poisonous! If you had shared them, you might not be so sick.") 
+
+    print ("you decide to take the long way round to get back to camp. when you get back, the rest of your class is not amused.") 
+
+if direction == "b": 
+
+    print ("you share the berries with the rest of the class, they are poisonous, but because you shared them you are all less sick than you would have been.") 
+
+else: 
+
+    print ("Invaled choice. Run again.") 
+    
+direction = input("")
