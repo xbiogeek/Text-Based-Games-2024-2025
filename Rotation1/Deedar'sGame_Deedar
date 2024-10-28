@@ -1,0 +1,91 @@
+#Deedar's Game
+#Deedar
+
+import random
+import time
+
+def start_game():
+    print("Hello, you have been kidnapped.")
+    player_name = input("What is your player name? ")
+    print(f"Hello, {player_name}, welcome to the house.")
+
+    direction = input("You are in the bedroom. Would you like to leave or stay? ").lower()
+    print(f"You chose to {direction}.")
+
+    if direction == "stay":
+        print("You hear the kidnapper coming towards you!")
+        decision = input("You see a closet. Would you like to hide or talk to the kidnapper? ").lower()
+        print(f"You chose to {decision}.")
+
+        if decision == "talk":
+            print("You talk to the kidnapper, but before you could say much, he has tied you up. - Game over.")
+        
+        elif decision == "hide":
+            print("The kidnapper is now looking for you.")
+            hallway_scenario()
+    
+    elif direction == "leave":
+        print("You are now in the dark hallway with spiders and rats around you.")
+        camera_decision = input("There is a camera. Will you break it? Yes or No? ").lower()
+        print(f"You chose to {camera_decision}.")
+
+        if camera_decision == "yes":
+            print("You have broken the camera! Nice work.")
+        elif camera_decision == "no":
+            print("The camera is looking at you.")
+        else:
+            print("That's not a valid choice. Please choose yes or no.")
+
+        hallway_scenario()
+
+    else:
+        print("That's not a valid choice. Please choose to leave or stay.")
+
+def hallway_scenario():
+    print("You are in a hallway. There is a room to your right. Would you like to go or stay?")
+    hallway_decision = input("Enter 'go' to enter the room or 'stay' to remain in the hallway: ").lower()
+
+    if hallway_decision == "stay":
+        print("You hear the kidnapper coming towards you again!")
+        decision = input("You see a closet. Would you like to hide or talk to the kidnapper? ").lower()
+        print(f"You chose to {decision}.")
+
+        if decision == "talk":
+            print("You try to talk to the kidnapper, but they don't listen. You're tied up again! - Game over.")
+        elif decision == "hide":
+            print("You hide in the closet. The kidnapper walks past you. You are safe for now.")
+            decision = input("You run to the kitchen and see a knife. Would you like to play the kidnapper at his own game? (yes/no) ").lower()
+            if decision == "yes":
+                print("You hear the kidnapper and left a note on the table that reads, 'Check your basement'.")
+                inventory = []
+                print("You found a knife!")
+                inventory.append("knife")
+                time.sleep(2)
+                roll = random.randint(1, 6)
+                print(f"You rolled {roll}.")
+                if roll < 3:
+                    print("The kidnapper hears you! - Game over.")
+                else:
+                    print("You managed to stay hidden. You have escaped!")
+
+            elif decision == "no":
+                print("You are now hiding in another closet. - Game over.")
+    
+    elif hallway_decision == "go":
+        print("You enter the room and see a window.")
+        decision = input("Would you like to go through the window or hide in the closet? ").lower()
+
+        if decision == "go through the window":
+            print("You have fallen out of the window and injured yourself, but you have escaped!")
+        elif decision == "hide in the closet":
+            print("Good job, the kidnapper has now gone outside to look for you! - You are safe!")
+    
+    else:
+        print("That's not a valid choice. Please choose to go or stay.")
+
+while True:
+    start_game()
+    play_again = input("Do you want to play again? (yes/no) ").lower()
+    if play_again != "yes":
+        print("Thanks for playing! Goodbye!")
+        break
