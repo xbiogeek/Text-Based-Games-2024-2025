@@ -1,0 +1,21 @@
+#Orphanage Forest
+#Jane
+
+print ("*hi der. welcome to my lil gamey game :D iza name iz the orphanage forest btw*")     
+player_name = input ("*alr what be yo name in ma game?*")      
+print (f"*u name be {player_name}? noice*")     
+print ("*oh yeah if theres the lil stars it means I'm talking*") 
+print ("*anyway we gotta start now*")  
+direction = input("you get out of a car and are greeted by a nun taking you down a path into the forest. do you want to follow her or run away?")    
+if direction == "follow": 
+    print ("you follow the nun through the woods into a giant field with a big building in the middle and children in uniform running around.you fit in fine and the other kids love you. you got adopted 3 month later.                   "                              " you got da good ending!...maybe :D")  
+elif direction == "run away": 
+     direction = input ("while the nun isn't looking, you run far away into the forest, trip into a pit and cant get out. do you yell for help or try and get out by yourself?")  
+if direction == "get out myself":  
+    print ("you cant get out and die in that hole. *welp dats my game hope you liked it*")  
+elif direction == "yell": 
+    import random 
+    event = random.choice (["no one hears you and you die in that hole", "you yell for helps loud as you can and it seems to attract some animals, but soon they leave you and you die there in that hole"])    
+    print(f"{event}")
+    print ("*welp that was my game. hope you liked it even though it was kinda bad and short*") 
+    print ("*it was really hard to make :,)*") 
