@@ -1,0 +1,48 @@
+#Fun Adventure
+#Negar
+
+print("welcome to your fun adventure!")
+player_name = input ("what is your name?")
+print(f"hello, {player_name}! Welcome to the future.")
+direction = input("you are at a flying cars crossroad.do you wanna go left or right?")
+print(f"you chose to go {direction}.")
+if direction == "left":
+     print("you got a flying car as well!")
+elif direction == "right":
+  print("you find a flashlight!")
+direction2 = input("now would you like to go right that goes into an biulding or left that goes into an food shop?")
+print(f"you chose to go {direction2}.")
+if direction2 == "left":
+ action2 = input("you see a angry robot.do you fight or flee?")
+ if action2 == "fight":
+   print("you bravely fighted and won.")
+ elif action2 == "flee":
+  print("sadly the robot atacked you!")
+if direction2 == "right":
+  action2 = input("you see an homeless guy.do you fight or flee?")
+  if action2 == "fight":
+   print("you bravely fighted and won.")
+  elif action2 == "flee":
+   print("sadly he atacked you and you lost")
+   play_again = "yes"
+  while play_again == "yes":
+    direction3 = input(" do you wanna go left or right?")
+    # (game logic here)
+    play_again = input("do you want to play again? type 'yes' or 'no' : ")
+  def intro_scene():
+    print("you are at a flying scooter crossroad.")
+    direction3 = input(" do you wanna go left or right?")
+    return direction
+  inventory = []
+  if direction3 == "right":
+   print ("you find a laser sword.")
+   inventory.append("laser sword")
+   if "sword" in inventory:
+    print("you use the sword to fight the robot!")
+    import random
+    event = random. choice(["robot", "flying car", "flashlight"])
+    print(f"you encouter a {event}.")
+   if direction2 == "left" and action2 == "fight":
+    print("you won the game!")
+else:
+ print ("you lost.")
