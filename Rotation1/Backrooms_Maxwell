@@ -1,0 +1,71 @@
+#Backrooms
+#Maxwell
+
+import time
+print ("hello player")
+time.sleep(2)
+print("Welcome to the backrooms")
+time.sleep(2)
+name = input("what is your name?:")
+time.sleep(2)
+print(f"Hello, {name}! and welcome")
+time.sleep(2)
+print("you are walking deeper into the backrooms, but then you have encountered a two separate path...")
+time.sleep(3)
+choice = input("Which way would you want to go?:")
+if choice == "right":
+    time.sleep(2)
+    print("you decided to go right")
+    time.sleep(2)
+    print("you see a door")
+    time.sleep(2)
+    choice = input ("would you like to open the door?:")
+    if choice == "no":
+        time.sleep(2)
+        print("you decided to continue walking.")
+        time.sleep(2)
+        print("after some minutes of exploring, you found a room filled with square holes that can fit through a human...")
+        time.sleep(4)
+        choice = input ("would you like to cross the room without falling?:")
+    elif choice == "yes":
+        time.sleep(2)
+        print ("you opened the door and you found some scraps on a table")
+        time.sleep(2)
+        print:("then, you continued on your journey")
+        time.sleep(2)
+        print("after some minutes of exploring, you found a room filled with square holes that can fit through a human...")
+        time.sleep(4)
+        choice = input ("would you like to cross the room without falling?:")
+        if choice == "yes":
+            print("you attempted to cross the room")
+            time.sleep(2)
+            print("but you fell through one of the holes and landed somewhere diffrent")
+            time.sleep(2)
+            print ("TO BE CONTINUED...")
+        elif choice == "no":
+            time.sleep(2)
+            print("you decided to go around but then accidently fell through one of the square holes...")
+            time.sleep(2)
+            print("you have entered a new level...")
+            time.sleep(2)
+            print("TO BE CONTINUED...")
+    else:
+        print("invalid choice, try again")
+elif choice == "left":
+    time.sleep(2)
+    print ("you have encountered a pit but you dont know what is inside of it...")
+    choice = input("would you like to jump in?")
+    if choice == "yes":
+        print ("you went in the pit and discovered that it was a pit of spikes...")
+        time.sleep(2)
+        print("YOU DIED:( ")
+        time.sleep(2)
+        print("try again??????")
+        time.sleep(2)
+    elif choice == "no":
+        print("you decided to turn back and headed to the right path instead.")
+        time.sleep(3)
+    else:
+        print("invalid choice, try again.")
+else:
+    print("Invalid choice, try again")
