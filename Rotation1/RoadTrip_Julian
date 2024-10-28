@@ -1,0 +1,99 @@
+#Road Trip
+#Julian 
+
+def main():
+    player_name = input("Welcome to your road trip, enter your name: ")
+    print(f"Hello, {player_name}!")
+    
+    answer = input("You are at an intersection. Choose to go left, keep, or right: ")
+    
+    if answer == "left":
+        mc = input("You drive until you see a McDonald's. Do you stop to eat? (yes/no): ")
+        
+        if mc == "no": 
+            doubleway = input("You find two ways. Which way do you go, left or right? ")
+            
+            if doubleway == "left":
+                print("You fall into a lake and die.")
+                exit()
+            elif doubleway == "right":
+                water = input("You drive to a waterpark. Do you go? (go/no): ")
+                
+                if water == "go":
+                    print("You get your car stolen and you get stranded. Game over.")
+                    exit()
+                elif water == "no":
+                    motel = input("You find a motel. Do you stay? (stay/no): ")
+                    
+                    if motel == "stay":
+                        print("You stay and get some sleep. You continue and find your resort.")
+                        exit()
+                    elif motel == "no":
+                        print("You get tired and go the wrong way. You go back and find 2 ways.")
+                        backway = input("Which way do you go, left or right? ")
+                        
+                        if backway == "left":
+                            print("You find your resort. You win!")
+                            exit()
+                        elif backway == "right":
+                            print("You get into a car crash. You die.")
+                            exit()
+        
+        elif mc == "yes":
+            print("You get full and continue on your way, where you find 3 ways: right, left, and straight.")
+            mcway = input("Which way do you go? (right/left/straight): ")
+            
+            if mcway == "right":
+                print("You find a shortcut to the resort.")
+                exit()
+            elif mcway == "left":
+                print("You find yourself at your house again. Game over.")
+                exit()
+            elif mcway == "straight":
+                zoo = input("You find a zoo. Do you go? (go/no): ")
+                
+                if zoo == "go":
+                    print("You fall into a gorilla cage and die.")
+                    exit()
+                elif zoo == "no":
+                    print("You run out of gas in the middle of nowhere and get stranded.")
+                    exit()
+
+    elif answer == "right":
+        choice = input("You find a supermarket. Do you go? (go/no): ")
+        
+        if choice == "go":
+            print("You bought some poisoned food and you died.")
+            exit()
+        elif choice == "no":
+            way = input("You go until you find 2 ways. Which way do you go, left or right? ")
+            
+            if way == "left":
+                print("You find yourself driving into a tree. You died.")
+                exit()
+            elif way == "right":
+                hotel = input("You find a hotel. Do you stay? (go/no): ")
+                
+                if hotel == "go":
+                    print("You get tired and fall asleep while driving. You die.")
+                    exit()
+                elif hotel == "stay":
+                    print("You get rest and continue but you encounter 2 ways: left or right.")
+                    highway = input("Which way do you go? (left/right): ")
+                    
+                    if highway == "left":
+                        print("You made it to your resort. You win!")
+                        exit()
+
+    elif answer == "keep":
+        light = input("You go until a red light. Do you wait or go? ")
+        
+        if light == "go":
+            print("You got into a car crash.")
+            exit()
+        elif light == "wait":
+            print("You wait and go safely but enter a dead end.")
+            exit()
+
+# Start the game
+main()
