@@ -1,8 +1,8 @@
 #Fierce Fire
-#Horace
+#Horace & Aidan
 
 import time
-import random
+import randoma
 
 # Define the list of fruits and fruit rarities
 blox_fruits = [
