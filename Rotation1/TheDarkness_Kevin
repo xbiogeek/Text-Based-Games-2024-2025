@@ -1,0 +1,55 @@
+#The Darkness
+#Kevin
+
+print("Welcome to 'To The Dark'")  
+inventory = []  
+player_name = input("What is your player name? ")  
+
+# Asking for direction choice
+direction = input(f"Hello, {player_name}! Welcome to the world of Darkness. There was a news that when you are at  'day' time you die because of the sun light. After arriving in Canada, where would you like to go? Hungary or France? ").lower()
+
+# Direction decision: Hungary or France
+if direction == "hungary":  
+    direction2 = input("You found a bunker in Hungary with 10 people hiding from the sun. You can bring 5 or half. How many would you like to bring? (5/half) ").lower()
+    if direction2 == "half":  
+        direction3 = input("You chose to go with half of the passengers, but the ones who didn't go were angry and shot some of the people. 10 came with you.what will you chose? 'break' or 'knock'?")
+        if direction3 == "break": print("you have chose to break, but the bunker was too strong, you have made a small gap, but the sun killed you")
+        elif direction3 == "knock": 
+            direction4 = input("you knock the door the people inside didn't welcome you, because there was too many people after few theys we will run out of food and die from hungriness what will you do. kill the other suvivers with your team or go on the plane and search for food? 'kill' or 'search'?")
+            if direction4 == "kill": 
+                print("You chose to fight but people in the bunker were soldiers, so you lost haha")
+            if direction4 == "search": print("you went out to search. Then you realized 'oh it's day time' you died")
+    elif direction2 == "5":  
+        direction5 = input("You brought 5 people, but more curious people followed you. 10 people came with you. there were people trying to break in the bunker  would you attack them?")
+        if direction5 == "yes": print("you take them out with your team. they had a gun you took the gun but someone else shot you you died")
+        elif direction5 == "no": print("you went to help them because of boredness, it took too much you died")
+    else:
+        direction6 = input("Invalid choice. You didn't take anyone you went by your self you found a gun would you take it?.")
+        if direction6 == "yes": print("you got a gun and someone else shot you haha")
+        if direction6 == "no": print("you about to take it anyways.but someone shot you then killed you haha")
+  
+elif direction == "france":  
+    action = input("You found a supply box with food and weapons. As you travel west towards Iceland, you hear about a huge seed storage under an ice cave system. Would you like to go in the seed storage? (yes/no) ").lower()
+    if action == "no":  
+        print("You died from the sun. L")
+    elif action == "yes":  
+        action2 = input("You were smart to go to the ice cave. However, the 10 people living there asked for a trade if you give them a gun they will let you in would you like to trade?.")
+        if action2 == "yes": print("they let you in but use your passengers and you as a slave to fix the ice cave.")
+        elif action2 == "no": 
+            action3 = input("as soon as you said 'no' they started shoting at you so you hide behind a barrel would you like to fight back?")
+            if action3 == "yes": print("they stop shoting because you shot them ans they died you survived")
+            elif action3 == "no": print("you died haha") 
+        import random
+        event = random.choice(["fight", "Hostage", "terror"])
+        action3 = input(f"you chose to {event} for no reason ")
+        if event == "fight": 
+            action4 = input("you fought and won, you found out there is a secret comunication system would you like to call for help to the EMS?")
+            if action4 == "yes": print("you called them, but they shot you for no reason")
+            elif action4 == "no": print("you survived! with your passingers")
+        if event == "hostage": print("someone else shot you")
+        elif event == "terror": print("haha you burned your self")
+    else:
+        print("You could have chosen better. You died. L")
+
+else:  
+    print("Invalid direction. You got lost in the world of Darkness.")
