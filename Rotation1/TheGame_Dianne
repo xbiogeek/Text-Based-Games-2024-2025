@@ -1,0 +1,62 @@
+#THeGame
+#Dianne
+
+play_again = "yes"
+while play_again == "yes":
+    print("Welcome to the game.")
+    name = input("What's your name? ") 
+    # Print greeting
+    print(f"Hello, {name}!")
+    print("This world called Hobac, is ruled by a tyrant named Pabo.")
+    print("You start in a boat with your friend.")
+    bestie = input("What's your friend's name? ")
+    print(f"You and {bestie} are in a boat, trying to escape from the tyrant's grip, where they banned eating anything containing wheat.")
+    print(f"You and {bestie}, being avid cereal enjoyers, are appalled by the rule, and are on your way to flee to the neighboring kingdom of Gamja.")
+    print("You and your friend are lost in thought and are brought back to reality when you realize that you have stopped.")
+    print("There is a sketchy, bald man speaking to you.")
+    print("'Where are you going, children?' he asks with a crooked smile.")
+    print(f"You and {bestie} explain that you are going to Gamja and he says that he is a professional in taking people to the neighboring land.")
+    print("'Do you kids want me to help you in going to Gamja?' he asks.")
+    
+    answer = input("Do you say 'yes' or 'no' to his question? ")
+    
+    if answer == "yes":
+        print(f"You and {bestie} follow him and find yourselves in an abandoned building. He says this is his house and that you will leave at dawn. You and {bestie} sleep soundly and wake up at 4 to the man shaking you awake.")
+        print(f"'We have to leave now! There are knights outside!' He says and rushes you two outside. You can see 6 knights standing outside. You run to his boat and sit down quickly, but you see {bestie} slowing down and being chased by the knights who have now noticed.")
+        b = input("Do you get off the boat to help them? (yes/no) ")
+        
+        if b == "no":
+            print(f"You leave {bestie} and sail towards Gamja. You land and get introduced to the old man's friends. You settle into Gamja and one day hear a knock that sounds familiar to the knock that you and {bestie} had made when you were younger.")
+            print(f"You're surprised and open the door, hoping to see {bestie}. They are in fact standing there, but behind them are soldiers. You see {bestie} in a suit and they tell you that {bestie} has become vice president of Hobac.")
+            print(f"You realize the hard truth: {bestie} has come to put you in jail. Even worse, they say you are going to be executed. You die a miserable death, and your last thought is 'I should have stuck with my friend.'")
+            play_again = input("Do you want to play again? (yes/no) ")
+        
+        elif b == "yes":
+            print(f"You get off the boat and get captured by the knights with your friend. They toss you into a cell, and you stay there for a year in a bleak life.")
+            print(f"One day, you hear news that the tyrant Pabo has been overthrown and you can now eat wheat freely. The prison erupts into cheers and everyone convicted for trying to leave is let out.")
+            print("You live peacefully until one day, you hear a knock. Curious, you look out the window and see soldiers. They seem to see you looking at them too.")
+            print("You open the door and see the soldiers standing awkwardly. They say they are from the government and have come to give you compensation. You receive 100,000 dollars and you live happily ever after.")
+            play_again = input("Do you want to play again? (yes/no) ")
+    
+    elif answer == "no":
+        print(f"You and {bestie} walk away from the stranger and walk into town. You see a knight following you out of the corner of your eye and tell {bestie}. Suddenly, you feel someone tap your shoulder.")
+        print(f"You see the knight from before and he tells you that you and {bestie} are arrested for fleeing from Hobac and are being sent to a nearby prison.")
+        
+        answer3 = input("Do you run away? (yes/no) ")
+        
+        if answer3 == "no":
+            print("You stand there, shocked, and end up getting arrested. You spend 2 years in jail. One day, an inmate comes into your cell and tells you that the tyrant Pabo has been overthrown, and everyone who was in prison for trying to leave the country is being set free.")
+            print("The prison erupts into cheers and you get let out after signing some paperwork. You get a degree in engineering and live a peaceful life with freedom.")
+            play_again = input("Do you want to play again? (yes/no) ")
+        
+        elif answer3 == "yes":
+            print("You sprint away but end up being cornered by other knights. You punch him, but another knight grabs your hands and arrests you and {bestie} who has been standing there.")
+            print(f"You and {bestie} get sent to prison and spend 2 bleak years there. One day, an inmate comes into your cell and tells you that the tyrant Pabo has been overthrown, and everyone who was in prison for trying to leave is being set free.")
+            print(f"You and {bestie} cheer, but then you realize that you had been arrested for attacking the police officer and have to stay there for 3 more years.")
+            print(f"You solemnly stare out the window, watching {bestie} leave and start contemplating your life.")
+            print(f"A few years later, you hear a knock on your door. You open the door and see {bestie} standing in front of you.")
+            print(f"You're shocked, so you just stand there while your friend lets themself in. You sit down and start chatting with {bestie}, catching up on lost time. You live happily ever after.")
+            play_again = input("Do you want to play again? (yes/no) ")
+
+if play_again == "no":
+    print("Thank you for playing this game. Don't die and have a good day!")
