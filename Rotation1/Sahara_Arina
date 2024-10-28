@@ -1,0 +1,53 @@
+#Sahara
+#Arina
+
+print(f"Hello,kids!welcome to the sahara")
+"direction" == input ("you have now arrived at the Ingro sefrench!!!, Where would you like to go next.") 
+"sleep time" == 1
+print ("left or right, left leads to ngaji and right leads to kiand easteldives") 
+print ("you chose to go to:ngaji")
+if "direction" =="ngaji": 
+    "action0" == input ("you find some water, do you share it amongst your group or do you keep it to yourself ")
+"sleep time" == 2
+print ("you got to the Eastern bonbu landge.")
+print("you need some food, lucky for you there is a store nearby.")
+print("or you could go hunting and save the money.")
+"sleep time == 3"
+if "action0" == "store": print ("how many pounds of food would you want you can only carry 100 pounds")
+elif "action1" == "hunt": print ("you caught nothing and you lost 20 pounds of food trying.")
+if "action2" == "store": print ("you went to the store and bought 50 pounds. Now you have 70n pounds of food.")
+elif "action2" == "hunt": print ("you come back with no food and you lost 20 pounds but you still managed to save money. But remember you're still starving")
+print ("you have now arrived at sauis ngoreco. where would you like to go next.")
+print ("you can either go to saumacye or habiaka")
+if "direction" == "saumacye":
+    "action3" == input ("you found some rope")
+if "direction" == "habiaka":
+    print("test")
+"inventory.append"
+import random 
+event = random.choice (["water","shovel","nothing"])
+print ("you find a {event}") 
+print ("you got to coupuhong")
+print ("you can either go to paand or ijanea")
+if "direction" == "coupuhong":
+    print ("you found a gravesite would you like to see it")
+    if "answer" == "yes":
+        print ("taylor was a young beautiful soul, but she unfortunatly died suffering from de-hidration") 
+elif "direction" == "ijanea":
+    print ("you are now on a crossroad which way do you go")
+    print ("you can either go to khstaningla or stetuhern")
+if "direction" == "khstaningla":
+    print ("you found a army of dead mummy")
+elif "direction" == "stetuhern":
+    print ("you can continue on your journey")
+    print ("you found some food")
+    print ("you can either go to Virta Engre or Herntetar lands. but remember your trying to get to gibacay")
+if "direction" == "Virta Engre":
+    print ("you can continue on your journey")
+elif "direction" == "Herntetar lands":
+    print ("you found some more food")
+    print ("you can either go to hozue or nearas")
+if "direction" == "hozue":
+    print ("you got to the end of the map")
+if "direction" == "nearas":
+    print ("you died because you forgot that the mummies were chasing you")
