@@ -1,0 +1,32 @@
+#The Forest
+#Geeta
+
+print("Welcome to 2024")
+player_name = input ("What is your name? ")
+print(f"Greetings , {player_name}! Welcome to the game")
+direction = input("You are in a forest. Do you want to go right or left? ") 
+print(f"You chose to go {direction}.")
+if direction =="right":
+    action=input("When you are walking on the path you see a cat. Do grab or leave it.")
+    if action == "grab":
+        print("It does a quick dance and then becomes your best friend.")
+    if action == "leave":
+        print("It attacks you and get very hurt.")
+if direction == "left":
+  action=input("When you are walking on the path you see a dog. Do you grab it or do you leave it?")
+if action == "grab":
+ print("The dog becomes your best buddy.")
+elif action =="leave":
+  print("You become lonely so you try to sneek into a kings castle to become a prince or princess.")
+if action == "prince":
+    print("The castle doesn't need princes. So, they lock you in a dungeon forever.")
+    if action == "princess":
+        print ("You get in and get treated amazing. And live happy ever after.")
+        if direction == "princess":
+            print ("You won!")
+print("You see a Grizzly bear")
+action = input ("The bear walks towards you. Do you fight or hide")
+if action == "fight":
+ print ("Your pet becomes mighty and saves your life. The pet becomes your bestie forever.")
+ if action == "hide":
+   print ("You die")
