@@ -1,0 +1,128 @@
+#Haunted Forest
+#Rylie
+
+play_again = "yes"
+
+while play_again== "yes":
+
+print ("Hello! Welcome to your adventure!")
+
+name=input ('What is your name?')
+
+print (f' Hello {name}')
+
+print ('You are in a forest that is haunted.')
+
+print ('You were camping with your friend who suddenly disappeared, and on a mission to find them.🙂')
+
+start=input ("ready to start?? type 'yes' or 'no'.")
+
+if start== "yes":
+
+print ('Okay, lets start')
+
+if start== "no":
+
+print ('Youre playing anyways.')
+
+print ("You start walking in the forest. You come arcoss two path ways. Which way do you want to go?")
+
+direction=input (" type 'left' or 'right'.")
+
+if direction== 'left':
+
+print ('You start walking in the deep scary forest. You come arcoss a bear. The bear slashed your face with its claws.🐻')
+
+play_again = input ("Do you want to play again")
+
+if play_again == "no": print ("Bye! Thanks for playing!☺️")
+
+if direction=='right':
+
+print ('Good job, you choose the right path! You continue on the path.')
+
+print ('You walk for a couple more minutes, but then something caught your eye. Its a cave! Small but big enough for you to fit in. Do you want to go in the cave?')
+
+cave=input ("type 'yes' or 'no'.")
+
+if cave== 'no':
+
+print ('You keep walking down the long trail. You start to hear something. Its footsteps! What should you do?!')
+
+runn=input ("type 'run' or 'walk'.")
+
+if runn == "run":
+
+print ('The masked man heard you running and murdered you with his knife')
+
+play_again = input ("Do you want to play again")
+
+if play_again == "no": print ("Bye! Thanks for playing!☺️")
+
+if runn == "walk":
+
+print ('You hear the footsteps gettting closer, and closer. The man jumped out of the bushes and murdered you')
+
+play_again = input ("Do you want to play again")
+
+if play_again == "no": print ("Bye! Thanks for playing!☺️")
+
+if cave== 'yes':
+
+print ('You go down the dark creepy cave,spiders on the walls and bats sleeping,you probaby shouldnt disturb them... Its not that dark and there was enough light to see, but not well. ')
+
+print ('You are very thristy and tired, the cave was longer then you thought it was. Should you take a break?')
+
+b=input ("type 'yes' or 'no'.")
+
+if b== 'yes':
+
+print ("You take a longly waited break and take your water out of your backpack, But you realized you have bright flashlight and a dim flashlight")
+
+if b== "no":
+
+print ('You start to feel dizzy, and pass out on the floor')
+
+play_again = input ("Do you want to play again")
+
+if play_again == "no":
+
+print ("Bye! Thanks for playing!☺️")
+
+flashlight=input ("Which flashlight do you want to use. type 'bright' or 'dim'.")
+
+if flashlight=='bright':
+
+print (' As, soon as you turn on the bright light, the bats stare at you with their red glowing eyes, They start flying everywhere and even start biting you. You shouldve not disturbed the bats.You die of rabies a few minutes after.🦇 ')
+
+play_again = input ("Do you want to play again")
+
+if play_again == "no": print ("Bye! Thanks for playing!☺️")
+
+if flashlight== 'dim':
+
+print ('Good job! you didnt wake up the bats, you can see better now and you continue through the cave. ')
+
+print ('You finally make it to the end of the cave! And you see Your friend captured by and evil witch!')
+
+print ('You find a magic wand on the rock next to you.')
+
+grab=input ("should you grab it? type 'yes' or 'no'.")
+
+grab== "yes"
+
+print ("The wand gives you an ability to control and make fire!")
+
+print ('You blast a fire into the witchs face.')
+
+print ('congrats you saved your friend and you went back to camp, The end.')
+
+play_again = input ("Do you want to play again")
+
+if play_again == "no": print ("Bye! Thanks for playing!☺️")
+
+print ('The witch laughs at you and splashes poison on you.')
+
+if play_again == "no":
+
+print ("Bye! Thanks for playing!☺️")
