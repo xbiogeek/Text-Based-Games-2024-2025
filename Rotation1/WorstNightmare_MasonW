@@ -1,0 +1,109 @@
+#Welcome to Your Worst Nightmare
+#Mason
+
+import time 
+print("Welcome To Your Worst Nightmare")
+time.sleep(3)
+print("You Will Spend The Next 400 years here if you don't make it out")
+player_name = input("What is your name? ")
+print(f"Hello {player_name}, if you want to get out of here soon, you will have to choose every decision wisely. The only way out is through the castle on the far side of the island. You are on the opposite side. To get there, you must travel through the deep forest.")
+
+would_you_like_to_leave = input("Would you like to begin? [yes or no] ")
+if would_you_like_to_leave.lower() != "yes":
+    print("Ok Bye =(")
+else:
+    print("Then let's begin")
+    time.sleep(1)
+
+    direction = input("Would you like to take the longer, safer route and go around or rough it out through the forest, which will be much faster? [around or through] ")
+
+    if direction.lower() == "around":
+        print("You start your journey around the forest.")
+        time.sleep(3)
+        print("You go left until you get to the beach.")
+        time.sleep(3)
+        print("You set up camp after a long hike.")
+    elif direction.lower() == "through":
+        print("You start the dangerous trek through the forest.")
+        time.sleep(3)
+        print("You wake up and start walking; you will be walking for the next 2 days until you reach the beach.")
+    else:
+        print("Invalid choice, please choose 'around' or 'through'.")
+        exit()
+
+    inventory = []  
+    print("You encounter a wandering trader.")
+    buy_supplies = input("Would you like to buy basic supplies [yes or no]? ")
+
+    if buy_supplies.lower() == "yes":
+        print("You buy basic supplies.")
+        inventory.append("20 pounds of food, 4 sets of clothes, a sword, a bow with no arrows, and 20 coins for a nearby village.")  
+    elif buy_supplies.lower() == "no":
+        print("You take a risk; you might be able to buy things until you leave the forest.")
+    else:
+        print("Invalid choice.")
+
+    print("Your inventory:", inventory)
+
+    if direction.lower() == "around":
+        print("You are a 3 days' walk from the next village.")
+        time.sleep(2)
+        print("you are hungry")
+        time.sleep(2)
+    if buy_supplies.lower() == "yes":
+        print("you eat 3 pounds of food")
+   
+        inventory.append("15 pounds of food, 4 sets of clothes, a sword, a bow with no arrows, and 20 coins for a nearby village.")
+        print("you inventory", inventory)
+        print ("print you sleep the night")
+        time.sleep(1)
+        print ("its 2 AM")
+        time.sleep(0.5)
+        print("BOOM!!!")
+        time.sleep(2)
+        print("you draw your sword")
+        import random 
+        event = random.choice(["dragon", "ogre" "wolfs"])
+        print (f"You hop out your tent and outs side you see a {event} ")
+        print(f"You Draw Your sword and fight the {event}")
+        time.sleep(2)
+        print(f"you fight the {event}")
+        time.sleep(2)
+        print(f"the {event} is no match for you")
+        time.sleep(1)
+        print("the {event} surrenders")
+        time.sleep(2)
+        print(f"the {event} escorts you to the castle")
+        time.sleep(1)
+        for i in range(100):
+          print("YOU WIN!!!", i + 1)
+if buy_supplies.lower() == "no":
+        print ("your health declines")
+        time.sleep(2)
+        print ("you will need to find food or you will not make it to the next village")
+        time.sleep(2)
+        print ("WHAT LUCK! you find a dead bird")
+        time.sleep(2)
+        print ("you cook the bird, it seems fresh but you still worry it might make you sick")
+        time.sleep(1)
+        print ("but you are starving and take the risk")
+        time.sleep(2)
+        print ("print you sleep the night")
+        time.sleep(1)
+        print ("its 2 AM")
+        time.sleep(0.5)
+        print("BOOM!!!")
+        time.sleep(0.4)
+        print("you draw your sword")
+        import random 
+        event = random.choice(["dragon", "ogre", "wolfs"])
+        print (f"You hop out your tent and outs side you see a {event} ")
+        print("you didnt buy suplies so you had no weapon")
+        time.sleep(1)
+        print(f"you throw sticks at the {event} ")
+        time.sleep(1)
+        print(f"you are help less and get eaten by the {event}")
+       
+
+        
+        
