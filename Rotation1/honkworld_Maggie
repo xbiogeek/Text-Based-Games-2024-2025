@@ -1,0 +1,147 @@
+#honk world
+#maggie
+
+play_again="restart"   
+while play_again == "restart":  
+    print("...")  
+    print("honk, honk HOOONK!")   
+    print("oh hello, welcome to the chaotic goose world where you could end up in 8 endings")   
+    player_name = input ("what is your name?")   
+    print("...")   
+    print(f"HONKKK '{player_name}' have just made their way out the egg! HONNNNNK WELCOME OUR LITTLE ONE")  
+    wepond=input ("for your safety, you need a wepond. would you like the 'rock' 'stick' or 'honk'") 
+    print (f"you choose a {wepond}")   
+    inventory=[]
+    if wepond == "rock":
+        print ("you now have a rock")
+        inventory.append ("rock")
+    if wepond == "stick":
+        print ("you now have a stick")
+        inventory.append ("stick")
+    if wepond == "honk":
+        print ("*you learned the LOUD honking techniqe")
+        inventory.append ("honking")
+    print("STATUS")   
+    print("Energy: low")   
+    print("Health: 100%")   
+    print("as a goose, you still need to be careful of your energy and health :)")   
+    choice1=input("now that you are out! would you like to wait for your other siblings to get out of their eggs? 'yes' or 'no' ")  
+    print(f"you choose {choice1}")   
+    if choice1== "yes":   
+        print("...")  
+        print ("you take a rest and wait for your siblings")   
+        print("STATUS")   
+        print("Energy: high")   
+        print("Health: 100%")   
+        print(",,,")   
+        print("you wake up to three broken eggs")   
+        print("turns out you have two other sibling")   
+        print("your mom is telling everyone to follow her")   
+        print("she seems to be trying to show you something on the ground")  
+        print("she pecks at the ground and picks up a long worm")   
+        print(",,,")   
+        print("STATUS")   
+        print("Energy: ok")  
+        print("Health: 100%")   
+        print("in the goose world, there is a 50% you will not get a worm and starve") 
+        food=input("to find worms type 'food'")   
+        if food == "food":   
+            import random  
+            event = random.choice (["you got a worm", "the worm ran away"])  
+            print (f"{event}.")  
+            if event == "the worm ran away":   
+                print(",,,")   
+                print("STATUS")   
+                print("Energy: gone")  
+                print("Health: 1%")  
+                print("[YOU GOT THE DIED OF STARVATION ENDING]") 
+                play_again=input ("...to play again type 'restart' ")  
+                if play_again=="no":   
+                    play_again=input ("...to play again type 'restart' ")  
+            elif event == "you got a worm": 
+                print ("...")  
+                print("1 MONTH LATER")  
+                print("it is time to learn a skill")  
+                skill = input ("do you want to learn to 'swim' or 'fly'") 
+                print(f"you wanted to {skill} ")  
+                if skill == "swim":  
+                    print("...")  
+                    print ("you touched the Honku lake")  
+                    print ("u always drink water here..")  
+                    print("but you've never swam in it before")  
+                    print ("you follow mom for a while before you and your siblings got very curious")  
+                    swchoice=input ("would you like to 'explore' or 'follow mom'")  
+                    if swchoice == "explore": 
+                        print("...")  
+                        print ("you and your siblings run away and explore together")  
+                        print ("5mins later, you notice one sibling dissapeared")  
+                        print ("together, the two of you try heading back")  
+                        print ("only to realise you are lost")  
+                        print("STATUS")   
+                        print("Energy: gone")  
+                        print("Health: 100%")   
+                        print ("...")  
+                        print ("[YOU GOT THE HOOONK I AM LOST ENDING]") 
+                        play_again=input ("hey, you died... to play again , type 'restart")   
+                        if play_again=="no":   
+                            play_again=input ("hey, you died...to play again, type 'restart'")   
+                    elif swchoice == "follow mom": 
+                        print("...")  
+                        print ("1 DAY LATER")  
+                        print("...")  
+                        print("you will start learning how to fly next")
+                        print("you feel the wind under your wing")  
+                        print("[YOU GOT THE OFFICIALLY A GOOSE ENDING]")
+                        play_again=input ("...to play again type 'restart' ")  
+                        if play_again=="no":   
+                            play_again=input ("...to play again type 'restart' ")  
+                if skill=="fly":  
+                    print("...")  
+                    print ("It is your first time flying")  
+                    print ("u feel the wind under your wings")  
+                    print ("you wonder and wonder")  
+                    print (".... until you crashed into a tree")  
+                    print ("[YOU GOT THE BONK ENDING] ")  
+                    play_again=input ("hey, you died...to play again type 'restart' ")  
+                    if play_again=="no":   
+                        play_again=input ("...to play again type 'restart' ")  
+    elif choice1=="no":   
+        print("...")  
+        print("you leave by yourself and try to explore!")   
+        print("HOOONK EVERYONE DONT PANIK")   
+        print("*a cougar has appeared*")   
+        choice12=input("would you like to 'be brave' or 'panick'")  
+        print(f"you choose to  {choice12}")   
+        if choice12=="be brave":   
+            print("...")   
+            print("you use the wepond givent to you at birth")
+            print(f"you had a {wepond}")
+            if "rock" in inventory:  
+                print ("you throw your rock at the cougar scaring it away") 
+                print ("[YOU GOT THE I ROCK ENDING] ")   
+                play_again=input ("...to play again type 'restart' ") 
+            if "stick" in inventory:  
+                print ("the stick broke")  
+                print ("[YOU GOT THE EASY COUGAR FOOD ENDING] ") 
+                play_again=input ("...to play again type 'restart' ")
+            if "honking" in inventory:  
+                PLACE=input("would you like to honk from 'behind' or 'upfront'?")
+                HONK=input ("would you like to 'honk' or 'HONK'")
+                if PLACE== "behind" and HONK=="HONK":
+                    print ("you HOOONK at the cougar scaring it away")  
+                    print ("[HOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNKKKKKKKKKKKKKKKKKK ENDING] ")   
+                else:
+                    print("OOPSIE GOOSIE U DIED")
+                play_again=input ("...to play again type 'restart' ") 
+        if choice12== "panick":   
+            print("...")   
+            print("other gooses keep honking at the cougar")   
+            print("even if it is too late, the gooses keep trying...")  
+            print("you become super drowsy,everything is...")   
+            print("STATUS")   
+            print("Energy: very low")   
+            print("Health: 0%")   
+            print("[YOU GOT THE COUGAR FOOD ENDING]")   
+            play_again=input ("hey, you died...to play again type 'restart' ")  
+            if play_again=="no":   
+                    play_again=input ("hey, you died...to play again type 'restart' ")   
