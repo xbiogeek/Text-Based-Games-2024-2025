@@ -1,0 +1,35 @@
+#Pookie
+#Jessie
+
+print("hi pookie :)")
+name=input("what's your name ")
+print(f"hello,{name} i like your name :)")
+print("welcome to unicorn rainbow magic land!")
+ready=input("let's travell to my castle!. type 'yes'or 'no'")
+if ready == 'no':
+    print("then bye  >:(")
+if ready == "yes":
+    print(" ok good choice let's go :)") 
+    ready2=input("would you like to go left or right?. type 'left'or 'right'")
+    if ready2 == "left":
+        print("ops you drowned in the chocolate river")
+    if ready2 == "right":
+        print("yay you went the right way")
+ready3=input("you see THE Willy Wonka (hes evil btw) type 'run pass'or 'fight him'")
+if ready3 =='run pass' :
+    print("he didn't see you you suvived yay :)")
+if ready3 =='fight him' :
+    print("he ate you you dided")
+    print("we are almost there!!!!!!!") 
+ready4=input("you see a rianbow bear type 'climb a tree'or 'shoot it away'")
+if ready4== "shoot it" :
+    print("he killed you 😔")
+if ready4=="climb a tree" :
+    print("he didnt see you ")
+    print ("we are almost there !!!!!")
+ready5=input("you see a magic staff do you take it type 'yes'or 'no'")
+if ready5 =='yes' :
+    print ("you protected yourself from a pack of wolf nearby")
+    print ("we here yayyyyyy")
+if ready5 =='no' :
+    print("there was a pack of wolf and they ate you ")
