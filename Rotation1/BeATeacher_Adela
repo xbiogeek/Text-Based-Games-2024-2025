@@ -1,0 +1,103 @@
+#Be A Teacher
+#Adela
+
+print("Welcome to BE A TEACHER!!!")
+player_name =input("What is your name:")
+print(f"Hello, {player_name}, welcome to the game.")
+import time
+time.sleep(2)
+print("In this game, you are a substitute teacher for a Grade 7 class. They are very dreadful children, and you are in charge of them for 2 hours.")
+print("Your goal is to keep these students safe and listening.")
+import time
+time.sleep(3)
+print("Good luck.")
+import time
+time.sleep(3)
+print("You arrive at Montgomery Middle School. You can already hear screaming and hollering as you enter the old icky building.")
+print("You look at your paper. It reads, 'Advisory 13'.")
+print("You rush to the classroom, since you are a couple minutes late. But when you arrive, a paper air plane hits you right on the forehead.")
+import time
+time.sleep(3)
+print("The class bursts into laughter.")
+choice = input(f"What do you do? (1) Keep chill so that the students like you or (2) yell at them and tell them to sit down?")
+if choice == "1":
+    print("You go to the teacher's desk and sit down. You search for the papers, until a student throws a bunch of paper at you. You keep the chill and just glare at them.")
+    import time
+    time.sleep(2)
+    print("But right after, another student flings their jello at you.")
+    import time
+    time.sleep(2)
+    print("You explode. 'THIS CLASS IS SO CRAZY!!!' you scream. You grab a tissue and you wipe your face with it.")
+elif choice == "2":
+    print("You clap your hands. 'ADVISORY 13!' you shout. 'YOU ARE NOT IN GRADE 1. THIS IS UNACCEPTABLE. IF YOU WILL LIKE ME TO WRITE A NOTE FOR THE TEACHER, I WOULD NOT MIND AT ALL.' you head over to the teacher's desk.")
+    import time
+    time.sleep(3)
+    print("Then, two boys, which the teacher had informed you were trouble makers, start making fart noises.")
+print("'OH MY GOODNESS!' you scream. 'THIS CLASS IS A NIGHTMARE!'")
+import time
+time.sleep(2)
+print("The class looks at you, finally silent.")
+choice == input(f" (1) Do you punish them or (2) start the lesson?")
+if choice == "1":
+    print("'ALL OF YOU. FORM A LINE,' you shout. You grab a stick, ready to whap their backs.")
+    print("The class forms a line. You grab the stick and whap every student's back. Surprisingly, they do not scream. The boys, would stay still, and the girls would giggle their heads off.")
+    import time
+    time.sleep(3)
+    print("After the last student, who giggle the most (Amber), you throw the work sheets for the students to do themselves.")
+elif choice == "2":
+    print("You grab the papers and start explaining what you do on the worksheet.")
+    print("That's when Jerold farts. Everyone bursts into laughter, and you even have a little laugh.")
+    print("Finally after everyone stops laughing, you continue your explanation.")
+    import time
+    time.sleep(3)
+    print("After explaining, you hand out the papers.")
+print("You go to your desk, waiting for some students to ask for help.")
+print("That's when you hear Alex scream, 'MELISSA IS PLAYING ADOPT ME! TEACHER!' you groan.")
+choice = input(f"(1) Do you write a note for the teacher that Melissa was playing Roblox or (2) take her laptop?")
+if choice == "1":
+    print("You grab a note and start scribbling angry words.")
+    print("You hear Melissa cussing at Alex.")
+    import time
+    time.sleep(2)
+    print("After writing the note, you decide to be strict with these children.")
+elif choice == "2":
+    print("You go to her and shut the laptop.")
+    print("'HEY! NOOO!!! I WAS ALMOST READY TO BUY A GARDEN EGG IN ADOPT ME...' she cries.")
+    import time
+    time.sleep(2)
+    print("You place the weird looking laptop on your desk.")
+print("You listen deeply into the student's conversations, determined to punish them again.")
+print("That's when you hear Edith and Chelsea fighting.")
+choice = input(f"(1) Do you want to talk to them outside or (2) yell at them to shut up?")
+if choice == "1":
+    print("'EDITH! CHELSEA! COME OUTSIDE NOW,' you shout. The 2 girls follow.")
+    print("After some questions, you understand the scenerio. Chelsea was eating a yummy snack, then Edith decided to steal some without her permission. And so, Chelsea physically attacked her.")
+    import time
+    time.sleep(4)
+    print("You tell them to stop, then allow them back inside.")
+elif choice == "2":
+    print("'SHUT UP!' you shout.")
+    print("The girls stop talking and sit back down.")
+print("Later, Aidan comes to you. He asks, 'Are you skibidi sigma for my question?'")
+choice = input(f"How do you answer? (1) for yes, and (2) for no.")
+if choice == "1":
+    print("'Yes, I'm skibidi sigma for your question,' you say. Aidan starts laughing. 'You're so sigma, bro,' he says. Then he leaves, happily.")
+elif choice == "2":
+    print("'No, I'm not skibidi sigma for your question,' you say.")
+    print("Aidan looks at you blankly, then leaves.")
+print("After helping the following students: Max, Nino, Maxwell, and Olivia L, you decide to get a cup of coffee.")
+choice = input(f"Should you leave the class alone (1) or leave them with a teacher (2)?")
+if choice == "1":
+    print("'I will be back soon,' you say. You leave the classroom.")
+    import time
+    time.sleep(3)
+    print("When you come back, the class is up on their desks, dancing to 'Please please please' by Sabrina Cartpenter. You even see your favourite child, Aria, dancing with Nikhil.")
+    print("'STOOOOOOP!' you scream. The class starts laughing awkwardly, then sits down.")
+elif choice == "2":
+    print("You ask M. Hashmi to watch the class.")
+    import time
+    time.sleep(2)
+    print("You arrive back at the class with a cup of coffee. The class is working nicely, with M. Hashmi glaring sharply at Alex.")
+print("That's when the bell rings. The 2 hours is done!!!")
+print("Thank you for playing my game! :)")
+print("THE END.")
