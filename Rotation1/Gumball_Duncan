@@ -1,0 +1,26 @@
+#Gumball
+#Duncan
+
+play_again = "yes"
+while play_again == "yes":
+    print ("yawn...")
+    print ("you woke up")
+    player_name = input ("*eats breakfast*")
+    print ("I love eating stale bred")
+    player_name = input("oh shoot im late for work the genaric factory")
+    print ("i dont want to go to work")
+    player_name = input("oh no if im late mr gumball will fire me")
+    print ("fire me")
+    player_name = input("OH SHOOOOT IF IM LATE ILL GETTT FIRE NOOOOOOOOO")
+    print ("AND I HAVE 0.00000000000001")
+    player_name = input("time for super speed")
+    print ("im almost der")
+    make = input ("a strange man trys to sell you a magic beans (yes/no)")
+    if make == "yes" :
+        make = input (" do you want to eat the bean (yes/no)")
+        if make == "yes":
+            print ("you ate bean it yummy")
+        print ("ok pay me")   
+    elif make == "no" :
+        print ("aw man")
+        play_again = input ("do you want to play again or no")
