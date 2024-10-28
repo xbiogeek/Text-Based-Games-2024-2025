@@ -3,9 +3,8 @@
 
 restart = "yes"
 while restart =="yes":
-        print("Welcome soldier") 
     print("D-day june 6th 1944") 
-    print ("dont expect to return")
+    print ("No more fooling around")
     player_name = input("what is your player_name?")
     print(f"Greetings,{player_name}! welcome to the invasion")
     rank = input("Private  foreign aid officer")
@@ -27,8 +26,9 @@ while restart =="yes":
     print ("you see a medic tent, do you want to end here?")
     medic = input ("1. yes I want to live to fight another day 2. no,I can still fight")
     if medic == "1":"Do you want to restart? (yes/no) "
+    if medic == "1": print ("you got the coward ending")
     if medic == "2": print ("You decide to fight to the end")
-    if medic =="2":                                         
+    if medic =="2":                                          
         print ("you advance over the top of the hill to the village")
         print ("It's too quiet")
         Suspicious = input ("1.Wait and see 2.follow your fellow soldiers to the village")
@@ -38,6 +38,7 @@ while restart =="yes":
         if Suspicious == "2": print ("You make your way to the village")
         if Suspicious == "2": print ("You follow your fellow soldiers into the village")
         if Suspicious == "2": print ("In a split second you wish you stayed behind")
+        if Suspicious == "2": print ("you got the ambush ending")
         if Suspicious == "1": print ("you wait until the gunfire stops")
         if Suspicious == "1":
             print ("you travel to the village after a while ")
@@ -47,6 +48,7 @@ while restart =="yes":
             decide = input ("1. stay and examine the bodies 2. find a safe place")
             if decide == "1": print ("you examine the bodies")
             if decide == "1": print ("sniper bullets are everywhere")
+            if decide == "1": print ("you got the quick death ending")
             if decide == "2": print ("you run behind a bush")
             if decide == "2": print ("you hear Germans yapping about something, probably how much people they killed")
             if decide == "2": print ("anger fills your body")
@@ -57,4 +59,5 @@ while restart =="yes":
             if decide == "2": print ("your both aiming your guns at each others heads")
             if decide == "2": print ("goodbye,dear friend")
             if decide == "2": print ("you pull the trigger,the officer does the same")
+            if decide == "2": print ("you got the final ending")
             
