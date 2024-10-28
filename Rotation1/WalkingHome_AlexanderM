@@ -1,0 +1,19 @@
+#Walking Home 
+#Alexander M
+
+play_again = "yes"
+while play_again == "yes":
+    print("Hello Student Welcome To Walking Home From School")
+    print("Get Ready For Your Journey Back Home Student")
+    player_name = input("What is your name? ")
+    print(f"Hello, {player_name}! Welcome to the game. ")
+    direction = input("You are now at a crosswalk. Will you cross now? or wait for your friends? ")
+    print(f"You chose to {direction}.")
+    if direction == "cross now":
+        print("You have been hit by a Car!")
+        play_again =input("You did not survive the crash and you have been paralyzed Head Down and have broke both your Ribs would you like to play again?")
+    elif direction == "wait for your friends":
+        print("You cross safely with no injuries!")
+        print("You are now approaching your neighborhood and walking to your Driveway.")
+        direction = input("You have now made it to your Driveway. Would you like to go inside your house? or check out the Squirrel in the bush? ")
+        
