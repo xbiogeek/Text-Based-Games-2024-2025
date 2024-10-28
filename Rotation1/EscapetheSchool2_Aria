@@ -1,46 +1,188 @@
 #Escape the School Part 2
 #Aria
 
-play_again = "yes"
-while play_again == "yes":
-    print("Welcome to your adventure!")
-    player_name = input ("What is your name? ")
-    print (f"Hello, {player_name}! Welcome to the game.")
-    import random
-    event = random.choice(["wolf", "mysterious chest", "nothing"])
-    print(f"You encounter a {event}.")
-    direction = input ("You are at a forest. Do you go left or right? ")
-    print(f"You chose to go {direction}.")
-    print("You encounter a wolf!")
-    inventory = []
-    print("You find a gun!") 
-    inventory.append("gun")
-    if "gun" in inventory:
-         print("You use the gun to fight the wolf!")
-         print("You run away but the wolf catches up.")
-         if direction == "left":
-            action = input("You are face to face with the wolf. Do you fight or flee?")
-            if action == "fight":
-                    print("You won the game!")
-            elif action ==  "flee": 
-                print("You run away fast but the wolf manages to catch up")
-                action2 = input("Do you fight or surrender?")
-                if action2 == "fight":
-                    print("You lost the fight")
-                    if action2 == "surrender":
-                         print("You died!")
-            else:
-                       print("You lost.")
-         elif direction == "right":
-            print ("You find a mysterious chest.")
-         else:
-            print("Invalid choice.")
-         play_again = input("Do you want to play again? Type 'yes' or 'no':")
-    def intro_scene():
-         direction = input("Do you go left or right? ")
-         inventory = []
-    if direction == "right":
-        print("You find a gun!")
-        inventory.append("sword")
-        if "gun" in inventory:
-            print("You use the gun to fight the wolf!")
+play_again = "yes" 
+
+while play_again == "yes" 
+
+    print("Welcome to ESCAPE THE SCHOOl, part 2") 
+
+    player_name = input("What is your name.:") 
+
+    print(f"Hello {player_name}! Welcome to the game!") 
+
+    print("In this game, the goal is to escape the school.") 
+
+    import time 
+
+    time.sleep(3) 
+
+    print("Every year, like clockwork, something bad happens to the students at Mourdery High. Many people say that this school is haunted, but it's the only one in the city.") 
+
+    time.sleep(4) 
+
+    print("You are invited to the annual Sleepathon at your school with your class. You decide to get there at 6pm.") 
+
+    time.sleep(3) 
+
+    print("For dinner, you are served pizza, and Coca Cola.") 
+
+    time.sleep(2) 
+
+    print("There are 3 teachers who are supervising, your math teacher, M.Hooshmi, your french teacher, M.Bilard, and the gym teacher Ms.Lepainne.")  
+
+    time.sleep(5) 
+
+    print("Kosyta, one of your classmates, finds blood in the pizza box, but M.Bilard just shrugs it off. You think that the blood is a bad sign, because of the schools history.") 
+
+    direction = input("Your teacher gives everybody a chance to call their parents, and you are uneasy because of the blood. Do you call your mom or not?") 
+
+    print(f"You said {direction}") 
+
+    if direction =="yes": 
+
+        time.sleep(2) 
+
+        print("Your mom says she'll pick you up, and within a few minutes, she's arrived.") 
+
+        time.sleep(3) 
+
+        print("You escaped successfully, but everybody calls you a wuss for not sticking it out.") 
+
+        play_again = input("Would you like to play again? Type 'yes' or 'no':") 
+
+    if direction =="no":  
+
+        time.sleep(2) 
+
+        print("you go back to the gym") 
+
+        choice00 = input("You and your friends wait for the teachers to make an announcement. It's decided that you can either GO to the science classroom, with M.Hooshmi, or STAY in the gym with  M.Bliard and Mme. Lepienne. Text stay or go.") 
+
+        print(f"You said {choice00}") 
+
+        if choice00 =="go": 
+
+            time.sleep(2) 
+
+            print("You go with M.Hooshmi, and set up all of your supplies. He tells you to never exit the class without permission, and to not make him angry....") 
+
+            time.sleep(3) 
+
+            print("Out of the corner of your eye, you see Melissa tapping on her laptop. M.Hooshmi sees that too, and in a flash of red, both Melissa and M.Hooshmi are gone. The only thing left of them is Melissa's laptop, which is streaked with red blood.") 
+
+            time.sleep(3) 
+
+            print("All of your classmates in the science classroom start screaming, and pandamonium starts.") 
+
+            time.sleep(2) 
+
+            print("Adela, your classmate, has the right idea to go tell the other teachers in the gym, but you're afraid that they're killers too.") 
+
+            choice2 = input ("Do you go to the gym? Text yes or no.") 
+
+        print(f"You said {choice2}") 
+
+        if choice2 =="no": 
+
+            print("You stay behind, with only 2 other classmates. All of you just stand in the room, not saying anything. Seconds pass, and suddenly Knox screams, pointing behind you, you turn around, just as M.Hooshmi spears all of you.") 
+
+            print("Better luck next time!") 
+
+            play_again = input("Would you like to play again? Type 'yes' or 'no':") 
+
+        if choice2 =="yes": 
+
+            print("You and most of your classmates run to the gym. Together, you warn M.Bliard and Mme.Lepianne. Adela warns everybody about M.Hooshmi.") 
+
+            time.sleep(3) 
+
+            print("Suddenly Mme.Leppianne's eyes go white, and she starts talking in an eerie voice:        When the moon comes up a killer rises from the depths. They suck the essence of the soul, so beware of those on the prowl.") 
+
+            time.sleep(5) 
+
+            print("Everybody is quiet.") 
+
+            time.sleep(3) 
+
+            print("Mme.Lepienne falls to the ground and explodes into a cloud of white dust. All the remaining classmates are scared, and Nino starts crying.") 
+
+            time.sleep(4) 
+
+            choice3 = input ("You look at your phone and stare in horror because you only have 3% battery. You can only make one call. If you want to call your mom, type mom. If you decide to call your dad, type dad.") 
+
+            if choice3 =="mom": 
+
+                    print("Your mom didn't pick up the phone, now your phone is dead. You hang up the phone only to find that everybody is gone. While you were calling your dad, they all left. You venture to the hallway, and see a dark figure running at you. You scream, but it's just Arina.") 
+
+                    time.sleep(2) 
+
+                    print("Hurry she says, and the two of you run outside. Just then a uber pulls up, with a couple of your classmates. All of you drive away." ) 
+
+                    time.sleep(3) 
+
+                    print("CONGRATS YOU SURVIVED") 
+
+                    play_again = input("Would you like to play again? Type 'yes' or 'no':") 
+
+            if choice3 =="dad": 
+
+                    print("Your dad says that he can't pick you up until 11:30. You hang up the phone only to find that everybody is gone. While you were calling your dad, they all left.") 
+
+                    time.sleep(4) 
+
+                    print("You venture to the hallway, only to find M.Hooshmi standing and smiling at you. Better luck next time.") 
+
+                    play_again = input("Would you like to play again? Type 'yes' or 'no':") 
+
+    choice0 = input 
+
+    print(f"you said {choice0}") 
+
+    if choice0 =="stay": 
+
+            time.sleep(2) 
+
+            print("You stay in the gym, and set up all your belongings. Then you get ready for bed. At 9:52, Adela and everybody who went with M.Hooshmi runs in and tells you that M.Hooshmi killed Melissa.")  
+
+            time.sleep(4) 
+
+            print("You all split into groups of five, and your group goes down the west wing. Aria suggests that your group should run down to the cafeteria to escape through the west side doors.") 
+
+            choice4=input("Do you follow her suggestion? Yes or No?") 
+
+            if choice4 =="yes": 
+
+                print("You go down to the cafeteria and exit through the west doors. On the grass field, you find a knife, still bloody.") 
+
+                time.sleep(4) 
+
+                choice5=input("Do you pick it up?") 
+
+                if choice5 =="yes": 
+
+                    print("You continue running down the hill, and halfway, you hear a screeching noise, and you see M.hooshmi floating at you with his spear. You throw the knife at his face, and it hits him dead center.") 
+
+                    time.sleep(5) 
+
+                    print("With an ear piercing scream, he disappears, leaving only a bloody corpse behind.") 
+
+                    print("YOU SURVIVED, AS A KILLER.") 
+
+                    play_again = input("Would you like to play again? Type 'yes' or 'no':") 
+
+                    play_again = input("Would you like to play again? Type 'yes' or 'no':") 
+
+            if choice4 =="no": 
+
+                print("You decide to follow Alex instead, and go through the main doors. As soon as you open the door, you all collapse.") 
+
+                time.sleep(3) 
+
+                print("YOU DIED.")  
+
+                play_again = input("Would you like to play again? Type 'yes' or 'no':") 
+
+ 
+
+ 
