@@ -1,0 +1,51 @@
+#Parfaiteia Academy
+#Hannah J 
+
+play_again = "yes"
+while play_again == "yes":
+    print("Welcome to the Parfaiteia Academy")
+    print("This is the place that you can learn any kind of magic")
+    player_name = input("What is your name?")
+    print(f"Greetings, {player_name}! Welcome to our academy.")
+    magic = input("You are going for the level test to see what type of element is inside of your heart. Which magic did you've got picked? There is galaxy, black hole, fire, and ice.")
+    print (f"Your element was {magic}")
+    input (f" Stin: Good. Now, let's see your magic level. {player_name}, please higher up your magic as you can. Okay?")
+    input (" Stin: Hmm.. Your magic level is 5. Impressive. Usually the beginners are level 2 or 1 or even can't use it very well. By the way, you should meet my sister Stella! She is a volunteer for the beginner students like you. Come on, I will help you to go to her. I can teleport together with you. Okay?")
+    magic = input (f"Stella: Oh, so you are the new one who came to the academy. Hello! I guess your name was.. {player_name}. right? Anywyas, what element did you've got for the result? {magic}?") 
+    if magic == "fire":
+        print("Stella: Nice! You have the same element as my brother! Oh I see.. how about you train with Stin today then?")
+    elif magic == "galaxy":
+            print ("Stella: Galaxy.. how rare element... Having a element for galaxy is like a world's 1 perceent people. You should go to a girl named Luna and talk with her. She is the teacher for the students that have the galaxy element")
+    elif magic == "black hole":
+                print ("Stella: Black hole, huh? You should then go to a boy named Dyne. He is the teacher for the students who has the element for black hole.")
+    elif magic == "ice":
+                    print ("Stella: Ice? You have the same element as I have! You know what? I will just teach you! I'm so glad that you have the same element as I have!")
+    print ("Narrator: However, the danger alarm came from the Magic Forest...")
+    print ("Stella: Oh no.. The danger alarm had come from the Magic Forest! All of the element experts are gone now and we are the only ones who are here at this academy...! No one will know about this.. However we have to help before the Magic FOrest gets all destroyed!")
+    print ("Stin: It looks like the elemental monster had broken the seal, sister!")
+    print (f"Probably true. Stin, I am going to the forest right now. You can follow me with {player_name} or help {player_name}'s skills to get improved with a quick lesson and help me! [Flies away to the Magic Forest]")
+    print (f"Okay, I guess we have to choose it. Quick, {player_name}. Do you want to help Stella or get a quick lesson first?")
+    action = input("what is your action? help, lesson")
+    if action == "lesson":
+        print ("[You've got a 1 hour lesson with Stin. You are now more powerful]")
+        inventory = []
+        print (f"[You've got the elemental sword from Stin]")
+        inventory . append("elemental sword")
+        if "elemental sword" in inventory:
+            print (f"You use the {magic} sword to fight the monster together with Stella and Stin!")
+        import random
+        event = random.choice(["Elemental slash", "Elemental Explosion", "Sword Slash"])
+        print(f"You encounter {event}.")
+        print(f"Stin: Nice, {player_name}! Howver, here is the hard part..")
+        print(f"Stella: We need to do the final attack to the monster but the choosing of the final attack can change the result: Defeated or not")
+        attack = input (f"Stin: Okay, {player_name}. This is your choice. Final slashes are not that powerful attack but could be helpful as we can slash a lot. Or you can rather choose the elemental last shot, which is powerful, but can be not helpful as you can slash only ONCE and it only attacks for 5 seconds only. Stella and I are already injured for the battle. Hurry, {player_name}! What will you choose?")
+        if attack == "final slashes":
+            print("Stin: You defeated the monster! You'd saved our forest!")
+            print(f"Stella: Thank you so much, {player_name}!")
+            print("Game finished.")
+        else:
+                            print("Narrator: Unfortunately, you had died.. Stella and Stin were so shocked that they've got froze from the mental shock and got defeated.")
+    if action == "help":
+        print (f"Stin: Okay, let's go then! Teleport! [Teleports together with {player_name}] You had fought the monster with Stin and Stella. Unfortunately, the result was defeated..")
+        direction = input ("Do you go to the lesson or help?")
+        play_again = input("play again?")
