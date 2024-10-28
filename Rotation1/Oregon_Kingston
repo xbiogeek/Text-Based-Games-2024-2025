@@ -1,0 +1,17 @@
+#Oregon
+#Kingston 
+
+player_name=input("what is your name?")
+print("")
+print(f"hello, {player_name}!.")
+print("it is 1849 and you hear that oregon has free land and if your lucky you can find gold in calfornia")
+print("")
+print("")
+print("")
+input("do you go west")
+print("")
+print("")
+print("you decide to go west")
+print("")
+print("you have 19000 dolers to spend at the store")
+input("1 oxen 2 food 3 bullits ")
