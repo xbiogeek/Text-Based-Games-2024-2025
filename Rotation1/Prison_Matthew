@@ -1,0 +1,57 @@
+inventory = []
+print("welcome to the prison")
+print("your goal here is to select the right path and to break out")
+print("what is your name")
+n = input()
+print("Hello, " + n)
+print("You can break the lock on your cell door by lockpicking it or bashing it with a rock")
+print("what would you like to use the lockpick or rock?")
+Direction = input()
+if Direction == "lockpick":
+    print("you have unlocked the lock")
+elif Direction == "rock":
+    print("you have destroyed the lock, you may have alerted the guards as it was loud.")
+else:
+    print("invalid option please restart")
+    exit()
+print("Now would you like to take the front door which is the fastest way or the secret tunnel which is longer but safer")
+m = input()
+if m == ("front door"):
+    print("As you walk towards the front door a guard notices you. The guard catches you, Bad ending")
+    exit()
+elif m == ("secret tunnel"):
+    print("As you traverse the old tunnels you find a goblin. He tells you he will let you pass if you give him your rock. Give him the rock or ignore?")
+else:
+    print("that isn't a option, please restart")
+    exit()
+a = input()
+if a == ("rock"):
+    print("The goblin lets you pass and also gives you a sword.")
+    inventory.append("sword")
+elif a == ("ignore"):
+    print("The goblin lets you pass anyway")
+else:
+    print("that is not an option")
+    exit()
+print("You can see the exit but as you approach it you see a dragon outside.")
+if "sword" in inventory:
+    print("you have slayed the dragon")
+elif "sword" not in inventory:
+    print("The dragon kills you")
+    exit()
+print("After you slay the dragon you store its meat for later")
+inventory.append("meat1")
+inventory.append("meat2")
+inventory.append("meat3")
+inventory.append("meat4")
+inventory.append("meat5")
+print("you have stored 5 pieces of dragon meat")
+print("After days of wondering the forest you encounter a village. would you like to buy their food with your dragon meat? yes or no")
+p = input()
+if p == "no":
+    print("you have starved to death")
+    exit()
+elif p == "yes":
+    print("you give them one piece of dragon meat")
+    inventory.remove("meat1")
+https://github.com/xbiogeek/Text-Based-Games-2024-2025.git
