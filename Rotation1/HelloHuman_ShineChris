@@ -1,0 +1,44 @@
+#Hello Human
+#Shine & Chris
+
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("hello human")
+print ("'o'")
+print("you are in a world which is covered with cake")
+print("._.")
+("you have one goal")
+print("eat all cakes!")
+
+print(" 'u' ")
+print(" ")
+print("now eat!")
+print("wait")
+print("he's here!")
+print("do you want to 1.stand and fight or2. run away")
+choice = input("1. stand and fight")
+if choice == "stand and fight": print ("you died")
+elif choice == "run away": print("u got away safely")
+print ("now, will you 1. eat or 2. drink?")
+choice = input("1.eat")
+if choice == "eat": print ("u got poisined")
+elif choice == "drink":
+    print ("you are refreshed")
+print ("now...")
+print("continue on your mission!")
+print ("remember...")
+print ("you have to eat all cakes!")
+print("will u eat the ground or the ceiling?")
+print("Pick one")
+print("1. Ground or 2. Ceiling")
+choice2 = input ("1. Ground") 
+if choice2 == "ground": print ("you died") 
+elif choice2 == "ceiling": print ("you survive")
+print ("Now, you see a light")
+print ("Will you 1. Go or 2. Walk away")
+choice3 = input ("1. Go or 2. Walk away")
+if choice3 == "go": 
+    print ("you made it out!")
+elif choice3 == "walk away": print ("you fall off, you died")
+print ("The End!")
+print ("Goodbye!")
