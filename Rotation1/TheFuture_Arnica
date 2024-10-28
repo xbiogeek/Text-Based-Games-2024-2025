@@ -1,0 +1,17 @@
+#The Future
+#Arnica
+
+play_again = "yes"
+while play_again == "yes":
+    print("it's 2050 in Canada")
+    player_name= input ("what is your name?")
+    print(f"hello, (player_name)! Welcome to the game")
+    direction = input ("you are in the car driving to your location. Would you like to go right or left?")
+    print (f"you chose to go (direction)")
+    if direction== "left":
+        action== input ("you see a bunch of squirels on the road. Do you pass by them or stop?")
+        if action== "pass by them":
+            print("you arrive early to your destination")
+        if action== "stop":
+            print ("you arrive a little late to your destination")
+            play_again = input ("do you want to play again")
