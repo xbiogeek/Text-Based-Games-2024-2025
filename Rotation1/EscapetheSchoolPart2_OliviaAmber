@@ -1,0 +1,117 @@
+#Escape the School Part 2
+#Amber & Olivia 
+
+import time  
+
+def win():
+    print("You hit her with the hammer, she passes out. You take this chance to run outside.")
+    time.sleep(2)
+    print("Congratulations! You've escaped the school and survived the zombie apocalypse!")
+    time.sleep(3)
+    print("Thank you for playing ESCAPE THE SCHOOL Pt.1!")
+    time.sleep(2)
+    exit()  # Exit the game
+
+print("Welcome to ESCAPE THE SCHOOL Pt.1")  
+
+player_name = input("What is your name: ")  
+
+print(f"Hello, {player_name}. Welcome to the game.")  
+
+print("In this game, you must escape the school without getting killed by zombies.")  
+
+print("Every ten years, just like clockwork, something bad happens to the students at Mourdery High.")  
+
+time.sleep(3)  
+
+print("Many people say that Mourdery is haunted.")  
+
+print("You arrive at school in your dad's car.")  
+
+time.sleep(3)  
+
+print("It was loud in the hallways just like usual, you go to your math class.")  
+
+time.sleep(3)  
+
+print("Surprisingly, it's actually pretty interesting because your teacher Mr. Hooshmi is yelling at a student, Melissa, for playing games in class.")  
+
+time.sleep(4)  
+
+print("Suddenly, the lights flash then go out. You hear a loud scream. The lights come back on and you see Mr. Hooshmi lying on the ground. His dilated pupils look around the room with a hungry look. He runs to Melissa and bites her.")  
+
+time.sleep(5)  
+
+print("You barely escape. You run into the hallway hearing ear-piercing screams. There are two ways to run, but you don't have much time.")  
+
+time.sleep(4)  
+
+print("The first path is the library and the second is the music room.")  
+
+time.sleep(2)  
+
+def choice():  
+    user_choice = input("Which one do you choose? Type 1 to go to the library, and type 2 to go to the music room: ")  
+    time.sleep(2)  
+
+    if user_choice == "1":  
+        print("On your way to the library, you hear something coming from the bathroom.")  
+        time.sleep(3)  
+        print("You open the door and hear your best friend Arina whimpering in the stall.")  
+        time.sleep(3)  
+        print("Nuh uh, I'm not going to die today, Arina says.")  
+        time.sleep(3)  
+        user_choice = input("Do you choose to bring your best friend Arina? Type 3 to bring her and 4 to leave her: ")  
+        time.sleep(3)  
+
+        if user_choice == "3":  
+            print("You say to her: 'Let's go find a hiding spot, okay?'")  
+            time.sleep(3)  
+            print("You guys run to the library and stay there for a long time.")  
+            time.sleep(3)  
+            print("You see it's getting dark. You tell Arina to wait there. You go search for weapons, and you find a basket of apples. You take it with you. You find a hammer.")  
+            time.sleep(5)  
+            print("You take the hammer with you and go back. You see Arina on the ground twitching. She's crawling towards you.")  
+            time.sleep(3)  
+            user_choice = input("Do you run or hit her with the hammer? Type 5 to run and type 6 to hit her: ")  
+
+            if user_choice == "5":  
+                print("You try to run, but she's too fast. She grabs your ankle and bites you. You die.") 
+                time.sleep(3)  
+                print("Restarting the game...") 
+                time.sleep(2)  
+                return choice()  # Restart the game 
+
+            elif user_choice == "6":  
+                win()  # Call the win function when the player escapes 
+
+        elif user_choice == "4":  
+            print("You leave her and run to the library.")  
+            time.sleep(3)  
+            print("You stay there and see it's getting dark.")  
+            time.sleep(3)  
+            print("You see a shadow and say: 'Mr. Bloozzard! You're alive! How do we escape?' But then you realize his face is deformed. He runs towards you and opens his mouth...")  
+            time.sleep(3)  
+            print("You die.") 
+            time.sleep(2)  
+            print("Restarting the game...")  
+            return choice()  # Restart the game 
+
+    elif user_choice == "2":  
+        print("You go to the music room.")  
+        time.sleep(3)  
+        print("You start crying in there, and then the closet door opens...")  
+        time.sleep(3)  
+        print("You see Mrs. Cooswell crawling towards you. You let out an ear-piercing scream and try to run, but it's too late. She opens her mouth and...")  
+        time.sleep(2)  
+        print("You die.") 
+        time.sleep(2)  
+        print("Restarting the game...")  
+        return choice()  # Restart the game 
+
+    else: 
+        print("Invalid choice. Please type 1 or 2.") 
+        return choice()  # Re-prompt for a valid input 
+
+choice()
+
