@@ -1,0 +1,74 @@
+#Stalingrad
+#Sebastian
+
+print("Welcome to Stalingrad")
+
+# Choosing the side
+country = input("Ok soldier, what side do you want to be on? German or Soviet: ").lower()
+player_name = input("What is your name, cadet? ")
+
+if country == "german":
+    print("You chose the German Army. Welcome to the German Forces, cadet.")
+elif country == "soviet":
+    print("You chose the Soviet Army. Welcome to the Soviet Forces, cadet.")
+else:
+    print("Invalid choice. Please choose either 'German' or 'Soviet'.")
+    exit()  # Exit if the choice is invalid
+
+# Choose your force type
+force = input("Now, you need to choose your force, cadet. Choose between Air, Tank, or Artillery: ").lower()
+
+# Determine force-related messages
+if force == "air":
+    print(f"You chose the Air Forces, cadet. Proceed to your aircraft!")
+elif force == "tank":
+    print(f"You chose the Tank Forces, cadet. Head over to your tank!")
+elif force == "artillery":
+    print(f"You chose the Artillery Forces, cadet. Move to the artillery position!")
+else:
+    print("Invalid force choice.")
+    exit()  # Exit if the force choice is invalid
+
+# Mission instructions based on country and force choice
+if country == "german":
+    if force == "air":
+        print("Ok soldier, go to the plane far ahead and get ready for battle!")
+    elif force == "tank":
+        print("Go to the tank Mark II far ahead and prepare for combat!")
+    elif force == "artillery":
+        print("Move to the German 8.8cm Pak 43 Anti-Tank Gun and prepare for defense.")
+
+elif country == "soviet":
+    if force == "air":
+        print("Ok soldier, make your way to the plane and get ready for battle!")
+    elif force == "tank":
+        print("Proceed to the T-34 tank in the factory and prepare for combat!")
+    elif force == "artillery":
+        print("Move to the 76.2mm M1927 infantry support artillery and prepare for defense.")
+
+# Decision on first aid kits
+take_kit = input("You see some first aid kits. Do you want to take one? Type '1' to grab it or '2' to leave it: ")
+
+if take_kit == "1":
+    print("You chose to take the first aid kit.")
+elif take_kit == "2":
+    print("You chose not to take the first aid kit.")
+else:
+    print("Invalid choice for first aid kit.")
+    exit()  # Exit if the input is invalid
+
+# End scenario based on choices
+if force == "air" and take_kit == "1":
+    print("In air combat, you take down an enemy plane, but his ally shoots you down. Fortunately, the first aid kit helps you survive. (Good ending) THANKS FOR PLAYIN' MY GAME!!!")
+elif force == "air" and take_kit == "2":
+    print("In air combat, you take down an enemy plane, but his ally shoots you down. Without the first aid kit, you couldn't heal and did not survive. (Bad ending) THANKS FOR PLAYIN' MY GAME!!!")
+
+elif force == "tank" and take_kit == "1":
+    print("In tank combat, you destroy an enemy tank, but another one ambushes you. The first aid kit helps you survive. (Good ending) THANKS FOR PLAYIN' MY GAME!!!")
+elif force == "tank" and take_kit == "2":
+    print("In tank combat, you destroy an enemy tank, but another one ambushes you. Without the first aid kit, you couldn't heal and did not survive. (Bad ending) THANKS FOR PLAYIN' MY GAME!!!")
+
+elif force == "artillery" and take_kit == "1":
+    print("In artillery defense, you hold off enemy infantry but are overwhelmed. With the first aid kit, you survive and hide nearby. (Good ending) THANKS FOR PLAYIN' MY GAME!!!")
+elif force == "artillery" and take_kit == "2":
+    print("In artillery defense, you hold off enemy infantry but are overwhelmed. Without the first aid kit, you couldn't heal and did not survive. (Bad ending) THANKS FOR PLAYIN' MY GAME!!!")
