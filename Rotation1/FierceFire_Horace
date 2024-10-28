@@ -1,0 +1,108 @@
+#Fierce Fire
+#Horace
+
+import time
+import random
+
+# Define the list of fruits and fruit rarities
+blox_fruits = [
+    'common rocket', 'common rocket', 'common rocket', 'common rocket', 'common rocket', 
+    'common spin', 'common spin', 'common spin', 'common spin', 'common spin', 
+    'common chop', 'common chop', 'common chop', 'common chop', 'common chop', 
+    'common spring', 'common spring', 'common spring', 'common spring', 'common spring', 
+    'common bomb', 'common bomb', 'common bomb', 'common bomb', 'common bomb', 
+    'common smoke', 'common smoke', 'common smoke', 'common smoke', 'common smoke', 
+    'common spike', 'common spike', 'common spike', 'common spike', 'common spike',
+    'uncommon flame', 'uncommon flame', 'uncommon flame', 
+    'uncommon falcon', 'uncommon falcon', 'uncommon falcon', 
+    'uncommon ice', 'uncommon ice', 'uncommon ice', 
+    'uncommon sand', 'uncommon sand', 'uncommon sand', 
+    'uncommon dark', 'uncommon dark', 'uncommon dark', 
+    'uncommon ghost', 'uncommon ghost', 'uncommon ghost', 
+    'uncommon diamond', 'uncommon diamond', 'uncommon diamond', 
+    'rare light', 'rare light', 'rare rubber', 'rare rubber', 
+    'rare barrier', 'rare barrier', 'rare magma', 'rare magma', 
+    'legendary quake', 'legendary buddha', 'legendary love', 
+    'legendary sound', 'legendary spider', 'legendary phoenix', 
+    'legendary portal', 'legendary rumble', 'legendary pain', 
+    'legendary blizzard', 'mythical gravity', 'mythical shadow', 
+    'mythical mammoth', 'mythical t-rex', 'mythical dough', 
+    'mythical venom', 'mythical control', 'mythical spirit', 
+    'mythical dragon', 'mythical leopard', 'mythical kitsune', 
+    's-mythical meme', 's-mythical cheem', 's-mythical floppa', 
+    's-mythical kilo'
+]
+fruit_rarities = [
+    'common rocket', 'common spin', 'common chop', 'common spring', 'common bomb', 
+    'common smoke', 'common spike', 'uncommon flame', 'uncommon falcon', 
+    'uncommon ice', 'uncommon sand', 'uncommon dark', 'uncommon ghost', 
+    'uncommon diamond', 'rare light', 'rare rubber', 'rare barrier', 
+    'rare magma', 'legendary quake', 'legendary buddha', 'legendary love', 
+    'legendary sound', 'legendary spider', 'legendary phoenix', 
+    'legendary portal', 'legendary rumble', 'legendary pain', 'legendary blizzard', 
+    'mythical gravity', 'mythical shadow', 'mythical mammoth', 'mythical t-rex', 
+    'mythical dough', 'mythical venom', 'mythical control', 'mythical spirit', 
+    'mythical dragon', 'mythical leopard', 'mythical kitsune', 's-mythical meme', 
+    's-mythical cheem', 's-mythical floppa', 's-mythical kilo'
+]
+
+inventory = []
+roll_count = 10
+
+print("Fierce Fire(guide): Hello there, welcome to Miami Demon Fruit store!")
+time.sleep(2)
+print("Fierce Fire: Here, you have to try to roll the best demon fruit possible in 10 rolls.")
+time.sleep(4)
+print("Fierce Fire: So first, let's give you a starting fruit.")
+time.sleep(2)
+print("Fierce Fire: Let's go to Radbob to roll a demon fruit.")
+time.sleep(2)
+
+name = input("Fierce Fire: Wait, what was your name again? ")
+print(f"Fierce Fire: Ok, {name}, let's go to Radbob now.")
+time.sleep(2)
+
+print(f"Radbob: Hello, {name}! I am Radbob, and I'm where you can roll a fruit.")
+time.sleep(5)
+print("Radbob: So, how it works is you pay me 0 beli and you will get a random fruit!")
+time.sleep(5)
+print(f"Radbob: So, {name}, roll a fruit! It's free for now since this is just a fake fruit.")
+time.sleep(5)
+
+roll = input("System: Would you like to roll a fruit? ").strip().lower()
+
+if roll == 'yes':
+    print("System: You got a common fruit!")
+else:
+    print("Kr967: Womp womp! My game, my rules! You rolled a fruit, and you got a common fruit!")
+time.sleep(3)
+
+print("Fierce Fire: Now, I think you are smart enough to do this by yourself now. Bye, have fun!")
+time.sleep(5)
+
+for i in range(roll_count):
+    choice = input("What would you like to do? 1: Roll 2: Inventory 3: Fruit rarity | ").strip()
+    
+    if choice == '1':
+        random_fruit = random.choice(blox_fruits)
+        print(f"Random fruit selected: {random_fruit}")
+        inventory.append(random_fruit)
+    elif choice == '2':
+        if inventory:
+            print("Inventory:", ', '.join(inventory))
+        else:
+            print("You have nothing in your inventory yet.")
+    elif choice == '3':
+        print("Fruit rarities:", ', '.join(fruit_rarities))
+
+print("Kr967: Time's up, buddy. Let's see what you got...")
+time.sleep(3)
+print("Inventory:", ', '.join(inventory))
+time.sleep(9)
+
+print("Thank you for playing! Here are our staff behind the scenes: Kr967: Owner, Fierce Fire: Owner, Radbob: Fruits Gacha")
+time.sleep(5)
+print("Thank you for playing, bye...")
+print(".............................")
+print("Why are you still here? Go, there is no v2...")
+print("Totally not....")
