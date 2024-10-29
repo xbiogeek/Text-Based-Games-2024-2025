@@ -1,0 +1,34 @@
+#Fun Game
+#Pooneh
+
+print("welcome to your adventure!")
+player-name = input("what is your name?") 
+direction = input("you are at a crossroads.Do you go left or right?")
+print(f"You chose to go {direction}.")
+if direction == "left":
+  print("You encounter a dragon!")
+elif direction == "right":
+  print("You find a treasure chest.")
+else:
+  print("Invalid choice.")
+if direction == "left":
+  action == input ("You see adrago.Doyou fight or flee? ")
+if action == "fight":
+  print("You bravely fight the dragon and won!")
+elif action == "flee":
+  print("You run away safely.")
+play-again = "yes"
+wile play-again == "yes":
+   direction = input ("Do you go left or right? ")
+#  (game logic here)
+  play_again = input ("Do you want to play again? Type 'yes' or 'no' :")
+def intro_scene() :
+  print("You are at a crossroads.")
+  direction = input("Do you go left or right? ")
+  return direction
+inventory = []
+if direction == "right":
+  print("You find a sword. ")
+  inventory. append("sword")
+if "sword" i inventroy:
+  print("You use the sword to fight the dragon!")
