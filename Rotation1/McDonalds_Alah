@@ -1,0 +1,10 @@
+#McDonalds
+#Alah
+
+print("hello welcome to mcdonalds")
+print("what would you like to get for today?")
+topic1 = input ("may i have ur name first")
+print ("alright i will now make your food")
+print("2 minutes pass")
+print(f"{topic1}, your order is now ready.") 
+print ("have a good day!")
