@@ -1,0 +1,33 @@
+#Door Choice
+#Rumessa
+print ("welcome to choose a door!")
+
+topic1 = input("what is your name?")
+
+print(f"welcome to pick a door {topic1}")
+
+topic2 = input("choose any colour of a door, and see whats behind it!")
+
+print ("you see a huge mansion!")
+
+topic3 = input("But you have to live with your bestfriend. yes or no?")
+
+print("okay.")
+
+topic4 = input("Do you have a cat or a dog as a pet?")
+
+print ("Good choice.")
+
+topic5 = input ("you see your pool and the jacuzzi but you can decide which one you wanna go in! do you hop in the jacuzzi or the pool?")
+
+print("good choice! you go wear swimsuit and hop in!!")
+
+print("You hop out of the pool and get changed into your pjs and sit on your bed, until you get a text from a person you havnt talked to in so so long.")
+
+print("they ask if you want to meet up and solve things.")
+
+topic6 = input("what is your response? Yes or No?")
+
+print("wise decision... But you dont know what happens BECAUSE YOU NEED TO SEE IT IN REALITY..")
+
+print ("The end!! or is it?")
