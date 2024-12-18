@@ -1,0 +1,61 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    print("welcome to this lovely journey!") 
+
+    player_name = input("What is your name?") 
+
+    print(f"Hello, {player_name} Welcome to the game!") 
+
+    def introscene(): 
+
+        direction = input("You are in the forest. Do you go left or right?") 
+
+        print(f"You chose to go right.") 
+
+        if direction == "left": 
+
+            print("You encounter a big, scary monster!") 
+
+            action = input("You see a scary monster. Do you fight or flight?") 
+
+            if action == "flight": 
+
+                print("You run away safely") 
+
+            elif action == "fight": 
+
+                print("You bravely fight the monster and you win!") 
+
+        elif direction == "right": 
+
+            print("You find an axe!") 
+
+            action1 = input("Do you want to keep the axe? (yes / no)") 
+
+            if action1 == "yes": 
+
+                print("You have stored the axe away for safe keeping") 
+
+                action2 = input("You find a big box. do you open it?") 
+
+                if action2 == "yes": 
+
+                    print("There was a ticking time bomb and you explode!") 
+
+                elif action2 == "no": 
+
+                    print("You stay safe and continue to explore.") 
+
+            if action1 == "no":  
+
+                print("You end up needing it later and die.") 
+
+                play_again = input("Do you want to play again? Type 'yes" or 'no') 
+
+        else: 
+
+            print("Invalid choice") 
+
+    introscene() 
