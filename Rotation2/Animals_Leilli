@@ -1,0 +1,49 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    player_name = input("What is your name?") 
+
+    print(f"Hello, {player_name}! Say hello to the game!") 
+
+    def introscene(): 
+
+        direction = input("You are at the end of the crosswalk. Do you go left or right?") 
+
+        print(f"You chose to go {direction}.") 
+
+        if direction == "left": 
+
+            print ("You encounter a stray cat!") 
+
+            action = input ("You see a stray cat. Do you fight or flee?") 
+
+            if action == "fight": 
+
+               print ("You bravely fight the stray cat and win!") 
+
+               play_again = input ("Do you want to play again? Type 'yes' or 'no': ") 
+
+            elif action == "flee": 
+
+                print ("You run away safely and win.") 
+
+        elif direction == "right": 
+
+            print("You encounter a stray dog.") 
+
+            action1 = input("You wonder if you can turn the stray into your pet, do you want to keep the dog? (yes / no)") 
+
+            if action1 == "yes": 
+
+                print("Take it home and win.") 
+
+            if action1 == "no": 
+
+                print('You leave it on the street and lose.') 
+
+        else: 
+
+            print("Invalid choice.") 
+
+    introscene 
