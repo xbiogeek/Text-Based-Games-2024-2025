@@ -1,0 +1,47 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    print("I love undertime slopper.") 
+
+    player_name = input("What is your name?") 
+
+    print(f"Hello, {player_name}. Do you love undertime slopper?") 
+
+    direction = input("Do you like undertime slopper? Yes or No?") 
+
+    print(f"you choose to say {direction}.") 
+
+    if direction == "yes": 
+
+        print ("very epic") 
+
+        action = input("He offers you a free ticket to the skibidi toilet movie. Do you take it or not?") 
+
+        if action == "take it": 
+
+            print("You go to see the skibidi toilet movie") 
+
+        elif action == "refuse": 
+
+            print("You walk away and explode") 
+
+            play_again = input("Would you like to restart? yes or no:") 
+
+    elif direction == "no": 
+
+        action2 = input("he doesn't look very happy. fight him or not?") 
+
+        if action2 == "fight": 
+
+            print("you fight him and he defeats you with the power of undertime slopper") 
+
+        elif action2 == "run away": 
+
+            print("you manage to get away, for now") 
+
+        play_again = input("Would you like to restart? yes or no:") 
+
+    else: 
+
+        print("invalid choice") 
