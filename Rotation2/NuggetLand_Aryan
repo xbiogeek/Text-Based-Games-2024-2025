@@ -1,0 +1,37 @@
+direction = input ("You are at a nuggetlandia. Do you go wendys or  chick fil a or go home?") 
+
+    def intro_scene() : 
+
+        print(f"You chose to go {direction}.") 
+
+        if direction == "wendys": 
+
+                print("you encounter big boi nuggy!") 
+
+        if action == "fight": 
+
+            print("you bravely fight big boi nuggy and win!") 
+
+            print("you get rewarded and won") 
+
+        elif action == "flee" : 
+
+            print("you get lost and die from a wolf.") 
+
+        elif direction == "home": 
+
+            print("You go home and you get kidnapped and die") 
+
+            play_again = input("Do you want to play again? type 'yes or 'no' :") 
+
+        elif direction == "chick fil a": 
+
+                print("You find a huge nugget but no sauce")  
+
+                print("the nuggies execute you for not eating") 
+
+                print("I love chicken nuggets") 
+
+    intro_scene() 
+
+      
