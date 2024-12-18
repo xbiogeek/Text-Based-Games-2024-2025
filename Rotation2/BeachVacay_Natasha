@@ -1,0 +1,61 @@
+play_again = "yes"  
+
+while play_again == "yes" : 
+
+    print("Welcome to your new beach vacation")  
+
+    player_name = input("what is your name?")     
+
+    print(f"Hello, {player_name}! Welcome to the game.") 
+
+    def introscene(): 
+
+        direction = input ("You are at your hotel, there are two hallways. Do you go left or right?")    
+
+        print (f"You chose to go {direction}.")    
+
+        if direction  == "left":    
+
+            print ("You encounter a cat.")    
+
+            print("You start following the cat, and it leads you down to a mysterious room")   
+
+            action = input("Now there is a mysterious door in front of you, do you 'go in' or 'go back'?")   
+
+            if action == "go in":   
+
+                print("You open the door and a trap happens.")  
+
+                play_again = input (" Do you want to play again? Type 'yes' or 'no' : ")  
+
+            elif action == "go back":   
+
+                print("You feel a sense of dread.") 
+
+                action2 = input("you get knocked out.You wake up and your in a maze.Do you try to find someone or you try to find the exit yourself?") 
+
+                if action1 == "you try and find someone": 
+
+                    print("you find a guy stuck there too.") 
+
+                    print("you and the guy find the exit and fall in love.") 
+
+                    play_again = input (" Do you want to play again? Type 'yes' or 'no' : ")   
+
+                elif action2 == "you try to find the exit yourself": 
+
+                    print("you get eaten by a hungry lion.") 
+
+                    play_again = input (" Do you want to play again? Type 'yes' or 'no' : ")   
+
+        elif direction == "right":    
+
+            print ("you find your room.")    
+
+            play_again = input (" Do you want to play again? Type 'yes' or 'no' : ")   
+
+        else:   
+
+            print("Invalid choice.") 
+
+    introscene 
