@@ -1,0 +1,135 @@
+# Starting the game
+
+play_again = "yes"
+
+while play_again == "yes":
+
+print("Welcome to your Grandmas mysterious house, where the warmth of Christmas dinner awaits... but not everything is as it seems.")
+
+
+player_name = input("What is your name, brave adventurer? ")
+
+print(f"Ah, {player_name}, welcome to the holiday of a lifetime... or perhaps, the most dangerous Christmas youll ever experience.")
+
+
+# The first choice: Left or Right
+
+direction = input("You arrive at the grand entrance of your grandmas house. There are two doors: one whispers a strange
+
+song from the basement, the other hums with a warm light from within the house. Do you go left or right? ").lower()
+
+print(f"You choose to go {direction}.")
+
+
+if direction == "left":
+
+print("You open the door with a creaking sound that echoes through the dark hallway. A chill runs down your spine.")
+
+
+# Second choice: Fight or Flee the spider
+
+action = input("Suddenly, a gigantic 10ft spider lunges at you from the shadows! It has glowing red eyes and sharp fangs. Do you fight or flee? ").lower()
+
+
+if action == "fight":
+
+print("With heart pounding, you grab a nearby broken broomstick and charge at the spider. You battle fiercely, your strikes landing true.")
+
+# Winning outcome 1: You kill the spider and find the hidden treasure
+
+treasure = input("With the spider slain, you discover a hidden treasure chest underneath its web. Do you open it? (yes/no) ").lower()
+
+if treasure == "yes":
+
+print("Inside the chest, you find a glittering golden Christmas star that pulses with magic. You feel a warmth spreading through your body, and a wave of peace washes over you. You win!")
+
+else:
+
+print("You hesitate and walk away, your heart heavy with regret. The treasure is lost, and you leave with nothing but the sound of your own footsteps. You lose.")
+
+
+elif action == "flee":
+
+print("Your feet move faster than your thoughts, and you dash back toward the door. Your heart races, but you escape safely.")
+
+# Losing outcome 1: Grandma is disappointed
+
+print("Your grandma, watching from a distance, sighs in disappointment. 'Cowards never get to enjoy the feast,' she mutters. You lose.")
+
+
+else:
+
+print("You freeze, too terrified to move. The spider strikes, and everything goes dark. You lose.")
+
+# Losing outcome 2: Invalid action leads to a bad end
+
+print("You could not choose, and the spider had no patience")
+
+
+elif direction == "right":
+
+print("You step through the door and into a warm, cozy living room where the aroma of Christmas dinner fills the air. But something is not right...")
+
+print("Suddenly, your grandmas familiar face distorts, her smile turning into a wicked grin as her eyes glow with an unnatural red light!")
+
+
+# Third choice: Fight, Flee, or Talk to Grandma
+
+action = input("Grandma, now a monstrous spider with her human voice echoing through the room, asks, 'Will you join me in my new life? Do you fight, flee, or try to talk to her? ").lower()
+
+
+if action == "fight":
+
+print("You charge forward with a furious yell, but your strength is no match for Grandmas monstrous form. You are wrapped in her web.")
+
+# Losing outcome 3: You lose fighting the spider grandma
+
+print("Your struggle is in vain as the web tightens around you. Darkness closes in. You lose.")
+
+
+elif action == "flee":
+
+print("You turn and sprint toward the door, but the webs catch you just in time. You scream as you are pulled back into her lair.")
+
+# Losing outcome 4: You try to run but get trapped
+
+print("There is no escape. You lose")
+
+elif action == "talk":
+
+print("You take a deep breath, trying to speak with your grandma. 'Please, come back to us. We need you,' you beg.")
+
+# Winning outcome 2: Grandma turns back to normal
+
+print("To your surprise, she softens. 'I didnt want to hurt you,' she whispers, her spider form shrinking. Grandma is back to normal, and she welcomes you with open arms.")
+
+print("Together, you sit down to the most magical Christmas dinner youve ever had. You win!")
+
+
+else:
+
+print("You hesitate too long, caught between fear and confusion. The web closes around you before you can make a decision.")
+
+# Losing outcome 5: Invalid choice leads to capture
+
+print("Your indecision costs you. You lose.")
+
+
+else:
+
+print("You stand frozen, unsure which door to choose. The house feels alive, watching you. You wander aimlessly.")
+
+# Losing outcome 6: Invalid direction leads to getting lost
+
+print("In the end, you never make it inside. The house consumes you, and you lose.")
+
+
+# Ask if the player wants to play again
+
+play_again = input("Do you want to try again? (yes/no): ").lower()
+
+
+print("Thank you for playing! May your holidays be filled with joy... or mystery. Goodbye!")
+
+
+BY. Thea sooraj
