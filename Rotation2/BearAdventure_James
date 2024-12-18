@@ -1,0 +1,57 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    print ("Welcome to your adventure") 
+
+    player_name = input ("What is your name") 
+
+    print (f"Hello, {player_name} ! Welcome to the game") 
+
+    direction = input ("You are at a crossroads . Do you go left or right?")  
+
+    print (f"You chose to go {direction} . ") 
+
+    if direction == "left": 
+
+        print ("You encounter a dog named chavi") 
+
+        print ("You see a knife") 
+
+        action = input("Would you like to stab the dog? yes or no") 
+
+        if action == "yes": 
+
+            print("congrats you killed the dog YOU WIN THE GAME!") 
+
+            play_again = input ("Do you want to play againtype 'yes or 'no:") 
+
+        elif action == "no": 
+
+            print("you kicked the dog and you run to a fence you hopped over it congrats the dog cant get you you win!") 
+
+            play_again = input ("Do you want to play againtype 'yes or 'no:") 
+
+    elif direction == "right": 
+
+        print ("you see a gun") 
+
+        print ("There is a bear behind you") 
+
+        decision=input ("are you going to shoot the bear or run to the city?") 
+
+        print (f"You chose to go {decision} . ")  
+
+        if decision == "shoot the bear" :  
+
+            print("congrats you killed the bear you won!") 
+
+            play_again = input ("Do you want to play againtype 'yes or 'no:") 
+
+        elif decision == "run to the city": 
+
+            print("You see a fence you hopped over it and continue and the bear cant catch you congrats you win!") 
+
+            play_again = input ("Do you want to play againtype 'yes or 'no:") 
+
+             
