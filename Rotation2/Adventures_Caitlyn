@@ -1,0 +1,65 @@
+play again = "yes" 
+
+while play_again == "yes": 
+
+    print("Welcome To Your Adventure!") 
+
+    player_name = input("What Is Your Name?")   
+
+    print(f"Hello, {player_name}! Welcome To The game.") 
+
+    direction = input("You want a cookie. Do You Go to the bakery? Or do you want to go to the supermarket?")  
+
+    print (f"You Chose to go to the {direction}.") 
+
+    direction1 = input("You see 2 different types of cookies. Do you want to get Sugar cookies? Or Chocolate chip cookies?") 
+
+    print(f"you chose to get {direction1}.") 
+
+    direction2 = input("While you line up to pay for your cookies, you see some lemonade and have just enough to buy a bottle. do you want to get strawberry? or lemon?") 
+
+    print(f"you pick to get {direction2} lemonade.") 
+
+    direction3 = input("while you pay, you see your friend Barry from school and he asks if you want to go to the playground.Do you want to go to the playground? yes, no, or maybe later?") 
+
+    print (f"you say {direction3} to Barry.") 
+
+    if direction3 == "yes": 
+
+        action = input ("you go to the playground with Barry and you are having so much fun. after a while, he says you can go to his house for dinner.he says his mom is going to order takeout. he askes if you would rather have fish and chips, or pizza and fries?") 
+
+        if action == "pizza and fries":print("Barry tells his mom that you would like pizza and fries. you go to his house and eat a yummy dinner. after, you go back home and sleep. The End.") 
+
+        if action == "fish and chips":print("Barry tells his mom you want fish and chips.you go to his house and you eat your fish and chips. you have a lot of fun.you go home,take a shower,and go to bed.THE END. ") 
+
+    elif direction3 == "no": 
+
+        action1 = input ("you go back home and eat dinner. you need to clean yourself. do you want to take a bath or a  shower?") 
+
+        if action1 == "bath": 
+
+            print("You take a  bath, but the water is too cold! you get a cold. you go to the doctor and he says you have a very very bad cold and you will be sick for the next 30 days.you are in trouble. THE END.")  
+
+            play_again = input("do you want to play again? type 'yes', or 'no'.:" ) 
+
+        elif action1 =="shower": 
+
+            print("you take a shower but the water is too hot! you cannot go to bed.you go to the doctor.the doctor says you have a bad burn that will hurt for 30 days.you are in trouble. THE END.") 
+
+            play_again = input("do you want to play again? type 'yes', or 'no'.:" ) 
+
+    elif direction3 == "maybe later": 
+
+        action2 = input ("you go home and eat dinner.do you want to go to Barry's house now,or in 2 hours?") 
+
+        if action2 == "in 2 hours": 
+
+            print ("you wait 2 hours before you go to Barry's house. it is too dark for you to see, and you fall into a ravine.the police find you 2 years later. you are dead.THE END.") 
+
+            play_again = input("do you want to play again? type 'yes', or 'no'.:" ) 
+
+        if action2 == "now" : 
+
+            print("you make it to Barry's house just before dark.he says you can sleep over, so you borrow a sleeping bag.you tare up telling stories all night and you fall asleep peacefully.you have had a awesome day.THE END.") 
+
+            exit() 
