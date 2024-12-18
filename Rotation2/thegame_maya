@@ -1,0 +1,67 @@
+play_again ="yes" 
+
+while play_again == "yes" : 
+
+    print("welcome to the maze") 
+
+    player_name = input ("whats yout name") 
+
+    print(f"hello, {player_name}! welcome to the game.") 
+
+    def introscene(): 
+
+        direction = input("you are at a crossroads. do you go left or right") 
+
+        print(f"you chose to go {direction}") 
+
+        if direction == "left": 
+
+            print("you encounter a elf") 
+
+            action = input("it starts coming towords you. do you go left or right") 
+
+            if action == "right": 
+
+                print ("you bravely find your way out the maze") 
+
+                play_again = input("do you wnat to play again? type  'yes' or 'no'") 
+
+            elif action == "left": 
+
+                print("You will find three more elves in front of you") 
+
+        elif direction == "right": 
+
+            print("you find presents") 
+
+            direction2=input("do you want to open the presents or leave it") 
+
+            if direction2 == "yes": 
+
+                print("you find a big red button") 
+
+           action2 = input("do you want to press it or leave it") 
+
+                if action2 == "press it ": 
+
+                    print("you fall asleep and never wake up") 
+
+                elif action2 == "leave it ": 
+
+                    print("you carry on with the maze") 
+
+            if direction2 == "no": 
+
+                print("you are safe and you carry on your life") 
+
+    introscene 
+
+   
+
+ 
+
+ 
+
+    
+
+ 
