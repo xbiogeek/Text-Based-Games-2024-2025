@@ -1,0 +1,49 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    print("welcome to the ride or die game") 
+
+    playername = input ("what is your name") 
+
+    print (f"Hello, {playername} ! Welcome to the game.") 
+
+    direction = input("You are at a crossroads. Do you go left or right? ") 
+
+    print(f"you choose to go {direction} .") 
+
+    if direction == "left": 
+
+        print("you find wolverine") 
+
+        action1= input("team up with wolverine") 
+
+        print("wolverine kills you") 
+
+    elif direction == "right": 
+
+        print("you find deadpool.") 
+
+        action = input("if you see a deadpool. do you fight or flee? ") 
+
+        if action == "fight": 
+
+          print("you die and get rebooted") 
+
+          play_again = input("do you want to play again? Type 'yes' or  'no' ")   
+
+          print("you bravely fight the deadpool and win") 
+
+        elif action == "flee": 
+
+            print("you run away safely.") 
+
+    else: 
+
+        print("invalid choice.")    
+
+def intro_scene(): 
+
+    print("you are at a crossroads") 
+
+    direction = input("do you go left or right? ")   
