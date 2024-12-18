@@ -1,0 +1,43 @@
+lay_again = "yes" 
+
+while play_again == "yes": 
+
+    print("welcome to your adventure") 
+
+    player_name=input("what is your name") 
+
+    print(f" hello, {player_name}! welcome to the game.") 
+
+    direction=input("you are at crossroads.do you go left or right?") 
+
+    print(f"You choose to go {direction} .") 
+
+    if direction == "left": 
+
+        print("you encounter a orca") 
+
+        action = input("what do you do? stay still or fight") 
+
+        if action == "stay still": 
+
+            print("you died becuase you were scared") 
+
+            play_again = input ("do you want to play again? type yes or no :") 
+
+        elif action == "fight": 
+
+            print("you killd the orca and ate its guts") 
+
+            play_again = input ("do you want to play again? type yes or no :") 
+
+    elif direction == "right": 
+
+        print("you found a treasure chest") 
+
+        play_again = input ("do you want to play again? type yes or no :") 
+
+    else: 
+
+        print("invalid choice") 
+
+https://www.programiz.com/online-compiler/4tHAbVsuqMxI1 
