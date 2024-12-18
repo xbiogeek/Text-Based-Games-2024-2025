@@ -1,0 +1,49 @@
+play_again = "yes" 
+
+while play_again == "yes" : 
+
+    print("Hello, Welcome to Skibidi Game")  
+
+    player_name = input("What is your Skibidi name?")  
+
+    print(f"Hello, {player_name} ! Welcome to the Skibidi Game")  
+
+    direction = input("What direction do you want to go? Left, or Right?") 
+
+    print(f"You chose to go {direction} .") 
+
+    if direction == "Left":  
+
+        action = input ("You see a skibidi toilet, do you fight or flee?") 
+
+        if action == "fight" :  
+
+            print ("you fight the skibidi toilet and win!")  
+
+            play_again = input ("Do you want to play again? Type 'yes' or 'no': ") 
+
+        elif action == "flee": 
+
+            print ("You run away safely")  
+
+            play_again = input ("Do you want to play again? Type 'yes' or 'no' or go back : ") 
+
+    elif direction == "Right":  
+
+        action1 = input ("You find a skibidi chest do you open it up, or not?.")  
+
+        if action1 == "open": 
+
+            print ("you open up the chest, and find a gold bar!")  
+
+            play_again = input ("Do you want to play again? Type 'yes' or 'no' or go back: ") 
+
+        elif action1 == "not" : 
+
+            print ("you leave the chest and go back to your previous path.")  
+
+            play_again = input ("Do you want to play again? Type 'yes' or 'no'go back : ") 
+
+    else:  
+
+        print ("Invalid Choice.") 
