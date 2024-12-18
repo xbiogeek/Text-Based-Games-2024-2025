@@ -1,0 +1,115 @@
+play_again = "yes"  
+
+ 
+
+while play_again == "yes":  
+
+ 
+
+    print("Welcome to the Park")  
+
+ 
+
+    player_name= input("what is your name?")  
+
+ 
+
+    print(f"Hello,{player_name}! welcome to the Animal Park.")  
+
+ 
+
+    direction = input("Would you like to take the dog or cat on our adventure? (dog/cat)")  
+
+ 
+
+    print(f"you chose to go {direction}.")  
+
+ 
+
+    if direction == "dog":  
+
+ 
+
+        print("Since you chose dog, we will go outside at the park with the dog.")  
+
+ 
+
+        action = input("Would you like to give the dog a treat? (yes / no)")  
+
+ 
+
+        if action == "yes":  
+
+ 
+
+            print("The dog receives the treat and licks you to thank you.")  
+
+ 
+
+        elif action == "no":  
+
+ 
+
+            print ("The dog is sad that you didn't give him the treat and he is now hungry")  
+
+ 
+
+    elif direction == "cat":  
+
+ 
+
+        print("Since you chose cat, we will play indoors with some toys.")  
+
+ 
+
+        action1 = input("The cat begins to tire while playing, will you let the cat go to sleep? (yes/no)")  
+
+ 
+
+        if action1 == "yes":   
+
+ 
+
+            print("You now have some free time and can go outside.")  
+
+ 
+
+        if action1 == "no":   
+
+ 
+
+            print("You are going to play with the cat some more")  
+
+ 
+
+            action2 = input("Do you want to give a sweet snack or a salty ")  
+
+ 
+
+            if action2 == "sweet snack":  
+
+ 
+
+                print("The cat feels energized and feels better.")  
+
+ 
+
+            elif action2 == "salty snack":  
+
+ 
+
+                print("The cat does not like it very much and he is now hurt")  
+
+ 
+
+            action3 = input("Do you want to give another snack? yes or no")  
+
+ 
+
+            if action3 == "yes":  
+
+                print("go to outside get new snack") 
+
+            if action3 == "no":  
+
+                print("The cat is now going to sleep.") 
