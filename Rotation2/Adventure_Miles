@@ -1,0 +1,93 @@
+play_again="yes" 
+
+while play_again=="yes": 
+
+    print("Welcome to your adventure. You are wanted and want to not be wanted.") 
+
+    player_name=input("what is your name?") 
+
+    print(f"hello, {player_name}! Welcome to the game.") 
+
+    direction=input("You are at a crossroad. Do you go left or right?") 
+
+    print(f"you chose to go {direction}.") 
+
+    if direction == "left": 
+
+        action=input("You find a deep river, do you walk across it now or look for a shallow part? ") 
+
+        if action=="walk across it now": 
+
+            print("you walked in and got swept in!") 
+
+            play_again=input("Do you want to play again? Type 'yes' or'no': ") 
+
+        elif action=="look for a shallow part": 
+
+            print("You found a shallow part and walk across safely.") 
+
+            sword=input("You see a sword in a stone. Do you take it") 
+
+            if sword=="yes": 
+
+                print ("You take the sword and it starts to glow! Everyone sees it and they all grant you worthy as a king because nobody has ever pulled that sword!") 
+
+                play_again=input("Do you want to play again? Type 'yes' or'no': ") 
+
+            elif sword=="no": 
+
+                print("you walked past the sword and see a town in the distance. But as you walk you don't see the cliff under you and you fall and die.") 
+
+                play_again=input("Do you want to play again? Type 'yes' or'no': ") 
+
+    elif direction == "right": 
+
+        action1=input("you found a big hole, do you jump down or go around?") 
+
+        if action1 == "jump down ": 
+
+            print("You jumped down and died") 
+
+            play_again=input("Do you want to play again? Type 'yes' or'no': ") 
+
+        elif action1 == "go around": 
+
+                print("You went around the big hole safely.") 
+
+                town=input("you see a town around a corner. Do you go into it?") 
+
+                if town=="no": 
+
+                    print("you walk around the town and get lost in the forest") 
+
+                    play_again=input("Do you want to play again? Type 'yes' or'no': ") 
+
+                elif town=="yes": 
+
+                    town1=input("you walk into the town and see 2 shops. A bakery, and a general store. Which one do you walk into?") 
+
+                    if town1=="bakery": 
+
+                        print("you try to buy something but you get grabbed over the table harsly and get thrown into the over") 
+
+                        play_again=input("Do you want to play again? Type 'yes' or'no': ") 
+
+                    elif town1=="general store": 
+
+                        general=input("You see few items. Do you buy food or wood") 
+
+                        if general=="wood": 
+
+                            print("you got wood and brought it back to your home") 
+
+                            play_again=input("Do you want to play again? Type 'yes' or'no': ") 
+
+                        elif general=="food": 
+
+                            print("You bought food and walked back to your home") 
+
+                            play_again=input("Do you want to play again? Type 'yes' or'no': ") 
+
+    else: 
+
+            print ("Invalid choice.")         
