@@ -1,0 +1,49 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    print("Welcome to kill or die!") 
+
+    player_name = input ("What is your name? ") 
+
+    print(f"Hello, {player_name}! Welcome to the game.") 
+
+    direction = input("You are at a crossroads. Do you go left or right?") 
+
+    def intro_scene():    
+
+        print(f"You chose to go {direction}.") 
+
+        if direction == "left" : 
+
+            print("You encounter a big black bear!") 
+
+            action = input("You see a big black bear. Do you fight or flee? ") 
+
+            if action =="fight": 
+
+                print("You bravely fight the big black bear and win!") 
+
+            elif action == "flee": 
+
+                print("You run away safely.") 
+
+                print("You go get more materials to live and you win. ") 
+
+        if direction == "right": 
+
+            print("You find a treasure chest and encounter a big black bear") 
+
+            action1 = input("You see a big black bear. Do you fight or flee? ") 
+
+            if action1 =="fight": 
+
+                print("You bravely fight the big black bear and win!") 
+
+            elif action1 == "flee": 
+
+                print("You run away safely.") 
+
+                play_again = input("Do you want to play again? Type 'yes' or 'no': ") 
+
+        return intro_scene 
