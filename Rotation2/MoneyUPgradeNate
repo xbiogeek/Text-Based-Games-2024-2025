@@ -1,0 +1,55 @@
+ 
+
+play_agian = "yes" 
+
+while play_agian == "yes": 
+
+    print("welcome to money upgrade") 
+
+    playername = input ("what is your name")  
+
+    print (f"Hello, {playername} ! welcometo the game. ") 
+
+    def intro_scene(): 
+
+        direction = input("You are at a crossroads. Do you go left or right? ") 
+
+        print (f"You chose to go {direction} .") 
+
+        if direction == "left": 
+
+            print("you encounter mister beast! ") 
+
+            action = input ("You see mister beast. do you ask to be in his video or ask for a millon dollars") 
+
+            if action == "ask for a millon dollars": 
+
+                print ("you bravely ask for a millon dollars but he says NO game over") 
+
+            elif action == "ask to be in his video": 
+
+                print ("you get to be in his video.") 
+
+                action2 = input("do you want to do squid game or can't leave the circle") 
+
+                if action2 == "can't leave the circle": 
+
+                    print(" you win") 
+
+                if action == "squid game": 
+
+                    print("better luck next time") 
+
+        elif direction == "right" : 
+
+           print ("you find elon musk.")  
+
+           print("you get a tesla cyber truck for free, that's all you win this time.") 
+
+           play_agian = input("Do you want to play agian? Type yes or no?") 
+
+        else: 
+
+               print ("invaled choice." ) 
+
+        return intro_scene 
