@@ -1,0 +1,31 @@
+print ("Welcome to virtual reality.")
+player_name = input("Enter your name.")
+print(f"Welcome, {player_name}.")
+direction = input("Choose a path to go down. Do you go to Nihility, Imaginarium, or Kavash?")
+print (f"You choose to go down the {direction} path.")
+if direction == "Nihility":
+    print("You encounter Apa, the guide for Nihility.")
+elif direction == "Imaginarium":
+        print("You encounter Sunday, the guide for Imaginarium.")
+elif direction == ("Kavash"):
+    print("You encounter Kawei, the guide for Kavash.")
+else:
+    print("This path does not exist.")
+if direction == "Nihility":
+    action = input ("She tells you to choose to go down the yellow bricked road or blue grassy fields. Which do you choose?")
+    if action == "yellow bricked road":
+            print("You walk slowly down the yellow bricked road. The curved and narrow road leads to a desolate empty house. Upon arriving, a hand wraps around your mouth and inevitably ends your journey.")
+    elif action == "blue grassy fields":
+          print("You walk down the blue grassy fields. The grass has a strange texture to it. But once the grass stops growing, you find an elderly old man seated at a bench. He asks you to join him.")
+elif direction == "Imaginarium":
+    action = input ("It tells you to choose to go to the rocky mountains or sloping valleys. Which do you choose?")
+    if action == "rocky mountains":
+            print("You have started your journey to the rocky mountains. The path is long and you lose an arm and a leg on the way. When you arrive, only emptiness greets you.")
+    elif action == "sloping valleys":
+                print("You have started your journey to the sloping valleys. The locals you meet along the way tell you the valleys are a beautiful place. You come to a conclusion to stay in high spirits because of your expectations. You've arrived, and it is as beautiful as they say it is.")
+elif direction == "Kavash":
+    action = input("Are you sure?")
+    if action == "yes":
+        print("The man nods and takes out a short stubby knife. Hold this is what he said. This is your chance to defend yourself against me. Understandably, the knife you were given was of no use. You have died.")
+    elif action == "no":
+        print("Your journey ends here. A screen lights up with the words 'CONGRATULATIONS' in front of you. You have made the correct choice.")
