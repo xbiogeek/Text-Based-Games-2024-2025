@@ -1,0 +1,107 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+ 
+
+ 
+
+    print("Welcome to Mcdonalds!") 
+
+    player_name = input("What is your name?") 
+
+    print(f"Hello, {player_name} ! Welcome to the game.") 
+
+    def introscene(): 
+
+        direction = input ("You are at Mcdonalds. Will you go through the drive through or go in the store?") 
+
+        print (f"You choose to go {direction}.") 
+
+        if direction == "go through the drive through": 
+
+            print ("You drive and wait for you turn") 
+
+        if direction == "go through the drive through": 
+
+            action = input ("You say hello and waited 10 seconds for the worker to respond then the worker asked what you wanted. Do you want a normal meal or a happy meal?") 
+
+            if action == "normal meal": 
+
+                action1 = input ("A normal meal, will that be a bigmac, mcchicken or a sausage mcmuffin? ") 
+
+                if action1 == "bigmac": 
+
+                    print ("Ok a bigmac, that will be $5 at the next window, thank you!") 
+
+                if action1 == "sausage mcmuffin": 
+
+                    print ("Ok a sausage mcmuffin, that will be $3 at the next window, thank you!") 
+
+                if action1 == "mcchicken": 
+
+                    print ("Ok a mcchicken, that will be $5.50 at the next window, thank you!") 
+
+            elif action == "happy meal": 
+
+                action2 = input("A happy meal, will that be a cheeseburger or chicken nuggets?") 
+
+                if action2 == "cheeseburger": 
+
+                    print ("Ok a cheeseburger, that will be $4 at the next window, thank you!") 
+
+                if action2 == "chicken nuggets": 
+
+                    print ("Ok a chicken nuggets, that will be $2 at the next window, thank you!") 
+
+        elif direction == "go in the store": 
+
+            action4 = input ("There are 5 people ahead of you and after a couple of minutes it is finally your turn. The worker greeted you and asked what you wanted. Do you want a normal meal or a happy meal?") 
+
+            if action4 == "normal meal": 
+
+                action3 = input("A normal meal, will that be a bigmac, mcchicken or a sausage mcmuffin? ") 
+
+                if action3 == "bigmac": 
+
+                         print ("Ok a bigmac, that will be $5, thank you!") 
+
+                elif action3 == "sausage mcmuffin": 
+
+                         print ("Ok a sausage mcmuffin, that will be $3, thank you!") 
+
+                if action3 == "mcchicken": 
+
+                         print ("Ok a mcchicken, that will be $5.50, thank you!") 
+
+            elif action4 == "happy meal": 
+
+                action5 = input ("A happy meal, will that be a cheeseburger or chicken nuggets?") 
+
+                if action5 == "cheeseburger": 
+
+                    print ("Ok a cheeseburger, that will be $4, thank you!") 
+
+                if action5 == "chicken nuggets": 
+
+                    print ("Ok a chicken nuggets, that will be $2, thank you!") 
+
+    introscene() 
+
+     
+
+    def ending(): 
+
+        print ("You pay then you have finally get your food. You enjoyed it. WIN!") 
+
+        play_again = input("Do you want to play again? Type 'yes' or 'no':") 
+
+    ending() 
+
+ 
+
+ 
+
+ 
+
+ 
