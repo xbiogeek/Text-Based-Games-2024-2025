@@ -1,0 +1,137 @@
+play_again = "yes" 
+
+while play_again == "yes" : 
+
+    print (" hello my name is chris and I am your boss") 
+
+    player_name = input (" whats your name?") 
+
+    print (f"hi {player_name}.") 
+
+    question = input (" do you know why your here? ( yes / no) ") 
+
+    if question == "Yes":  
+
+        print(" ok then go save the city") 
+
+    elif question == "no":  
+
+        print(" ok you are here because there is a highly toxic bomb and you need to save the city from exploding but be careful because if you die, the city dies!") 
+
+    question2 = input (" so are up to the challege? (yes / no)") 
+
+    if question2 == "yes" :  
+
+        print("then go save the city") 
+
+    elif question2 == "no":  
+
+        print(" ok guess i shouldn't have chosen you then. ") 
+
+        play_again = input (" do you want to play again? yes / no :") 
+
+    question3 = input (" wait, do you know what you are doing? ( yes / no") 
+
+    if question3 == "yes" : 
+
+        print (" ok good, but i will still be communicating with you on the mission though an earpiece") 
+
+    elif question3 == "no" : 
+
+        print (" ok so i will need to go over to the southwest side of the city, then you will need to dig into the ground to try to find the bomb. once you do, you will need to figuar out how to defuse the bomb by what wires to cut. but don't worry i will stil be communicating with you though an earpiece") 
+
+    question4 = input (" so do you still want to do this? ( yes/ no)") 
+
+    if question4 == "yes" : 
+
+        print ("ok then you have less then forty eight hours to complete this mission, go save the city!!") 
+
+        print("3 hours later") 
+
+    elif question4 == "no" : 
+
+            print (" ok then go home i guess")          
+
+            play_again = input (" do you want to play again? yes / no :") 
+
+    question5 = input (" ok are you ready? ( yes / no)") 
+
+    if question5 == "yes" : 
+
+        print (" so then waht are you waiting for goooooo!") 
+
+    elif question5 == "no" : 
+
+        print (" well hurry up we ont have much time") 
+
+    print (" 30 mins later") 
+
+    question6 = input (" are you outside yet? ( yes / no) ") 
+
+    if question6 == "yes" : 
+
+        print (" ok so go in the forest so nobody can see you but make sure your very aware of your surroundings") 
+
+    elif question6 == "no" : 
+
+            print (" well get outside and starting walking along the sidewalk were taking a shortcut") 
+
+    question7 = input ("Avery come in are you still there?( yes / help me )") 
+
+    if question7 == "yes" : 
+
+                print (" ok keep walking and keep me posted") 
+
+    elif question7 == " help me": 
+
+                print ("ugh im done with this. YOU LOSE!") 
+
+                play_again = input (" do you want to play again? yes / no :") 
+
+    question8 = input (" are you there yet? ( yes / no )") 
+
+    if question8 == "yes": 
+
+                print (" ok start digging") 
+
+    elif question8 == "no": 
+
+         question = input (" why not where are you? ( hiding/ im slow)") 
+
+    if question == "hiding":  
+
+                  print (" ok you've been found. YOU LOSE!") 
+
+    elif question == "im slow": 
+
+                    print (" HURRY UPPPP!")  
+
+    question10 = input (" have you found it?( yes / no )") 
+
+    if question10 == "yes" : 
+
+             print (" cut the blue wire no wait red wire i dunno") 
+
+    if question10 == "no":  
+
+             print ("keep digging then") 
+
+    question11 = input (" what do you want to cut ( red wire / blue wire)") 
+
+    if question11 == "red wire": 
+
+        print ("KKKAAABOOOOMMMMM!!! YOU LOSE!") 
+
+        play_again = input (" do you want to play again? yes / no :") 
+
+    if question11 == "blue wire" : 
+
+        print (" BEEP BEEP BEep! great job (player_name) you secessfully defused the bomb. me and the city thanks you") 
+
+        play_again = input (" do you want to play again? yes / no :") 
+
+                          
+
+              
+
+                     
