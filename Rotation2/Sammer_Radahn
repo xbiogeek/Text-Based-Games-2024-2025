@@ -1,0 +1,43 @@
+play_again ="yes" 
+
+while (play_again) == "yes": 
+
+    print ("welcome to your adventure!") 
+
+    player_name=input("what is your name?") 
+
+    print (f"hello, {player_name}! welcome to the game.") 
+
+    direction = input ("your at crossroads. do you go left or right?") 
+
+    print (f"you chose to go {direction}.") 
+
+    if direction == "left": 
+
+        print ("you encounter a BEAST Named Sammer! You try to go back but its too late please restart") 
+
+        play_again = input ("Would you like to play again") ("(yes/no)") 
+
+    elif direction == "right": 
+
+        print("you find the aydin treasure chest.") 
+
+        action = input("Do you take the gold or leave it?") 
+
+        if action == "leave it": 
+
+            print("you leave safely but dont have any gold") 
+
+            print("you move on without taking anything and leave") 
+
+            play_again = input ("Would you like to play again") 
+
+        elif action == "take the gold": 
+
+            print("you take the gold but encounter a monster and un-alives you. please restart") 
+
+            play_again = input ("Would you like to play again (yes/no)") 
+
+    else: 
+
+        ("good choice") 
