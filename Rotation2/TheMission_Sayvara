@@ -1,0 +1,45 @@
+play_again= "yes" 
+
+while play_again == "yes": 
+
+    print ( "welcome to your mision" ) 
+
+    player_name = input ("what is your name?") 
+
+    print (" ok im am your boss and your listen to me carefully because you have a important mision ") 
+
+    print (" ok you will need to go to maryams house and take her cat because her cat is deadly and is going to kill her and she does not belive me and there is a 55% chance of you getting caught and going to jail but if you do it you will get 500k in cash.") 
+
+    question = input (" so are you in or out (yes/no ") 
+
+    if question == "yes": 
+
+        print (" ok you got in and got here cat and ran and maryam saw you and called the cops and now you are i jail ") 
+
+        play_again = input (" do you want to play again? type 'yes' or 'no':") 
+
+    elif question == "no": 
+
+        print (" you rejected the offer and made the boss mad and now he is going to kill you and your family ") 
+
+        direction = input ("chose left or right") 
+
+        if direction == "left": 
+
+            print(" he doesnt kill you and you family and you go find him and kill him") 
+
+            play_again = input (" do you want to play again? type 'yes' or 'no':") 
+
+        elif direction == "right": 
+
+            print("you have now failed.") 
+
+            play_again = input (" do you want to play again? type 'yes' or 'no':") 
+
+     
+
+     
+
+     
+
+ 
