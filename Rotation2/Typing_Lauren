@@ -1,0 +1,58 @@
+print("welcome to the digital literacy.")
+
+player_name=input("what is your name?")
+
+print(f"hello {player_name} welcome.")
+
+direction=input("You are in class, Which computer do you choose? ")
+
+print(f"You choose computer that {direction}.")
+
+input("sign in. put your ID and password.-")
+
+print("start typing club.")
+
+input("H-")
+
+input("G-")
+
+input("F-")
+
+input("J-")
+
+input("salad-")
+
+direction=input("dad-")
+
+if direction == "dad":print("2000 score 52 wpm")
+
+elif not direction == "dad":print("1000 score 38 wpm")
+
+print("great")
+
+print("now make game by python compiler.")
+
+direction=input("search google or type URL-")
+
+if direction == "python compiler":print("enter the python")
+
+elif not direction == "python compiler":print("did not match any document try again.")
+
+direction = input("choose a code - print or input-")
+
+if direction == "print": input("show how to use print code-")
+
+elif direction == "input": input("show how to use input() function-")
+
+else : print("invalid code")
+
+print(f"good job {player_name}!")
+
+input("what did you learn about? -")
+direction=input("-")
+
+if direction=="digital literacy": print("congraturation! you hidden code! Go back to your class. ~hidden ending~ ")
+
+elif direction=="?":print(f"{player_name} can't go back to your class. ~bad ending~”)
+
+else: print("Bye bye the digital literacy is ended. ~normal ending~")
