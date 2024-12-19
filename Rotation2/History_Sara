@@ -1,0 +1,91 @@
+# Title: The Portal of Shadows
+
+
+# Introducing the characters
+
+class Animal:
+
+def __init__(self, name, species):
+
+self.name = name
+
+self.species = species
+
+
+def speak(self):
+
+pass
+
+
+class Dog(Animal):
+
+def __init__(self, name):
+
+super().__init__(name, "Dog")
+
+
+def speak(self):
+
+return "Woof..."
+
+
+class Cat(Animal):
+
+def __init__(self, name):
+
+super().__init__(name, "Cat")
+def speak(self):
+
+return "Meow..."
+
+
+# Start of the story
+print("Title: The Portal of Shadows\n")
+
+
+print("Zane, the dog with eyes like burning embers, and Nyx, the cat with fur as dark as night, were wandering through the woods.")
+
+print("They were not ordinary animals. They had always known that something beyond the world they knew existed, something magical.")
+
+print("That evening, they discovered a strange, glowing portal, hidden in the shadows of ancient trees.")
+
+
+# The portal opens
+
+print("\nZane sniffed the air, his fur bristling. \"What is this?\"")
+
+print("Nyx stepped forward cautiously. \"I think we should enter. But... we must be careful.\"")
+
+print("Without another word, they both stepped into the portal. The air grew thick, and the world around them seemed to twist.")
+
+
+# The challenge
+
+print("\nThey found themselves in a place unlike any other—an endless field of black roses, glowing faintly under a purple sky.")
+
+print("In the distance, a shadowy figure appeared. \"Only those who face their true fear can leave,\" the figure whispered.")
+
+print('Zane growled. "We don\'t fear anything."') # Comillas corregidas
+
+print("Nyx's eyes glowed brighter. \"We face our fear together.\"")
+
+
+# The test of courage
+
+print("\nSuddenly, the ground split open, and a deep chasm appeared between them.")
+
+print("Zane stared at it. \"I\'ll jump first,\" he said, his voice steady.") # Comillas corregidas
+print("Without hesitation, Zane leapt across the chasm, landing safely on the other side. Nyx followed, her paws barely touching the ground.")
+
+print("They had passed the first test: courage.")
+
+
+# The escape
+
+print("\nThe shadowy figure nodded. \"You have proven yourselves. The portal to your world awaits.\"")
+
+print("The ground trembled, and the portal reappeared before them.")
+
+print("Zane and Nyx stepped through, returning home—but they knew they had changed. Whatever came next, they would face it together.")
+
+print("\nThe end.")
