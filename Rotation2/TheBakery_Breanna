@@ -1,0 +1,59 @@
+play_again = "yes" 
+
+while play_again == "yes" : 
+
+    print("welcome to the bakery!") 
+
+    player_name = input ("what is your name?") 
+
+    print(f"hi baker {player_name} welcome to my bakery!") 
+
+    print("uh oh i forgot that i need to make twenty cupcakes for a wedding! will you help me make some?") 
+
+    direction = input("you are now in the kitchen. do u go help her or to you help the people outside?") 
+
+    if direction == "outside":   
+
+        print ("you get a ten doller tip!") 
+
+        action = input("the people were kind of rude you. do you tell your boss or keep it to yourself?") 
+
+        if action == "tell the boss": 
+
+            print ('she tells you that you that they are all kind of rude and to come help her in the kitchen.') 
+
+            play_again = input ('do you want to play again?') 
+
+        elif action == "keep it to yourself": 
+
+            print('you keep it to your self and nothing happend') 
+
+            play_again = input ('do you want to play again?') 
+
+    elif direction == "kitchen":  
+
+        print ("you get twenty five dollers!")  
+
+        action2 = input ('the day is over do you take the bus or walk?') 
+
+        if action2 == 'walk': 
+
+            print (' when you were crossing the road. you didnt see the car coming and it hit you.') 
+
+            play_again = input ('do you want to play again?') 
+
+        elif action2 == ("take the bus") : 
+
+            action3 = input('you get home and see something move very fast do you go find it or leave the house?') 
+
+            if action3 == "go find it": 
+
+                print('as you go in to the house you a cat in your house. you let it out and go to bed') 
+
+            elif action3 == "leave the house": 
+
+                print("you leave and go to your moms house just for her to tell you that you need to sleep in the basment. you die of frozed bite") 
+
+                play_again = input ('do you want to play again?') 
+
+                  
