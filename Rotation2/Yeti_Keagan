@@ -1,0 +1,51 @@
+play_again = "yes" 
+
+while play_again == "yes" : 
+
+    print("hello welcome to the game keagan") 
+
+    direction= input("you are at the cross road, do you go left or right") 
+
+    if direction == "left ": 
+
+        print ("you encounter a dragon!") 
+
+        action = input("you see a dragon.do you fight or flee") 
+
+        if action == "fight": 
+
+            print ("you braverly fight the dragon and win") 
+
+            play_again = input("do you want to play again") 
+
+        elif action =="flee": 
+
+            print ("you run away safely.") 
+
+            play_again = input ("do you want to play again? type 'yes' or 'no'") 
+
+    elif direction == "right": 
+
+        print ("you find a treaser chest.") 
+
+        action2 = input("do you open or leave") 
+
+        if action2 == "open": 
+
+            print("no and a yeti comes") 
+
+            play_again = input("do you to play again? type 'yes' or 'no'") 
+
+        if action2 == "leave": 
+
+            print("you have left and the yeti comes") 
+
+            play_again = input("Do you want to play again? type 'yes' or 'no:'") 
+
+    else: 
+
+      print ("invaled choice.") 
+
+             
+
+      
