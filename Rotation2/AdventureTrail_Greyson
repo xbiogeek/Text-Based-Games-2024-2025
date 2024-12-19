@@ -1,0 +1,55 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    #print ("welcome to the adventure trail") 
+
+    player_name=input ("what would you like to be called on your adventure?") 
+
+    print(f"hi {player_name} I am the npc I will tell you which ways you can go to get tell your desitation choices but you choose your destination") 
+
+    print ("you are at the crossroads") 
+
+    def start():  
+
+        direction = input("You are at crossroads. Do you go left or right") 
+
+        if direction == "left": 
+
+            action = input ("You see a evil dragon.Do you fight or flee?") 
+
+            if action == "fight": 
+
+                print ("you bravely fight the dragon and win!") 
+
+            elif action == "flee": 
+
+                print ("you run away safely!") 
+
+                if direction == "right": 
+
+                     print("You see a cowboy. You have died. You lost the game .Better luck next time!") 
+
+                     
+
+                action2 = input("You see a river and the water you drank made you sick do you want seek help or stay quiet about it?") 
+
+                if action2 == "stay quiet about it": 
+
+                    print ("you die beter luck next time make good coices") 
+
+                elif action2 == "seek help": 
+
+                    action3 = input ("you found a old bridge do you want to go around the mountain or go on the bridge?") 
+
+                    if action3 == "go around the mountain": 
+
+                        print("you safley arived at the other side of the bridge") 
+
+                        print("WOW you made it! Good job see you next time. From: the npc") 
+
+                    if action3 == "go on the bridge": 
+
+                        play_again = ("do you want to play again 'yes' or 'no'") 
+
+        
