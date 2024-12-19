@@ -1,0 +1,43 @@
+print("Welcome to the game!") 
+
+player_name = input ("what is your name?") 
+
+print (f"Hello, (jimjim)! Welcome to the game.") 
+
+direction=input ("You are at backrooms.Do you go left or right?")  
+
+print(f"You chose to go  left.") 
+
+if direction == "left": 
+
+    print ("You encounter a dragon!") 
+
+elif direction == "right": 
+
+    print ("You find a coconut tree.") 
+
+else:  
+
+    print ("Invalid choice") 
+
+if direction == "left": 
+
+    action =input ("You see a bear. Do you fight or flee?") 
+
+    if action == "fight": 
+
+        print ("You bravely fight the bear and win!") 
+
+    elif action == "flee": 
+
+        print ("You run away safely.") 
+
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    direction = input ("Do you go left or right?") 
+
+    #  (game logic here) 
+
+    play_again =input ("Do you want to play again? Type 'yes or 'no' ; ) 
