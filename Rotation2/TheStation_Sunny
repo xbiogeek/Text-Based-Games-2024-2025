@@ -1,0 +1,59 @@
+print("Welcome to the Station!") 
+
+player_name = input("What is your name?") 
+
+print(f"Hello, {player_name}! Welcome to the game.") 
+
+direction = input("You are at a pass stop. Do you go in,stay, or wait for friends?") 
+
+print(f"You chose to {direction}.") 
+
+if direction == "go in": 
+
+    action = input("You encounter a Station police! He asks you for pass. Take out pass or ask him if you can go back?") 
+
+    if action == "take out pass": 
+
+        print("You showed him your pass and he let you through!") 
+
+    elif action == "ask him if you can go back": 
+
+        print("He lets you go back to the station start") 
+
+if direction == "stay": 
+
+    print("A kind stranger gave your wallet back after seeing you dropped it!") 
+
+if direction == "wait for friends": 
+
+    action = input("Your friends arrived. Would you like to go in?") 
+
+    if action == "yes": 
+
+        print("You and your friends succesfully arrived at your destination and had fun!") 
+
+    elif action == "no": 
+
+        print("You and your friends decided to take the bus to somewhere close. You had fun!") 
+
+else: 
+
+    print("invalid choice.") 
+
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    direction = input("Do you go in, stay, or wait for friends?") 
+
+    # (game logic here) 
+
+    play_again = input("Do you want to play again? Type 'yes' or 'no': ") 
+
+def intro_scene(): 
+
+    print("You are at The Station.") 
+
+    direction = input("Do you go in or stay?") 
+
+    return direction 
