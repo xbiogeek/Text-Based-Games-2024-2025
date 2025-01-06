@@ -1,0 +1,45 @@
+play_again = "yes"
+
+while play_again == "yes":
+
+  #("welcome to your hunted school")
+  
+  player_name = input("what is your name")
+  
+  print (f"hello, {player_name } ! welcame to the game.")
+  
+  direction = input ("you are crossroads. do you go left or right? ")
+  
+  print (f"you chose to go {direction} . ")
+  
+  if direction == "left":
+  
+    print ("you find out there is some thing moves")
+  
+    action == input("you check what is it or you continue walking")
+  
+    if action == "you check":
+  
+      print("there was no one in there and you can continue walking")
+  
+    elif action =="you continue":
+  
+      print ("your friend will come to you and take you home")
+  
+  if direction == "right":
+  
+    print ("you find someone")
+  
+    action2 = input ("you see the prson is coming to you do you run or stay")
+  
+    if action2 == "run ":
+  
+      print ("the prson didnt chase you ")
+  
+    elif action2 == "stay":
+  
+      print ("the prson will kill you")
+  
+  else:
+  
+  print ("invild choice")
