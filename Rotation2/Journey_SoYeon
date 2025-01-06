@@ -1,0 +1,768 @@
+ 
+import time 
+
+ 
+
+def pause(): 
+
+    input("\nPress Enter to continue...") 
+
+ 
+
+def start_game(player_name): 
+
+    print(f"\nWelcome, {player_name}! Your journey begins now.") 
+
+    time.sleep(2) 
+
+    print("\nThe sun dips below the horizon as you stand at the edge of a mysterious valley.") 
+
+    time.sleep(2) 
+
+    print("Legends speak of an ancient artifact hidden within—one that grants not imaginable power.") 
+
+    time.sleep(3) 
+
+    print("\nA cold wind carries whispers, as if the valle calls out to you.") 
+
+    time.sleep(2) 
+
+    print("You take a deep breath and step forward, uncover the truth.") 
+
+    time.sleep(2) 
+
+    encounter_old_man(player_name) 
+
+ 
+
+def encounter_old_man(player_name): 
+
+    print(f"\nAs you walk along a narrow path, you see an old man sitting by a fire.") 
+
+    time.sleep(2) 
+
+    print(f"'Ah, a traveler!' he says, his voice raspy. 'Few dare to tread these cursed lands.'") 
+
+    time.sleep(2) 
+
+ 
+
+    while True: 
+
+        print("\n1. Ask him about the valley.") 
+
+        print("2. Ignore him and continue walking.") 
+
+        print("3. Sit by the fire and share a meal.") 
+
+         
+
+        choice = input("\nWhat should you do? (1 = Ask, 2 = Ignore, 3 = Share): ").strip() 
+
+        if choice == "1": 
+
+            print("\nThe old man smiles. 'This valley was once home to the Order of the Crimson Sun. They sought power but lost their way.'") 
+
+            time.sleep(2) 
+
+            print("'Beware the artifact, traveler—it tests the soul as much as it grants strength.'") 
+
+            investigate_river(player_name) 
+
+            break 
+
+        elif choice == "2": 
+
+            print("\nThe old man shakes his head as you pass by. 'Fools rush where wisdom hesitates.'") 
+
+            investigate_river(player_name) 
+
+            break 
+
+        elif choice == "3": 
+
+            print("\nThe old man shares his meal and tells you stories of the valley's past.") 
+
+            time.sleep(2) 
+
+            print("'Many seek the artifact but are never seen again. Be careful, traveler.'") 
+
+            investigate_river(player_name) 
+
+            break 
+
+        else: 
+
+            print("\nInvalid choice. Try again.") 
+
+ 
+
+def investigate_river(player_name): 
+
+    print(f"\nYou come across a shimmering river cutting through the valley.") 
+
+    time.sleep(2) 
+
+    print("The water is unnaturally clear, and you can see strange, glowing fish swimming below.") 
+
+    time.sleep(3) 
+
+ 
+
+    while True: 
+
+        print("\n1. Cross the river using the stepping stones.") 
+
+        print("2. Try to catch one of the glowing fish.") 
+
+        print("3. Follow the river upstream.") 
+
+         
+
+        choice = input("\nWhat do you do? (1 = Cross, 2 = Catch, 3 = Follow): ").strip() 
+
+        if choice == "1": 
+
+            print("\nYou carefully hop across the stepping stones, avoiding the icy water.") 
+
+            discover_ruins(player_name) 
+
+            break 
+
+        elif choice == "2": 
+
+            print("\nYou catch a glowing fish, but it transforms into a writhing serpent in your hands!") 
+
+            time.sleep(2) 
+
+            print("You throw it back, shaken but unharmed.") 
+
+        elif choice == "3": 
+
+            print("\nYou follow the river upstream and discover a hidden waterfall.") 
+
+            investigate_waterfall(player_name) 
+
+            break 
+
+        else: 
+
+            print("\nInvalid choice. Try again.") 
+
+ 
+
+def discover_ruins(player_name): 
+
+    print(f"\nBeyond the river, you find ancient ruins overgrown with vines.") 
+
+    time.sleep(2) 
+
+    print("The air feels heavy, as if the ruins remember the battles fought here.") 
+
+    time.sleep(3) 
+
+ 
+
+    while True: 
+
+        print("\n1. Search the ruins for clues.") 
+
+        print("2. Rest in the ruins to recover your strength.") 
+
+        print("3. Leave the ruins and continue exploring the valley.") 
+
+         
+
+        choice = input("\nWhat do you do? (1 = Search, 2 = Rest, 3 = Leave): ").strip() 
+
+        if choice == "1": 
+
+            print("\nYou uncover a hidden chamber with carvings depicting a powerful artifact.") 
+
+            time.sleep(2) 
+
+            print("The carvings show both triumph and despair, warning of the artifact's dangers.") 
+
+            enter_dark_forest(player_name) 
+
+            break 
+
+        elif choice == "2": 
+
+            print("\nYou rest among the ruins, but your dreams are filled with shadowy figures.") 
+
+            time.sleep(2) 
+
+            print("When you wake, you feel a strange energy coursing through you.") 
+
+            enter_dark_forest(player_name) 
+
+            break 
+
+        elif choice == "3": 
+
+            print("\nYou leave the ruins, the sense of history lingering in your mind.") 
+
+            enter_dark_forest(player_name) 
+
+            break 
+
+        else: 
+
+            print("\nInvalid choice. Try again.") 
+
+ 
+
+def investigate_waterfall(player_name): 
+
+    print(f"\nThe waterfall glows faintly, and you notice a narrow passage behind it.") 
+
+    time.sleep(2) 
+
+    print("You squeeze through and find a hidden shrine with an ancient statue.") 
+
+    time.sleep(3) 
+
+ 
+
+    while True: 
+
+        print("\n1. Pray at the statue.") 
+
+        print("2. Examine the inscriptions on the walls.") 
+
+        print("3. Leave the shrine.") 
+
+         
+
+        choice = input("\nWhat do you do? (1 = Pray, 2 = Examine, 3 = Leave): ").strip() 
+
+        if choice == "1": 
+
+            print("\nAs you pray, you feel a warm light enveloping you.") 
+
+            time.sleep(2) 
+
+            print("You gain a blessing that protects you from harm.") 
+
+            enter_dark_forest(player_name) 
+
+            break 
+
+        elif choice == "2": 
+
+            print("\nThe inscriptions tell of a hero who once wielded the artifact to save the valley.") 
+
+            time.sleep(2) 
+
+            print("But the hero's fate remains unknown.") 
+
+            enter_dark_forest(player_name) 
+
+            break 
+
+        elif choice == "3": 
+
+            print("\nYou leave the shrine, feeling as though you missed something important.") 
+
+            enter_dark_forest(player_name) 
+
+            break 
+
+        else: 
+
+            print("\nInvalid choice. Try again.") 
+
+ 
+
+def enter_dark_forest(player_name): 
+
+    print(f"\nYou find yourself in a dense, shadowy forest where the trees seem to watch your every move.") 
+
+    time.sleep(2) 
+
+    print("The path forks ahead, and you must decide which way to go.") 
+
+    time.sleep(3) 
+
+ 
+
+    while True: 
+
+        print("\n1. Take the left path, where faint light can be seen.") 
+
+        print("2. Take the right path, which is shrouded in darkness.") 
+
+        print("3. Stay put and wait for something to happen.") 
+
+         
+
+        choice = input("\nWhat do you do? (1 = Left, 2 = Right, 3 = Wait): ").strip() 
+
+        if choice == "1": 
+
+            print("\nYou follow the light and find yourself at the edge of a cliff overlooking the valley.") 
+
+            discover_hidden_cave(player_name) 
+
+            break 
+
+        elif choice == "2": 
+
+            print("\nThe darkness consumes you, and you hear whispers growing louder.") 
+
+            face_valley_guardian(player_name) 
+
+            break 
+
+        elif choice == "3": 
+
+            print("\nAs you wait, the forest grows unnaturally silent.") 
+
+            time.sleep(2) 
+
+            print("A pair of glowing eyes appear in the shadows, watching you.") 
+
+            face_valley_guardian(player_name) 
+
+            break 
+
+        else: 
+
+            print("\nInvalid choice. Try again.") 
+
+def discover_hidden_cave(player_name): 
+
+    print(f"\nAs you approach the edge of the cliff, you notice a hidden cave entrance below.") 
+
+    time.sleep(2) 
+
+    print("The cave is dark and cold, but something calls to you from within.") 
+
+    time.sleep(2) 
+
+ 
+
+    while True: 
+
+        print("\n1. Enter the cave to explore.") 
+
+        print("2. Leave the cave and continue searching the valley.") 
+
+        print("3. Examine the surrounding area for clues.") 
+
+ 
+
+        choice = input("\nWhat do you do? (1 = Enter, 2 = Leave, 3 = Examine): ").strip() 
+
+        if choice == "1": 
+
+            print("\nYou descend into the cave, the air thick with the scent of earth and mystery.") 
+
+            time.sleep(2) 
+
+            print("You find a stone pedestal at the center, and atop it, the artifact you've been seeking.") 
+
+            time.sleep(3) 
+
+            print("But as you approach, a glowing figure emerges from the shadows...") 
+
+            face_valley_guardian(player_name) 
+
+            break 
+
+        elif choice == "2": 
+
+            print("\nYou leave the cave, but the allure of the artifact tugs at your mind.") 
+
+            time.sleep(2) 
+
+            print("You continue your journey, though you feel as though you've left something important behind.") 
+
+            face_valley_guardian(player_name) 
+
+            break 
+
+        elif choice == "3": 
+
+            print("\nYou examine the cave's walls and find markings similar to the ones you saw in the ruins.") 
+
+            time.sleep(2) 
+
+            print("The markings seem to warn of a great danger, but they also hint at the artifact's power.") 
+
+            enter_cave_with_caution(player_name) 
+
+            break 
+
+        else: 
+
+            print("\nInvalid choice. Try again.") 
+
+ 
+
+def enter_cave_with_caution(player_name): 
+
+    print(f"\nYou carefully step into the cave, staying alert for any signs of danger.") 
+
+    time.sleep(2) 
+
+    print("The further you go, the stronger the pull of the artifact becomes.") 
+
+    time.sleep(3) 
+
+ 
+
+    while True: 
+
+        print("\n1. Continue deeper into the cave.") 
+
+        print("2. Turn back and leave the cave.") 
+
+        print("3. Try to communicate with the glowing figure that appears.") 
+
+ 
+
+        choice = input("\nWhat do you do? (1 = Continue, 2 = Leave, 3 = Communicate): ").strip() 
+
+        if choice == "1": 
+
+            print("\nYou step forward, but as you touch the artifact, a surge of energy fills the cave!") 
+
+            time.sleep(2) 
+
+            print("The world around you shifts, and you feel as though you're being tested...") 
+
+            final_choice(player_name) 
+
+            break 
+
+        elif choice == "2": 
+
+            print("\nYou leave the cave, but the feeling of regret gnaws at you.") 
+
+            time.sleep(2) 
+
+            print("You may have escaped with your life, but the artifact's power still beckons.") 
+
+            final_choice(player_name) 
+
+            break 
+
+        elif choice == "3": 
+
+            print("\nYou attempt to speak to the glowing figure, but it remains silent, watching you with judgmental eyes.") 
+
+            time.sleep(2) 
+
+            print("The figure vanishes as the artifact's pull grows stronger.") 
+
+            final_choice(player_name) 
+
+            break 
+
+        else: 
+
+            print("\nInvalid choice. Try again.") 
+
+ 
+
+def face_valley_guardian(player_name): 
+
+    print(f"\nA towering figure emerges from the shadows, its eyes glowing with an ancient power.") 
+
+    time.sleep(2) 
+
+    print("The guardian speaks in a deep, echoing voice: 'You have ventured too far, traveler. The valley does not take kindly to trespassers.'") 
+
+    time.sleep(3) 
+
+ 
+
+    while True: 
+
+        print("\n1. Draw your weapon and prepare to fight.") 
+
+        print("2. Attempt to reason with the guardian.") 
+
+        print("3. Turn and flee from the guardian.") 
+
+ 
+
+        choice = input("\nWhat do you do? (1 = Fight, 2 = Reason, 3 = Flee): ").strip() 
+
+        if choice == "1": 
+
+            print("\nYou ready your weapon, preparing for a fierce battle.") 
+
+            time.sleep(2) 
+
+            print("The guardian is powerful, but your determination fuels your strength.") 
+
+            battle_outcome(player_name) 
+
+            break 
+
+        elif choice == "2": 
+
+            print("\nYou attempt to reason with the guardian, explaining your quest for the artifact.") 
+
+            time.sleep(2) 
+
+            print("The guardian seems to listen, but then its eyes narrow, and it responds.") 
+
+            battle_outcome(player_name) 
+
+            break 
+
+        elif choice == "3": 
+
+            print("\nYou turn and run, but the guardian is too fast, and its presence surrounds you.") 
+
+            time.sleep(2) 
+
+            print("You feel the weight of its power as you try to escape.") 
+
+            battle_outcome(player_name) 
+
+            break 
+
+        else: 
+
+            print("\nInvalid choice. Try again.") 
+
+ 
+
+def battle_outcome(player_name): 
+
+    print(f"\nThe battle rages on, with each blow shaking the ground beneath your feet.") 
+
+    time.sleep(2) 
+
+    print("The guardian is relentless, but so are you. Eventually, you manage to land a decisive strike.") 
+
+    time.sleep(3) 
+
+    print("The guardian stumbles, weakened, and then slowly fades into the shadows, leaving the valley in silence.") 
+
+    time.sleep(2) 
+
+    print(f"\nWith the guardian gone, you stand victorious, but the valley still calls you forward.") 
+
+    final_choice(player_name) 
+
+ 
+
+def final_choice(player_name): 
+
+    print(f"\nBefore you lies the artifact, glowing faintly with an otherworldly power.") 
+
+    time.sleep(2) 
+
+    print("You feel the weight of your choices pressing on you. The artifact can grant immense power, but it also carries great risk.") 
+
+    time.sleep(2) 
+
+ 
+
+    while True: 
+
+        print("\n1. Take the artifact and embrace its power.") 
+
+        print("2. Leave the artifact and walk away, refusing its temptation.") 
+
+        print("3. Destroy the artifact to prevent others from misusing it.") 
+
+ 
+
+        choice = input("\nWhat do you do? (1 = Take, 2 = Leave, 3 = Destroy): ").strip() 
+
+        if choice == "1": 
+
+            print("\nYou take the artifact and feel a rush of energy surge through you.") 
+
+            time.sleep(2) 
+
+            print("You gain unimaginable power, but with it comes the weight of the valley's curse.") 
+
+            ending_1(player_name) 
+
+            break 
+
+        elif choice == "2": 
+
+            print("\nYou turn away from the artifact, walking into the unknown.") 
+
+            time.sleep(2) 
+
+            print("Though you leave with nothing but your life, you carry with you the knowledge of what could have been.") 
+
+            ending_2(player_name) 
+
+            break 
+
+        elif choice == "3": 
+
+            print("\nYou destroy the artifact, its power shattering into nothingness.") 
+
+            time.sleep(2) 
+
+            print("A strange calm settles over the valley, and you feel that the world is a little bit safer now.") 
+
+            ending_3(player_name) 
+
+            break 
+
+        else: 
+
+            print("\nInvalid choice. Try again.") 
+
+ 
+
+def ending_1(player_name): 
+
+print(f"\nWith the artifact in your possession, you become a force to be reckoned with.") 
+
+time.sleep(2) 
+
+print("But the valley's curse begins to consume you, and the power you wield soon turns to madness.") 
+
+time.sleep(2) 
+
+print(f"You are remembered as a cautionary tale, {player_name}, a hero who fell to the very power they sought to control.") 
+
+time.sleep(3) 
+
+print("The end... or is it?") 
+
+ 
+
+def ending_2(player_name): 
+
+print(f"\nYou walk away from the artifact, and as you journey back home, you realize that you made the right choice.") 
+
+time.sleep(2) 
+
+print("Though you did not gain the power of the artifact, you preserved your soul and walked your own path.") 
+
+time.sleep(2) 
+
+print(f"Your name, {player_name}, is remembered as the one who resisted temptation and chose the way of wisdom.") 
+
+time.sleep(3) 
+
+print("The end.") 
+
+ 
+
+def ending_3(player_name): 
+
+print(f"\nBy destroying the artifact, you prevent its power from falling into the wrong hands.") 
+
+time.sleep(2) 
+
+print("Though the valley is now peaceful, the world remains filled with challenges.") 
+
+time.sleep(2) 
+
+print(f"You, {player_name}, are remembered as the one who sacrificed everything to protect the world from corruption.") 
+
+time.sleep(3) 
+
+print("The end.") 
+
+     
+
+    def ending_4(player_name): 
+
+        print(f"\nAfter a long battle, you finally defeat the Guardian and claim the artifact.") 
+
+        time.sleep(2) 
+
+        print(f"As soon as you touch the artifact, you feel an overwhelming surge of power. But it is not the power you expected.") 
+
+        time.sleep(2) 
+
+        print(f"The artifact begins to corrupt your mind, slowly consuming your will. The power that once seemed like a gift is now a curse.") 
+
+        time.sleep(3) 
+
+        print(f"{player_name}, you are consumed by the artifact's dark influence, and your once noble intentions fade into madness.") 
+
+        time.sleep(2) 
+
+        print("The valley echoes with your name, but not in honor. You become a legend of despair and power, a cautionary tale for all who follow.") 
+
+        time.sleep(3) 
+
+        print("The end.") 
+
+     
+
+    def ending_5(player_name): 
+
+        print(f"\nYou listen to the Guardian's warning and decide that the power of the artifact is not worth the risk.") 
+
+        time.sleep(2) 
+
+        print(f"You leave the ruins, feeling a sense of relief. The temptation of the artifact fades as you step away.") 
+
+        time.sleep(2) 
+
+        print(f"{player_name}, you gain wisdom through your decision to walk away. You are remembered not for the artifact you sought but for the wisdom you gained from knowing when to stop.") 
+
+        time.sleep(3) 
+
+        print("The people who hear your story learn that true strength lies not in power, but in restraint.") 
+
+        time.sleep(2) 
+
+    print("The end.") 
+
+     
+
+    def ending_6(player_name): 
+
+        print(f"\nYou turn away from the ruins, the artifact left behind. As you walk through the valley, a sense of peace settles over you.") 
+
+        time.sleep(2) 
+
+        print(f"{player_name}, you find a new sense of purpose, not in power or fame, but in the simple joys of life.") 
+
+        time.sleep(2) 
+
+        print("Your journey takes you to many places, and you become a quiet hero, known not for conquering, but for your wisdom and kindness.") 
+
+    time.sleep(2) 
+
+    print("In the end, the artifact is forgotten, and you are remembered for your heart and your choice to live a peaceful life.") 
+
+    time.sleep(3) 
+
+    print("The end.") 
+
+     
+
+    def ending_7(player_name): 
+
+    	print(f"\nYou carefully study the symbols and realize that the artifact must be destroyed to prevent the devastation it would cause.") 
+
+    time.sleep(2) 
+
+    print(f"You find a hidden mechanism in the ruins—a way to destroy the artifact forever. But doing so requires a great sacrifice.") 
+
+    time.sleep(3) 
+
+    print(f"{player_name}, you make the ultimate decision to use your own life force to destroy the artifact.") 
+
+    time.sleep(2) 
+
+    print(f"As you activate the mechanism, the artifact shatters, and its dark power. But in the process, you are consumed.") 
+
+    time.sleep(3) 
+
+    print(f"Your name lives on as a martyr, and the world is saved from the artifact's curse. Though you are gone, your story is told for generations.") 
+
+    time.sleep(2) 
+
+    print("The end.") 
