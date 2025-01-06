@@ -1,0 +1,45 @@
+play_again == "yes" 
+
+while play_again == "yes": 
+
+print("Welcome to my house") 
+
+player_name = input ("What is your name") 
+
+print(f",{player name}!) 
+
+def introscene(): 
+
+direction = input("You are at the door do you go in or stay outside") 
+
+print(f"You chose to go{direction}!) 
+
+if direction == "left": 
+
+print("You in encounter a monster") 
+
+action == input ("it starts coming towords you do you go down stairs or up stairs ") 
+
+if action == "down stairs": 
+
+print(" you found your way out") 
+
+play_again=input ("do you want to play again?type 'yes' or 'no'") 
+
+elif direction == "up stairs": 
+
+print("you find three more monsters infront of you ") 
+
+direction2=input "do you want to run or hide"you find a big red buton do you press it or leave it  
+
+if direction2 == "press it ": 
+
+print("you fall thrugh the ground") 
+
+elif action2 == "leave it " 
+
+print("you carry on through the house ") 
+
+if direction2== "no" 
+
+print("you are safe and you will never go in that house again") 
