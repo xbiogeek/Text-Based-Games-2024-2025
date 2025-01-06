@@ -1,0 +1,45 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    print ("hello today we are going to explore a haunted hospital!") 
+
+    player_name = input ("what is your name?") 
+
+    print (f"hello, {player_name} ! welcome to the game. ") 
+
+    direction = input ("which path should we go to the hospital?") 
+
+    print (f" you chose to go {direction}." ) 
+
+    if direction == "left": 
+
+            print ("A bear spawned out of no where?!") 
+
+            action =input("you see the bear, do you run or fight the bear? ") 
+
+            if action == "fight": 
+
+                print ("you got hurt and got a bunch of scratches but successfully you killed the bear and won!")  
+
+                exit 
+
+            elif action == "run": 
+
+                print("you ran away from the bear and arrived at the haunted hospital ") 
+
+                action2 = input("You entered the hospital and there are a choice of rooms - do you go into room 1 or 2") 
+
+                if action2 == "room 1": 
+
+                    print("you went into room 1 and saw blood and a syringe with blood on the floor and u passed out on the floor, when u also woke up u rushed out the door and left the hospital but not safely when you were walking in the forest u triped on a vine and never woke up..") 
+
+                if action2 == "room2": 
+
+                    print(" when u opened the door you saw nothing but a TAALL drop down and at the bottom u saw died bodys and u left the hospital safely") 
+
+    elif direction == "right" : 
+
+            print ("you found the right way to the hospital HOORAY!") 
+
+            play_again = input ("do you want to play again? Type 'yes' or 'no': ") 
