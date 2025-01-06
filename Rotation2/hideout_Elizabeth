@@ -1,0 +1,49 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    print("Hey! Welcome hideout! We found this creepy cabin a couple years back and its great to hang out. Come in!") 
+
+    player_name = input ("What is your name?") 
+
+    print (f"Hello, {player_name}!I think youll like it here.") 
+
+    direction = input ("We fell down a crack in the floor! There is two tunnels. Which one should we take? Chose tunnel left or right.") 
+
+    print (f"You chose to go {direction}.") 
+
+    if direction == "left": 
+
+        print("There is a bridge with lava underneath that is half broken.") 
+
+        action = input ("Should we walk across or run back?") 
+
+        if action == "walk across": 
+
+            print ("You successfully make it across with caution! Then follow the tunnle across and find yourself in the woods. After running for a while you make it back to a recognizable street and are safe!") 
+
+            play_again = input ("do you want to play again? yes or no?") 
+
+        elif action == "run back": 
+
+            print ("You trip and fall to your death") 
+
+            play_again = input ("do you want to play again? yes or no?") 
+
+    elif direction == "right": 
+
+        print("There is a mysterious staircase leading up to a creepy door.") 
+
+        action1 = input ("Should we walk up or run back?") 
+
+        if action1 == "walk up": 
+
+            print ("It leads to a door that is in the middle of the forest with no trace of people.After running for a while you make it back to a recognizable street and are safe!") 
+
+            play_again = input ("do you want to play again? yes or no?") 
+
+        elif action1 == "run back": 
+
+            print ("You trip and fall to your death") 
+
+            play_again = input ("do you want to play again? yes or no?")  
