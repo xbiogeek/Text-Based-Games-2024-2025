@@ -1,0 +1,55 @@
+play_agian = "yes" 
+
+while play_agian == "yes": 
+
+    print ("welcome to your adventure!")  
+
+    player_name = input ("what is your name")  
+
+    print (f"hello. {player_name}! Welcome to the game .")  
+
+    direction = input ("you are at a crossroads. do u go left or right") 
+
+    print(f"you chose to go {direction} .")  
+
+    if direction == "left":  
+
+        print ("you find a rattle snake")  
+
+        action = input ("you see a rattle snake. do u fight or flee")  
+
+        if action == "fight":  
+
+            print("you try to fight the snake u get bit and venom is in you") 
+
+            play_again = input("do u wanna play agian type 'yes' or 'no'") 
+
+        if action == "flee": 
+
+            print("you fun from the sanke but you are lost") 
+
+            play_again = input("do u wanna play agian type 'yes' or 'no'") 
+
+    elif direction == "right":  
+
+        print ("you find canned soup") 
+
+        action2 = input("Do you want to eat or save the soup?")  
+
+        if action2 == "eat": 
+
+            print("you eat the canned soup and your full") 
+
+            play_again = input("do u wanna play agian type 'yes' or 'no'") 
+
+        elif action2 == "save": 
+
+            print("you put the canned soup in pocket") 
+
+            play_again = input("Do you want to play again? Type 'yes' or 'no'") 
+
+    else:  
+
+        print("invalid choice.")  
+
+      
