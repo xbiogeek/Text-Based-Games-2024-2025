@@ -1,0 +1,79 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    print("Welcome to Prabirs School of Fine Arts") 
+
+    player_name = input("What is your prefered name? ") 
+
+    print (f"Hello, {player_name}! Enjoy your time here!") 
+
+    def intro_scene(): 
+
+        direction = input("You need to navigate to your next class. Do you go left, right or straight ") 
+
+        print(f"You chose to go {direction}.") 
+
+        if direction == "left": 
+
+            print ("You find a map of the school to guide you!") 
+
+            action = input("The map is confusing. Do you ask for help or try to understand it? ") 
+
+            if action == "ask for help": 
+
+                print("The teacher is very nice and you find your class! The rest of the year goes well, and you graduate! YOU WIN! ") 
+
+            elif action == "try to understand": 
+
+                print("You get lost and miss the first hour of class! You get sent to the office and get in trouble! YOU LOSE") 
+
+        elif direction == "right": 
+
+            def bullyscene(): 
+
+                print ("You encounter bully.") 
+
+                action1 = input("Do you run away or fight? ") 
+
+                if action1 == "fight": 
+
+                    print("You punch the bully and he falls! You think your safe but another bully comes out of no where and hits you! YOU LOSE! ") 
+
+                    play_again = input("Do you want to play again? Type 'yes' or 'no': ") 
+
+                elif action1 == "run away": 
+
+                    print("You attempt to run away but he chases you down and punches you! YOU LOSE! ") 
+
+                    bully = input("do you want to go back?") 
+
+                    if bully == "yes": 
+
+                        bullyscene() 
+
+                    if bully == "no": 
+
+                        print("you lose") 
+
+                        play_again = input("Do you want to play again? Type 'yes' or 'no': ") 
+
+            bullyscene() 
+
+        elif direction == "straight": 
+
+            print("You encounter a student. ") 
+
+            action2 = input("Do you talk to him or walk away? ") 
+
+            if action2 == "talk": 
+
+                print("He is friendly and leads you to your next class on time. The rest of the year goes well and you graduate! YOU WIN!")  
+
+            elif action2 == "walk away": 
+
+                print("You get lost and miss the first hour of class. You get in trouble! YOU LOSE!") 
+
+         
+
+    intro_scene() 
