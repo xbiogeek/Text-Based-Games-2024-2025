@@ -1,0 +1,64 @@
+play_again = "yes"
+
+while play_again == "yes":
+
+
+  print("Welcome to your adventure!")
+  
+  
+  tein = input("what is your name?")
+  
+  
+  print(f"Hello, {tein}! Welcome to the game.")
+  
+  
+  direction = input("You are at a crossroads. Do you got left or right?")
+  
+  
+  print(f"You chose to go {direction}.")
+  
+  
+  if direction == "left":
+  
+  
+    print ("You encounter a monkey.")
+    action = input("Do you walk on it or do nothing")
+  
+  
+    if action == "walk":
+  
+  
+      print("You step on it.")
+  
+      play_again = input("do you want to play again? type 'yes' or 'no': ")
+    if action == "nothing":
+  
+  
+      print("You avoided the poop!")
+  
+      play_again = input("do you want to play again? type 'yes' or 'no': ")
+  
+  
+  elif direction == "right":
+  
+  
+    print ("You found a stinky poop!")
+  
+  
+    action = input("Do you run or fight?")
+  
+  
+    if action == "run":
+  
+  
+      print("The monkey catches you. You die.")
+  
+      play_again = input("do you want to play again? type 'yes' or 'no': ")
+  
+    if action == "fight":
+  
+  
+      print("You beat the monkey!")
+      
+      play_again = input("do you want to play again? type 'yes' or 'no': ")
+      
