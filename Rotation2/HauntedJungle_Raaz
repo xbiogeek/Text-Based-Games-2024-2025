@@ -1,0 +1,105 @@
+play_again = "yes" 
+
+  
+
+while play_again == "yes": 
+
+    print('Welcome to the Haunted Jungle!') 
+
+  
+
+    player_name = input("What is your name? ") 
+
+    print(f"Hello, {player_name}, welcome to the game.") 
+
+  
+
+    direction = input("You are at a crossroads. Do you go left or right? ") 
+
+  
+
+    if direction == "left": 
+
+        print("You hear someone calling your name, but when you look back, no one is there!") 
+
+        action = input("Do you follow the voice or run away? ") 
+
+  
+
+            print("You find an exit. Congratulations!") 
+
+        elif action == "run away": 
+
+            print("The voice follows you, and you get lost.") 
+
+            action2 = input("Do you try to hide or scream for help? ") 
+
+  
+
+            if action2 == "hide": 
+
+                print("You find a safe spot and wait for rescue.") 
+
+            elif action2 == "scream for help": 
+
+                print("A mysterious figure appears to guide you out.") 
+
+            else: 
+
+                print("Invalid choice. You remain lost in the jungle.") 
+
+        else: 
+
+            print("Invalid choice. You are stuck in the jungle.") 
+
+    elif direction == "right": 
+
+        print("You see a light in the distance.") 
+
+        action = input("Do you follow the light or ignore it? ") 
+
+  
+
+        if action == "follow the light": 
+
+            print("You find the exit. Well done!") 
+
+        elif action == "ignore it": 
+
+            print("You wander aimlessly and get lost.") 
+
+        else: 
+
+            print("Invalid choice. You remain in the jungle.") 
+
+  
+
+    else: 
+
+        print("Invalid choice. You are lost in the jungle.") 
+
+  
+
+    play_again = input("Do you want to play again? Type 'yes' or 'no': ") 
+
+  
+
+print("Thank you for playing. Goodbye!") 
+
+ 
+
+        action3 = input("you follow the light or you don't fallow the light") 
+
+        if action3 =="you follow the light": 
+
+            print("you find the exit") 
+
+            play_again = input("do you want to play again? type 'yes' or 'no':")     
+
+        elif action3 == "you don't fallow the light": 
+
+            print("you get lost") 
+
+        else: 
+
+            print("invalid choios") 
