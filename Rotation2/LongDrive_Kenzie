@@ -1,0 +1,27 @@
+play_again = "yes" 
+while play_again == "yes":
+    print ("welcome to the long drive")
+    player_name= input("what is your name")
+    print(f"hello, {player_name} welcome to the long drive.")
+    direction= input ("you are at ice. do you go left or right ")
+    print (f"you chose to go {direction}.")
+    if direction== "left":
+        print("your car slides on the ice and you crash into a tree")
+        print("You have crashed and are severely injured, you lost.")
+    elif direction == "right":
+        print ("you slide a bit but you make it off the ice and keep driving.")
+        print("You see a gas station at a distance")
+        print("In attempts to cool off, you decide to get some gas. Unfortunately, there is no one to help you.")
+        print("You keep driving, but shortly after the empty sign pops up")
+        action = input("Would you like to turn back and 'walk to the gas station' or 'sit in your car'. ")
+        if action == "walk to the gas station":
+            print("You start walking back to the gas station and finally make it back")
+            print("After looking around awhile through the discarded boxes for the gas cannister, you unfortunately cannot find one.")
+            play_again = input("do you want to play again? type 'yes' or 'no': ")
+        elif action == "sit in your car":
+            print("You sat in the car for awhile, and you see a truck coming.")
+            print("You hail down the truck driver and ask for a tow.")
+            action1= input("The tow truck driver agrees and gives you a ride. Where do you want to go? Do you want to go to a car fixer or ask if he can keep driving you to your destionation")
+            print(f"you choose to go {action1} .")
+    else:
+        print ("invalid choice.")
