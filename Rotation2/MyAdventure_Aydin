@@ -1,0 +1,53 @@
+ 
+
+print ("Welcome to your adventure") 
+
+player_= input ("What is your name?") 
+
+print (f"Hello,  {player_name} ! Welcome to the game.") 
+
+direction = input ("You are at a crossroads. Do you go left or right?") 
+
+print (f"You chose to go {direction}.") 
+
+if direction == "left": 
+
+    print ("you encounter a DRAGON!") 
+
+elif direction == "right": 
+
+    print ("you find a treasure chest.")  
+
+else: 
+
+    print ("Invalid choice.") 
+
+ 
+
+ 
+
+ 
+
+print ("Welcome to your adventure") 
+
+player_= input ("What is your name?") 
+
+print (f"Hello,  {player_name} ! Welcome to the game.") 
+
+direction = input ("You are at a crossroads. Do you go left or right?") 
+
+print (f"You chose to go {direction}.") 
+
+if direction == "left": 
+
+    print ("you encounter a DRAGON!") 
+
+elif direction == "right": 
+
+    print ("you find a treasure chest.")  
+
+else: 
+
+    print ("Invalid choice.") 
+
+print ("theres nothing in the treasure chest") 
