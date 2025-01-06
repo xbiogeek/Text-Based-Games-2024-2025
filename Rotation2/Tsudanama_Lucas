@@ -1,0 +1,83 @@
+play_again="yes" 
+
+while play_again == "yes": 
+
+    print("Welcome to the Tsudanuma Elementary game") 
+
+    player_name = input("What is your name") 
+
+    print(f"Hello, {player_name} ! Welcome to the game.") 
+
+    def intro_scene(): 
+
+        direction = input ("You are in bed. Do you go to school? Go or don't go?") 
+
+        print(f"You chose to {direction}. ") 
+
+        if direction == "don't go": 
+
+            print("Your mom got mad and you got grounded. You lose.") 
+
+            play_again = input ("Do you want to play agian? Type 'yes' or 'no': ") 
+
+        if direction == "Go": 
+
+            action=input("Which class do you go to? Math or Science?") 
+
+            if action == "Math": 
+
+                print("You go to math.") 
+
+                print("You had a test today. You failed and when you got home your dad gave you a spanking. You lose.") 
+
+                play_again = input ("Do you want to play agian? Type 'yes' or 'no': ") 
+
+            elif action == "Science": 
+
+                print("You go to science.") 
+
+                print("You have a really nice science teacher. Your class goes well and the lunch bell rings.") 
+
+                action1 = input("What do you want for lunch? Pizza, Sandwich, or Sushi?") 
+
+                if action1 == "Pizza": 
+
+                    print("You feel sick from the lots of grease on the pizza. You get to go home. You win!") 
+
+                    play_again = input("Do you want to play agian? Type 'yes' or 'no': ") 
+
+                elif action1 == "Sushi": 
+
+                    print("The fish on the sushi was raw. You died to food poisoning. You lose.") 
+
+                    play_again = input("Do you want to play agian? Type 'yes' or 'no': ") 
+
+                if action1 == "Sandwich": 
+
+                    action2 = input ("The classic Sandwich. Good choice! The rest of lunch goes well. Your last block of the day. Gym or Tech Ed?") 
+
+                    if action2 == "Gym": 
+
+                        print ("You had to do laps today and you died from being out of breath. You lose.") 
+
+                        play_again = input("Do you want to play agian? Type 'yes' or 'no': ") 
+
+                    if action2 == "Tech Ed": 
+
+                        print("You got to play Fortnite with your friends. You win!") 
+
+                        play_again = input("Do you want to play agian? Type 'yes' or 'no': ") 
+
+                else: 
+
+                    print("Invalid choice") 
+
+            else: 
+
+                print("Invalid choice") 
+
+        else: 
+
+            print("Invalid choice") 
+
+    intro_scene() 
