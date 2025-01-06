@@ -1,0 +1,28 @@
+play_again = "yes"
+while play_again == "yes":
+    print ("Welcome to your adventure!") 
+    
+    player_name = input("What is your name?") 
+    
+    print(f"Hello, {player_name}! Welcome to the game")
+ 
+    direction = input("You are at a crossroads. Do you go left or right?") 
+    
+    print ("there is a donkey chasing you") 
+    
+    print (f"You chose to go {direction}.") 
+    
+    print ("There is a donkey chasing you!") 
+    
+    donkey = input ("Do you give it food or run away?”) 
+    
+    if donkey == "run away": 
+    
+        print ("you are safe")
+        play_again = input ("Do you want to play again")
+        
+    
+    elif donkey == "give it food": 
+    
+        print("you become friends!")
+        direction = input("You can choose to follow the donkey to the woods or go home, what will you choose?")
