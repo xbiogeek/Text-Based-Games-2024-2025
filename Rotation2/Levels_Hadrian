@@ -1,0 +1,30 @@
+play_again = "yes"
+while play_again == "yes":
+    print("Welcome to  the game!")
+    player_name = input ("What is your name?")
+    print(f"Hello {player_name}, Welcome to the game.")
+    def intro_scene():
+        direction = input("You have reached the first level. Which door do you choose? left or right")
+        print(f"You chose to go {direction}.")
+        if direction == "left":
+            print("You encounter zaza man.")
+            action = input("You encounter zaza man. Do you fight or flee?")
+            if action == "fight":
+                print("You fought zaza man and won!")
+            elif action == "flee":
+                print("You ran away like a coward hahaha")
+                action2 = input("question of action")
+                if action2 == "choice1":
+                    print("Quit")
+                elif action2 == "choice2":
+                    print("Try again")
+        elif direction == "right":
+            print
+            action1 = input ("Would you like to collect the relic?")
+            if action1 == "yes":
+                print("You have collected a Legendary relic yay")
+            if action1 == "no":
+                print("You did not collect the relic.")
+        else:
+            print("Invalid Choice.")
+    intro_scene()
