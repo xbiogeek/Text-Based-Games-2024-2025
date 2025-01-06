@@ -1,0 +1,33 @@
+play_again = "yes" 
+
+while play_again == "yes": 
+
+    player_name = input("welcome to an non interesting game enter name ") 
+
+    direction = input(f"hello, {player_name} do u go left or right? ") 
+
+    if direction == "left": 
+
+        play_again = input("invalid choice now bye bye.wana play again?'yes' or 'no': ") 
+
+        if direction == "right": 
+
+            print("you found a sick donkey, do you want to help or leave him?") 
+
+        if action == "help": 
+
+            print("you bring the donkey to a interesting hospital and it turns out hes been poisoned and the doctor gives you the duo phase dagger do you take it?yes or no? ") 
+
+            if direction == "yes": direction(f"'{player_name} duck its a sting bear when they bite you you get poisoned' 'who said that'you say'and how do you know my name' 'its me kery the donkey you saved'  'you can talk?!'you say, kery responeds'what ever use the dou phase dagger. so use it or run? ") 
+
+            if direction == "run": print(f"you get up on kery and he says'dude what are you doing' 'just run' 'fine if you say so {player_name}'game end wana play again before it takes a billin years for pt 2 to come out?") 
+
+            if direction == "use it": print("you jump on a log and kick the bear then stab it making the bear look purple then back to its normal phase 5 times like when something glitches and the bear dies.game complete wana play again before it takes a billin years for pt 2 to come out?") 
+
+        elif action == "leave him": 
+
+            print("you encounter a bear but you cant defend your self you get bit and you get injected with poison you die.(i guess you found the murderer)") 
+
+             
+
+            play_again = input("bye bye u completed the game wana play agin? 'yes' or 'no': ") 
