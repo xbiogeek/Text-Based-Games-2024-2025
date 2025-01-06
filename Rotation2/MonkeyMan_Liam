@@ -1,0 +1,32 @@
+print ("welcome to monkey man school")
+player_name = input("what is your name?")
+print(f"hello, {player_name}!welcome to the game.")
+direction = input ("you are in the hall way do you go left or right?")
+print(f"you chose to go{direction}.")
+if direction == "left":
+    print ("you encounter a monkey man bully!")
+    print("you see the monkey man and start to run down the hallway")
+    action = input("do you want to fight or run away")
+    if action == "fight":
+        print("you grab a broom and hit him")
+    elif action == "run away":
+        print("he chases you down the hall until you get to a dead end")
+        print("what do you do")
+        choice=input("do you go under his legs or try to fist fight him")
+        if choice =="under his legs":
+            print("you go under his legs and escape to the office")
+        elif choice =="fist fight him":
+            print("you fist fight him and make it out to run to the office")
+elif direction == "right":
+    print ("you find a class room")
+    choice1=input("do you ask the teacher if this is your class or do you walk away?")
+    if choice1=="ask the teacher":
+        print("is this my class?")
+        print("yes this is your class")
+        print("you win!")
+    elif choice1=="walk away":
+        print("walk away and ask the office where you class is")
+        print("the office tells you where you class is")
+        print("you win")
+else:
+    print ("invalid choice.")
