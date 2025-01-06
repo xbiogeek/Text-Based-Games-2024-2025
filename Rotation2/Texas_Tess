@@ -1,0 +1,21 @@
+print("welcome to texas")
+
+player_name = input ("what is your name")
+
+print (f"hello {player_name} welcome to the game")
+
+direction =input("you are now in texas. do you go to get brisket or go to young sheldons house ")
+
+print(f"you chose to go {direction}.")
+
+if direction =="left":
+
+  print ("you go and get brisket")
+
+elif direction == "right":
+
+  print ("you go to young sleldons house")
+
+else:
+
+  print ("invalid choice")
