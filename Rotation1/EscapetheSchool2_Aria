@@ -3,7 +3,7 @@
 
 play_again = "yes" 
 
-while play_again == "yes" 
+while play_again == "yes":
 
     print("Welcome to ESCAPE THE SCHOOl, part 2") 
 
@@ -35,7 +35,7 @@ while play_again == "yes"
 
     print("Kosyta, one of your classmates, finds blood in the pizza box, but M.Bilard just shrugs it off. You think that the blood is a bad sign, because of the schools history.") 
 
-    direction = input("Your teacher gives everybody a chance to call their parents, and you are uneasy because of the blood. Do you call your mom or not?") 
+    direction = input("Your teacher gives everybody a chance to call their parents, and you are uneasy because of the blood. Do you call your mom or not? 'yes' or 'no'") 
 
     print(f"You said {direction}") 
 
@@ -57,7 +57,7 @@ while play_again == "yes"
 
         print("you go back to the gym") 
 
-        choice00 = input("You and your friends wait for the teachers to make an announcement. It's decided that you can either GO to the science classroom, with M.Hooshmi, or STAY in the gym with  M.Bliard and Mme. Lepienne. Text stay or go.") 
+        choice00 = input("You and your friends wait for the teachers to make an announcement. It's decided that you can either GO to the science classroom, with M.Hooshmi, or STAY in the gym with  M.Bliard and Mme. Lepienne. Type 'stay' or 'go'.") 
 
         print(f"You said {choice00}") 
 
@@ -182,7 +182,5 @@ while play_again == "yes"
                 print("YOU DIED.")  
 
                 play_again = input("Would you like to play again? Type 'yes' or 'no':") 
-
- 
 
  
